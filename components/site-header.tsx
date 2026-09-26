@@ -27,7 +27,7 @@ export function SiteHeader({ locale, languageHref }: SiteHeaderProps) {
           <Link
             className="brand-lockup"
             href={localPath("home", locale)}
-            aria-label="VinMat School Games"
+            aria-label="VinMat Education Games"
           >
             <img
               className="brand-mark"
@@ -38,7 +38,7 @@ export function SiteHeader({ locale, languageHref }: SiteHeaderProps) {
             />
             <span className="brand-words">
               <strong>VinMat</strong>
-              <span>School Games</span>
+              <span>Education Games</span>
             </span>
           </Link>
 

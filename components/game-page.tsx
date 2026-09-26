@@ -82,11 +82,11 @@ export function GamePage({ gameKey, locale }: { gameKey: GameKey; locale: Locale
                   size: "lg",
                   className: "button-primary",
                 })}
-                href={assetPath(copy.primaryFile)}
-                download
+                href={gameKey === "fantasy" ? "#downloads" : assetPath(copy.primaryFile)}
+                download={gameKey === "fantasy" ? undefined : true}
               >
                 <Download aria-hidden="true" />
-                {copy.primaryDownload}
+                {gameKey === "fantasy" ? (locale === "cs" ? "Soubory ke stažení" : "Download files") : copy.primaryDownload}
               </a>
               <a className="text-link" href="#rules">
                 {locale === "en" ? "Read the rules" : "Přečíst pravidla"}
@@ -177,17 +177,29 @@ export function GamePage({ gameKey, locale }: { gameKey: GameKey; locale: Locale
               <h2>{copy.modesTitle}</h2>
             </div>
           </div>
-          <div className="mode-grid">
-            {copy.modes.map((mode) => (
-              <article key={mode.title}>
-                <h3>{mode.title}</h3>
-                <p>{mode.text}</p>
+          {gameKey === "fantasy" ? (
+            <div className="mode-grid">
+              <article>
+                <h3>{locale === "cs" ? "Bitva · počítání" : "Battle · arithmetic"}</h3>
+                <p>{locale === "cs" ? "Útoky a posily procvičují sčítání a odčítání. Vyberte jednu ze tří obtížností:" : "Attacks and support practise addition and subtraction. Choose one of three difficulty levels:"}</p>
+                <ul className="battle-levels">
+                  {copy.modes.slice(0, 3).map((mode) => <li key={mode.title}><h4>{mode.title}</h4><p>{mode.text}</p></li>)}
+                </ul>
               </article>
-            ))}
-          </div>
+              <article>
+                <h3>{locale === "cs" ? "Souboj · porovnávání (přebíjená)" : "Duel · comparing numbers (high-card game)"}</h3>
+                <p>{copy.modes[3].text}</p>
+                <p>{locale === "cs" ? "Každý hráč použije 18 karet jedné armády. Karty ATTACK, SUPPORT a patroni zůstanou stranou. Jakmile někdo na začátku kola nemůže otočit kartu, hra končí. Dojdou-li karty při remíze, za poslední kolo se bod neuděluje." : "Each player uses the 18 cards of one army. Leave ATTACK, SUPPORT and patron cards aside. The game ends when a player cannot reveal a card at the start of a round. If cards run out during a tie, no point is awarded for that last round."}</p>
+              </article>
+            </div>
+          ) : (
+            <div className="mode-grid">
+              {copy.modes.map((mode) => <article key={mode.title}><h3>{mode.title}</h3><p>{mode.text}</p></article>)}
+            </div>
+          )}
         </section>
 
-        <section className="download-section section-block">
+        <section id="downloads" className="download-section section-block">
           <div className="shell download-grid">
             <div className="download-copy">
               <p className="eyebrow">{shared.free}</p>
@@ -197,6 +209,20 @@ export function GamePage({ gameKey, locale }: { gameKey: GameKey; locale: Locale
                 <FileText aria-hidden="true" />
                 {copy.pdfNote}
               </p>
+              {gameKey === "fantasy" ? (
+                <div className="battle-downloads">
+                  {[
+                    {file: "vm-fantasy-battle-rules-cs.pdf", title: locale === "cs" ? "Návod" : "Rules", text: locale === "cs" ? "Český návod pro 2–4 hráče: Bitva i Souboj. Formát A5, tisk na A4." : "Czech rules for 2–4 players: Battle and Duel. A5 booklet on A4 sheets."},
+                    {file: "vm-fantasy-battle-knights-zombies.pdf", title: locale === "cs" ? "Karty rytířů a zombií" : "Knights & Zombies cards", text: locale === "cs" ? "Dvě armády, útoky, posily a patroni. 16 stran A4, včetně rubů." : "Two armies, attacks, support and patrons. 16 A4 pages, including card backs."},
+                    {file: "vm-fantasy-battle-orcs-goblins.pdf", title: locale === "cs" ? "Karty orků a goblinů" : "Orcs & Goblins cards", text: locale === "cs" ? "Další dvě armády, útoky, posily a patroni. 16 stran A4, včetně rubů." : "Two more armies, attacks, support and patrons. 16 A4 pages, including card backs."},
+                    {file: "vm-fantasy-battle-logs.pdf", title: "Battle Logy / Battle Logs", text: locale === "cs" ? "Volitelné záznamové listy pro počítání na papír. Do MY ARMY zapisujte změny vlastní armády, do ENEMY ARMY své útoky s iniciálou soupeřovy armády, například O: 10 − 2 = 8. Vhodné pro všechny čtyři armády." : "Optional worksheets for doing the arithmetic on paper. Record changes to your army under MY ARMY and your attacks under ENEMY ARMY, adding the target army’s initial, for example O: 10 − 2 = 8. Suitable for all four armies."},
+                  ].map((file) => <div className="battle-download" key={file.file}>
+                    <h3>{file.file.includes("logs") ? (locale === "cs" ? "Battle Logy" : "Battle Logs") : file.title}</h3>
+                    <p>{file.text}</p>
+                    <a className={buttonVariants({variant: "outline", className: "button-secondary"})} href={assetPath(`/downloads/${file.file}`)} download><Download aria-hidden="true" />{locale === "cs" ? "Stáhnout PDF" : "Download PDF"}</a>
+                  </div>)}
+                </div>
+              ) : (
               <div className="download-actions">
                 <a
                   className={buttonVariants({
@@ -224,6 +250,7 @@ export function GamePage({ gameKey, locale }: { gameKey: GameKey; locale: Locale
                   </a>
                 ) : null}
               </div>
+              )}
             </div>
 
             <aside className="contents-card">

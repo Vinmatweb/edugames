@@ -16,7 +16,7 @@ export function SiteFooter({ locale }: { locale: Locale }) {
         <div className="footer-brand">
           <img src={assetPath("/favicon.png")} alt="" width="52" height="52" />
           <div>
-            <strong>VinMat School Games</strong>
+            <strong>VinMat Education Games</strong>
             <p>{copy.footerLine}</p>
           </div>
         </div>

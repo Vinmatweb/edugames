@@ -39,7 +39,7 @@ export function pageMetadata({
       title,
       description,
       url: absolute(path),
-      siteName: "VinMat School Games",
+      siteName: "VinMat Education Games",
       locale: locale === "en" ? "en_US" : "cs_CZ",
       alternateLocale: locale === "en" ? ["cs_CZ"] : ["en_US"],
     },

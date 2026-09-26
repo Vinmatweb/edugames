@@ -6,12 +6,12 @@ import { BASE_PATH, SITE_URL } from "@/lib/site";
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),
   title: {
-    default: "VinMat School Games",
-    template: "%s | VinMat School Games",
+    default: "VinMat Education Games",
+    template: "%s | VinMat Education Games",
   },
   description:
     "Free printable card and board games that help children practise maths, logic and strategic thinking through play.",
-  applicationName: "VinMat School Games",
+  applicationName: "VinMat Education Games",
   authors: [{ name: "VinMat", url: "https://vinmat.eu" }],
   category: "education",
   icons: {

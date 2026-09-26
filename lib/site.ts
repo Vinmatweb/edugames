@@ -209,7 +209,7 @@ type Game = {
 export const games: Record<GameKey, Game> = {
   fantasy: {
     key: "fantasy",
-    image: "/images/fantasy-battle-cover.png",
+    image: "/images/fantasy-battle-cards.png",
     players: "2–4",
     age: "6–9",
     time: "10–20",
@@ -221,9 +221,9 @@ export const games: Record<GameKey, Game> = {
       category: "Card game · arithmetic",
       summary:
         "Build an army from number cards, launch attacks and call for support. Every move turns into a calculation the whole table can see.",
-      status: "Knights vs Undead · ready to print",
+      status: "4 armies · 2 games · ready to print",
       coverAlt:
-        "A friendly fantasy angel and knight facing a young necromancer and cartoon undead in a castle courtyard",
+        "Actual Knight, Zombie, Orc and Goblin cards from the printable decks",
       skills: [
         "Addition and subtraction within 20",
         "Building the same number in different ways",
@@ -233,7 +233,7 @@ export const games: Record<GameKey, Game> = {
       overview: [
         "Each unit card has a value. The cards in front of a player show the current size of that army. An ATTACK subtracts units, SUPPORT adds units and a patron can grant one carefully timed +5 boost.",
         "After every change, the player rebuilds the army with a new combination of cards. A total of 7 might be 5 + 2, 4 + 3 or a single 7. The arithmetic is visible, movable and easy for another player to check.",
-        "The current printable pack contains Knights and Undead for two players. The universal rules also describe free-for-all and team play for three or four players when additional army sets are available.",
+        "Choose from four armies: Knights, Zombies, Orcs and Goblins. With two or three players, everyone plays for themselves; four-player Battle uses two teams.",
       ],
       learnTitle: "What children practise",
       learnIntro:
@@ -273,7 +273,7 @@ export const games: Record<GameKey, Game> = {
           text: "An army at 0 is defeated. With two or three players, the last army wins; with four players, the surviving team wins.",
         },
       ],
-      modesTitle: "Choose the right challenge",
+      modesTitle: "Two games with one set of cards",
       modes: [
         {
           title: "Beginner · start at 10",
@@ -294,21 +294,21 @@ export const games: Record<GameKey, Game> = {
       ],
       contentsTitle: "Current free set",
       contents: [
-        "18 Knight unit cards",
-        "18 Undead unit cards",
-        "18 ATTACK cards",
-        "9 SUPPORT cards",
-        "2 patron cards (+5)",
-        "Battle Logs and Czech rules",
+        "18 Knight and 18 Orc unit cards",
+        "18 Zombie and 18 Goblin unit cards",
+        "18 ATTACK cards per set",
+        "9 SUPPORT cards per set",
+        "2 patron cards (+5) per set",
+        "Separate Battle Logs and Czech rules",
       ],
       downloadTitle: "Download the free game",
       downloadText:
-        "The illustrated cards are a Czech first edition. The complete English rules are available on this page; an English printable pack will follow after playtesting.",
-      primaryDownload: "Download cards · Czech PDF",
+        "Download the rules, either card set and optional Battle Logs separately. Card labels and logs are in English; print-sheet headings and the printable rules are in Czech.",
+      primaryDownload: "Knights & Zombies · PDF",
       secondaryDownload: "Download universal rules · Czech PDF",
-      primaryFile: "/downloads/vm-fantasy-battle-cards-cs-v1.pdf",
+      primaryFile: "/downloads/vm-fantasy-battle-knights-zombies.pdf",
       secondaryFile: "/downloads/vm-fantasy-battle-rules-cs.pdf",
-      pdfNote: "A4 · 100% scale · illustrated two-player set",
+      pdfNote: "A4 · 100% scale · two card sets for 2–4 players",
       faqTitle: "Common questions",
       faqs: [
         {
@@ -325,7 +325,7 @@ export const games: Record<GameKey, Game> = {
         },
         {
           q: "Can four children play with the current download?",
-          a: "The current illustrated set contains two armies. A four-player team game needs four distinct army sets, so keep this edition to two players unless you print or create two clearly distinguishable extra armies.",
+          a: "Yes. Download both card sets: Knights & Zombies and Orcs & Goblins. Each player chooses one army; with four players, Battle is played in two teams.",
         },
       ],
       relatedEyebrow: "Try another kind of maths",
@@ -338,9 +338,9 @@ export const games: Record<GameKey, Game> = {
       category: "Karetní hra · počítání",
       summary:
         "Sestavte armádu z číselných karet, útočte a povolávejte posily. Každý tah se promění ve výpočet, který vidí celý stůl.",
-      status: "Rytíři vs. Nemrtví · připraveno k tisku",
+      status: "4 armády · 2 hry · připraveno k tisku",
       coverAlt:
-        "Přátelský fantasy archanděl a rytíř proti mladému nekromantovi a kresleným nemrtvým na nádvoří hradu",
+        "Skutečné karty rytíře, zombie, orka a goblina ze sad k vytištění",
       skills: [
         "Sčítání a odčítání do 20",
         "Rozklad stejného čísla různými způsoby",
@@ -350,7 +350,7 @@ export const games: Record<GameKey, Game> = {
       overview: [
         "Každá karta jednotek má hodnotu. Součet karet před hráčem udává velikost jeho armády. ATTACK jednotky ubírá, SUPPORT je přidává a patron může jednou za hru přinést dobře načasovaných +5.",
         "Po každé změně hráč sestaví armádu znovu v jiné kombinaci. Sedm může být 5 + 2, 4 + 3 nebo jedna karta 7. Výpočet je vidět, lze s ním pohybovat a ostatní ho snadno zkontrolují.",
-        "Aktuální sada obsahuje rytíře a nemrtvé pro dva hráče. Univerzální pravidla už popisují také hru každý za sebe a týmovou hru pro tři až čtyři hráče s dalšími armádami.",
+        "Na výběr jsou čtyři armády: rytíři, zombie, orkové a goblini. Ve dvou a třech se hraje každý za sebe, ve čtyřech Bitva ve dvou týmech.",
       ],
       learnTitle: "Co si děti procvičí",
       learnIntro:
@@ -390,7 +390,7 @@ export const games: Record<GameKey, Game> = {
           text: "Armáda na 0 vypadává. Ve dvou nebo třech vyhrává poslední armáda; ve čtyřech tým, kterému alespoň jedna armáda zůstala.",
         },
       ],
-      modesTitle: "Zvolte správnou obtížnost",
+      modesTitle: "Dvě hry s jednou sadou karet",
       modes: [
         {
           title: "Začátečník · start 10",
@@ -411,21 +411,21 @@ export const games: Record<GameKey, Game> = {
       ],
       contentsTitle: "Aktuální sada zdarma",
       contents: [
-        "18 karet jednotek rytířů",
-        "18 karet jednotek nemrtvých",
-        "18 karet ATTACK",
-        "9 karet SUPPORT",
-        "2 karty patronů (+5)",
-        "Battle Logy a česká pravidla",
+        "18 karet rytířů a 18 karet orků",
+        "18 karet zombií a 18 karet goblinů",
+        "18 karet ATTACK v každé sadě",
+        "9 karet SUPPORT v každé sadě",
+        "2 karty patronů (+5) v každé sadě",
+        "Samostatné Battle Logy a český návod",
       ],
       downloadTitle: "Stáhněte si hru zdarma",
       downloadText:
-        "Ilustrované karty jsou hotovou první českou edicí. Samostatně si můžete stáhnout také univerzální pravidla se hrou pro 2–4 hráče a variantou Přebíjená.",
-      primaryDownload: "Stáhnout karty · české PDF",
+        "Návod, obě sady karet a volitelné Battle Logy si stáhněte samostatně. Popisky karet a logů jsou anglicky; záhlaví tiskových archů a návod jsou česky.",
+      primaryDownload: "Rytíři a zombie · PDF",
       secondaryDownload: "Stáhnout univerzální pravidla · PDF",
-      primaryFile: "/downloads/vm-fantasy-battle-cards-cs-v1.pdf",
+      primaryFile: "/downloads/vm-fantasy-battle-knights-zombies.pdf",
       secondaryFile: "/downloads/vm-fantasy-battle-rules-cs.pdf",
-      pdfNote: "A4 · tisk 100 % · ilustrovaná sada pro dva hráče",
+      pdfNote: "A4 · tisk 100 % · dvě sady karet pro 2–4 hráče",
       faqTitle: "Časté otázky",
       faqs: [
         {
@@ -442,7 +442,7 @@ export const games: Record<GameKey, Game> = {
         },
         {
           q: "Mohou se současným souborem hrát čtyři děti?",
-          a: "Aktuální ilustrovaná sada obsahuje dvě armády. Pro týmovou hru ve čtyřech jsou potřeba čtyři odlišitelné armády, proto tuto edici zatím používejte pro dva hráče.",
+          a: "Ano. Stáhněte obě sady: rytíře a zombie i orky a gobliny. Každý hráč si vybere jednu armádu; Bitva ve čtyřech se hraje ve dvou týmech.",
         },
       ],
       relatedEyebrow: "Zkuste jiný druh počítání",
@@ -693,10 +693,10 @@ export const games: Record<GameKey, Game> = {
 
 export const aboutCopy = {
   en: {
-    eyebrow: "About VinMat School Games",
+    eyebrow: "About VinMat Education Games",
     title: "Small games with a clear learning purpose.",
     lead:
-      "VinMat School Games is a free library of printable games for families, educators and children who learn best when numbers have a story and a reason.",
+      "VinMat Education Games is a free library of printable games for families, educators and children who learn best when numbers have a story and a reason.",
     sections: [
       {
         title: "Play comes first",
@@ -731,10 +731,10 @@ export const aboutCopy = {
     ],
   },
   cs: {
-    eyebrow: "O VinMat School Games",
+    eyebrow: "O VinMat Education Games",
     title: "Malé hry s jasným vzdělávacím cílem.",
     lead:
-      "VinMat School Games je bezplatná knihovna her k vytištění pro rodiny, pedagogy a děti, kterým se lépe učí, když mají čísla příběh a smysl.",
+      "VinMat Education Games je bezplatná knihovna her k vytištění pro rodiny, pedagogy a děti, kterým se lépe učí, když mají čísla příběh a smysl.",
     sections: [
       {
         title: "Hra je na prvním místě",
@@ -870,7 +870,7 @@ export const legalCopy = {
       sections: [
         {
           title: "Current site",
-          text: "VinMat School Games does not require an account, does not offer comments and does not intentionally collect personal information. Printable files are downloaded directly from this website.",
+          text: "VinMat Education Games does not require an account, does not offer comments and does not intentionally collect personal information. Printable files are downloaded directly from this website.",
         },
         {
           title: "Technical records",
@@ -893,7 +893,7 @@ export const legalCopy = {
       sections: [
         {
           title: "Současná verze webu",
-          text: "VinMat School Games nevyžaduje účet, nenabízí komentáře a záměrně neshromažďuje osobní údaje. Soubory k tisku se stahují přímo z tohoto webu.",
+          text: "VinMat Education Games nevyžaduje účet, nenabízí komentáře a záměrně neshromažďuje osobní údaje. Soubory k tisku se stahují přímo z tohoto webu.",
         },
         {
           title: "Technické záznamy",
