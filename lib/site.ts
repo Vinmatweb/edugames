@@ -210,7 +210,7 @@ type Game = {
 export const games: Record<GameKey, Game> = {
   fantasy: {
     key: "fantasy",
-    image: "/images/fantasy-battle-arena.webp",
+    image: "/images/fantasy-battle-169.webp",
     players: "2–4",
     age: "6–9",
     time: "10–20",
@@ -453,7 +453,7 @@ export const games: Record<GameKey, Game> = {
   },
   racing: {
     key: "racing",
-    image: "/images/racing-challenge.webp",
+    image: "/images/racing-challenge-169.webp",
     players: "2–4",
     age: "6–8",
     time: "10–15",
