@@ -5,7 +5,7 @@ import { pageMetadata } from "@/lib/metadata";
 import { games, paths } from "@/lib/site";
 
 export const metadata: Metadata = pageMetadata({
-  title: "Racing Math – printable number-line game",
+  title: "VM Racing Challenge – printable number-line game",
   description: games.racing.en.summary,
   locale: "en",
   path: paths.racing.en,

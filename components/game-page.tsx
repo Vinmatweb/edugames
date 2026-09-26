@@ -13,7 +13,6 @@ import {
 } from "lucide-react";
 
 import { AdSlot } from "@/components/ad-slot";
-import { GameCard } from "@/components/game-card";
 import { SiteFooter } from "@/components/site-footer";
 import { SiteHeader } from "@/components/site-header";
 import {
@@ -37,7 +36,6 @@ export function GamePage({ gameKey, locale }: { gameKey: GameKey; locale: Locale
   const game = games[gameKey];
   const copy = game[locale];
   const shared = sharedCopy[locale];
-  const otherKey: GameKey = gameKey === "fantasy" ? "racing" : "fantasy";
   const alternateLocale: Locale = locale === "en" ? "cs" : "en";
 
   return (
@@ -56,6 +54,7 @@ export function GamePage({ gameKey, locale }: { gameKey: GameKey; locale: Locale
             </Link>
             <p className="eyebrow eyebrow--color">{copy.category}</p>
             <h1>{copy.title}</h1>
+            {copy.tagline && <p className="game-tagline">{copy.tagline}</p>}
             <p className="game-lead">{copy.summary}</p>
 
             <ul className="game-fact-row" aria-label="Game facts">
@@ -82,11 +81,10 @@ export function GamePage({ gameKey, locale }: { gameKey: GameKey; locale: Locale
                   size: "lg",
                   className: "button-primary",
                 })}
-                href={gameKey === "fantasy" ? "#downloads" : assetPath(copy.primaryFile)}
-                download={gameKey === "fantasy" ? undefined : true}
+                href="#downloads"
               >
                 <Download aria-hidden="true" />
-                {gameKey === "fantasy" ? (locale === "cs" ? "Soubory ke stažení" : "Download files") : copy.primaryDownload}
+                {locale === "cs" ? "Soubory ke stažení" : "Download files"}
               </a>
               <a className="text-link" href="#rules">
                 {locale === "en" ? "Read the rules" : "Přečíst pravidla"}
@@ -223,33 +221,17 @@ export function GamePage({ gameKey, locale }: { gameKey: GameKey; locale: Locale
                   </div>)}
                 </div>
               ) : (
-              <div className="download-actions">
-                <a
-                  className={buttonVariants({
-                    size: "lg",
-                    className: "button-primary",
-                  })}
-                  href={assetPath(copy.primaryFile)}
-                  download
-                >
-                  <Download aria-hidden="true" />
-                  {copy.primaryDownload}
-                </a>
-                {copy.secondaryFile && copy.secondaryDownload ? (
-                  <a
-                    className={buttonVariants({
-                      variant: "outline",
-                      size: "lg",
-                      className: "button-secondary",
-                    })}
-                    href={assetPath(copy.secondaryFile)}
-                    download
-                  >
-                    <FileText aria-hidden="true" />
-                    {copy.secondaryDownload}
-                  </a>
-                ) : null}
-              </div>
+                <div className="battle-downloads">
+                  {[
+                    {file: "vm-racing-challenge-rules-cs.pdf", title: locale === "cs" ? "Návod" : "Rules", text: locale === "cs" ? "Český návod pro 2–4 hráče: Malý závod i Velká cena. Skládaný návod A5 na dvou stranách A4." : "Czech rules for 2–4 players: Small Race and Grand Prix. Folded A5 booklet on two A4 pages."},
+                    {file: "vm-racing-challenge-cards.pdf", title: locale === "cs" ? "Herní karty" : "Game cards", text: locale === "cs" ? "Auta, společné startovní losy, čtyři barevné sady pořadí, závodní balíček a STARTING GRID včetně rubů." : "Cars, shared starting-position cards, four coloured position decks, the race deck and STARTING GRID, including card backs."},
+                    {file: "vm-racing-challenge-race-log.pdf", title: "Race Log", text: locale === "cs" ? "Volitelné záznamové listy pro počítání na papír. Zapište startovní místo, jednotlivé výpočty a konečné pořadí. Každý další výpočet začínejte aktuálním místem auta, které mohl mezitím změnit soupeř." : "Optional worksheets for doing the arithmetic on paper. Record your starting position, calculations and finishing position. Begin each calculation with your car’s current position, which another player may have changed."},
+                  ].map((file) => <div className="battle-download" key={file.file}>
+                    <h3>{file.title}</h3>
+                    <p>{file.text}</p>
+                    <a className={buttonVariants({variant: "outline", className: "button-secondary"})} href={assetPath(`/downloads/${file.file}`)} download><Download aria-hidden="true" />{locale === "cs" ? "Stáhnout PDF" : "Download PDF"}</a>
+                  </div>)}
+                </div>
               )}
             </div>
 
@@ -281,15 +263,10 @@ export function GamePage({ gameKey, locale }: { gameKey: GameKey; locale: Locale
         </section>
 
         <section className="related-section shell section-block">
-          <div className="section-heading section-heading--compact">
-            <div>
-              <p className="eyebrow">{copy.relatedEyebrow}</p>
-              <h2>{copy.relatedText}</h2>
-            </div>
-          </div>
-          <div className="related-card-wrap">
-            <GameCard gameKey={otherKey} locale={locale} />
-          </div>
+          <Link href={`${localPath("home", locale)}#games`} className={buttonVariants({size: "lg", className: "button-primary"})}>
+            <ArrowLeft aria-hidden="true" />
+            {locale === "cs" ? "Vyber si další hru" : "Choose another game"}
+          </Link>
         </section>
       </main>
 

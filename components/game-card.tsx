@@ -39,6 +39,7 @@ export function GameCard({ gameKey, locale }: { gameKey: GameKey; locale: Locale
         <h3>
           <Link href={localPath(game.routeKey, locale)}>{copy.title}</Link>
         </h3>
+        {copy.tagline && <p className="game-tagline">{copy.tagline}</p>}
         <p className="game-card-summary">{copy.summary}</p>
 
         <ul className="game-meta" aria-label="Game facts">

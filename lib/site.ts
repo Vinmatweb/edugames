@@ -164,6 +164,7 @@ export type GameKey = "fantasy" | "racing";
 type GameTranslation = {
   title: string;
   shortTitle: string;
+  tagline?: string;
   category: string;
   summary: string;
   status: string;
@@ -209,7 +210,7 @@ type Game = {
 export const games: Record<GameKey, Game> = {
   fantasy: {
     key: "fantasy",
-    image: "/images/fantasy-battle-cards.png",
+    image: "/images/fantasy-battle-arena.webp",
     players: "2–4",
     age: "6–9",
     time: "10–20",
@@ -223,7 +224,7 @@ export const games: Record<GameKey, Game> = {
         "Build an army from number cards, launch attacks and call for support. Every move turns into a calculation the whole table can see.",
       status: "4 armies · 2 games · ready to print",
       coverAlt:
-        "Actual Knight, Zombie, Orc and Goblin cards from the printable decks",
+        "A knight, zombie, orc and goblin facing each other in a sunset arena",
       skills: [
         "Addition and subtraction within 20",
         "Building the same number in different ways",
@@ -330,7 +331,7 @@ export const games: Record<GameKey, Game> = {
       ],
       relatedEyebrow: "Try another kind of maths",
       relatedText:
-        "Prefer a shared track to a head-to-head battle? Racing Math turns plus and minus into overtaking.",
+        "Prefer a shared track to a head-to-head battle? VM Racing Challenge turns plus and minus into overtaking.",
     },
     cs: {
       title: "VM Fantasy Battle",
@@ -340,7 +341,7 @@ export const games: Record<GameKey, Game> = {
         "Sestavte armádu z číselných karet, útočte a povolávejte posily. Každý tah se promění ve výpočet, který vidí celý stůl.",
       status: "4 armády · 2 hry · připraveno k tisku",
       coverAlt:
-        "Skutečné karty rytíře, zombie, orka a goblina ze sad k vytištění",
+        "Rytíř, zombie, ork a goblin proti sobě v aréně při západu slunce",
       skills: [
         "Sčítání a odčítání do 20",
         "Rozklad stejného čísla různými způsoby",
@@ -447,26 +448,27 @@ export const games: Record<GameKey, Game> = {
       ],
       relatedEyebrow: "Zkuste jiný druh počítání",
       relatedText:
-        "Dáváte přednost společné trati před soubojem? Závodní matematika mění plus a minus v předjíždění.",
+        "Dáváte přednost společné trati před soubojem? VM Racing Challenge mění plus a minus v předjíždění.",
     },
   },
   racing: {
     key: "racing",
-    image: "/images/racing-math-cover.png",
+    image: "/images/racing-challenge.webp",
     players: "2–4",
     age: "6–8",
     time: "10–15",
     routeKey: "racing",
     accent: "racing",
     en: {
-      title: "Racing Math",
-      shortTitle: "Racing Math",
+      title: "VM Racing Challenge",
+      shortTitle: "VM Racing Challenge",
+      tagline: "Race • Calculate • Overtake",
       category: "Board & card game · number line",
       summary:
         "Draw a racing event, calculate the new position and move your car through the field. Lower numbers mean you are closer to the finish.",
-      status: "Playtest edition · Czech printable",
+      status: "20 cars · ready to print",
       coverAlt:
-        "Six colourful racing cars including a prototype, roadster, rally car, buggy and retro streamliner",
+        "Red, blue, yellow and purple cars overtaking in a chicane, with position changes −1 and +1",
       skills: [
         "Adding and subtracting positions",
         "Orientation on a number line",
@@ -474,9 +476,9 @@ export const games: Record<GameKey, Game> = {
       ],
       overviewTitle: "Every calculation changes the race",
       overview: [
-        "Players start on positions 1–10 or 1–20 and draw one racing card in each of five rounds. Overtaking moves a token towards a lower number; losing places moves it towards a higher number.",
+        "Players start on positions 1–10 or 1–20 and draw one racing card in each of five rounds. Overtaking moves a car towards a lower number; losing places moves it towards a higher number.",
         "A child says the full calculation before moving: for example, “8 − 2 = 6.” The position cards remain on the table, so the number line is always visible and can be followed with a finger.",
-        "The playtest PDF contains twenty named cars, matching tokens, start positions and fifty racing cards. All cars play equally—the different styles simply make choosing one more fun.",
+        "The printable set contains twenty cars, starting-position cards, four coloured sets of personal position cards and fifty racing cards. Every car follows the same rules.",
       ],
       learnTitle: "What children practise",
       learnIntro:
@@ -484,7 +486,7 @@ export const games: Record<GameKey, Game> = {
       learningPoints: [
         {
           title: "Number-line movement",
-          text: "Tokens make each operation physical: move left for overtaking, right for losing places.",
+          text: "Cars make each operation physical: move left for overtaking, right for losing places.",
         },
         {
           title: "Arithmetic in context",
@@ -497,7 +499,7 @@ export const games: Record<GameKey, Game> = {
       ],
       rulesTitle: "How to run the race",
       rulesIntro:
-        "The game lasts five rounds, so everyone knows when the finish is coming. Empty places represent cars in the rest of the field.",
+        "The game lasts five rounds. Lay out all 10 or 20 cars; each position holds exactly one car, including cars not chosen by players.",
       steps: [
         {
           title: "Choose the race",
@@ -505,51 +507,51 @@ export const games: Record<GameKey, Game> = {
         },
         {
           title: "Draw the starting grid",
-          text: "Each player chooses a car and its matching token, then draws a start card and places the token on that position.",
+          text: "Each player chooses a car and a coloured PLAYER position deck, then draws a starting position without replacement. Fill the remaining positions with the other cars.",
         },
         {
           title: "Race for five rounds",
-          text: "Starting with the best grid position, players take turns drawing one card, saying the calculation and moving the token.",
+          text: "The best starting position goes first, then play clockwise. Draw a card, say the calculation and move your car. Shift every car you pass by one place and update affected players’ position cards.",
         },
         {
           title: "Check the finish",
-          text: "After round five, the lowest position number wins. Tied leaders share the win; more than one token may occupy a position.",
+          text: "After each player has taken five turns, the player whose car has the lowest position number wins. Each position holds exactly one car.",
         },
       ],
       modesTitle: "Two race sizes",
       modes: [
         {
           title: "Small race · positions 1–10",
-          text: "Best for a first game. Remove changes ±4 and ±5; the remaining 34-card deck keeps every calculation within a shorter number line.",
+          text: "Best for a first game. Remove changes ±4 and ±5; the remaining 38-card deck keeps every calculation within a shorter number line.",
         },
         {
           title: "Grand Prix · positions 1–20",
-          text: "Use all twenty positions and the complete 50-card deck, including larger overtakes, pit stops, a yellow flag and Turbo.",
+          text: "Use all twenty cars and the full 50-card deck, with OVERTAKE and OVERTAKEN changes from 1 to 5 places.",
         },
         {
           title: "Track edges",
           text: "A car never moves beyond 1 or the last position. Count only the places still available and stop at the edge.",
         },
         {
-          title: "Special events",
-          text: "Yellow flag means no movement. Turbo immediately draws another card; chained Turbo cards remain one turn.",
+          title: "Changes to other cars",
+          text: "Moving past another car changes its position too. Its player updates their position card immediately and still takes their own turn this round.",
         },
       ],
-      contentsTitle: "Playtest pack",
+      contentsTitle: "Printable set",
       contents: [
-        "20 car cards and 20 matching tokens",
-        "20 position cards",
-        "20 starting-position cards",
-        "40 overtaking and position-loss cards",
-        "10 special event cards",
-        "Czech rules for both race sizes",
+        "20 different car cards",
+        "4 coloured sets of position cards 1–20",
+        "20 shared starting-position cards",
+        "50 OVERTAKE / OVERTAKEN cards",
+        "Double-sided STARTING GRID cards",
+        "Separate Czech rules and optional Race Logs",
       ],
-      downloadTitle: "Download the playtest edition",
+      downloadTitle: "Download the free game",
       downloadText:
-        "This is the complete Czech prototype used for rule testing. Artwork and card layout may still change; the English rules on this page match the current version.",
-      primaryDownload: "Download playtest · Czech PDF",
-      primaryFile: "/downloads/racing-math-print-and-play-cs-v1.pdf",
-      pdfNote: "A4 · prototype v1 · 20 cars and 50 race cards",
+        "Download the rules, cards and optional Race Log separately. The printable rules are in Czech; card labels and Race Logs are in English. The PDFs still carry the original Racing Math title.",
+      primaryDownload: "Download cards · PDF",
+      primaryFile: "/downloads/vm-racing-challenge-cards.pdf",
+      pdfNote: "A4 · 100% scale · rules, cards and Race Log",
       faqTitle: "Common questions",
       faqs: [
         {
@@ -558,7 +560,7 @@ export const games: Record<GameKey, Game> = {
         },
         {
           q: "Can two cars stand on the same position?",
-          a: "Yes. They share that position. If they also share the best position after round five, they share the victory.",
+          a: "No. Each position holds one car. When you move, shift the cars you pass by one place and update any affected player’s position card.",
         },
         {
           q: "What if a card would move a car beyond the track?",
@@ -574,14 +576,15 @@ export const games: Record<GameKey, Game> = {
         "VM Fantasy Battle adds choices, visible number combinations and a little friendly confrontation.",
     },
     cs: {
-      title: "Závodní matematika",
-      shortTitle: "Závodní matematika",
+      title: "VM Racing Challenge",
+      shortTitle: "VM Racing Challenge",
+      tagline: "Race • Calculate • Overtake",
       category: "Desková a karetní hra · číselná osa",
       summary:
         "Otočte závodní událost, spočítejte novou pozici a projeďte autem startovním polem. Čím nižší číslo, tím blíž jste vítězství.",
-      status: "Testovací verze · české PDF",
+      status: "20 aut · připraveno k tisku",
       coverAlt:
-        "Šest barevných závodních aut včetně prototypu, roadsteru, rally auta, buggy a retro speciálu",
+        "Červené, modré, žluté a fialové auto předjíždějí v šikaně se změnami pořadí −1 a +1",
       skills: [
         "Sčítání a odčítání pozic",
         "Orientace na číselné ose",
@@ -589,9 +592,9 @@ export const games: Record<GameKey, Game> = {
       ],
       overviewTitle: "Každý výpočet změní závod",
       overview: [
-        "Hráči startují na pozicích 1–10 nebo 1–20 a v každém z pěti kol otočí jednu závodní kartu. Předjíždění posouvá žeton k nižšímu číslu, ztráta míst k vyššímu.",
+        "Hráči startují na pozicích 1–10 nebo 1–20 a v každém z pěti kol otočí jednu závodní kartu. Předjíždění posouvá auto k nižšímu číslu, ztráta míst k vyššímu.",
         "Dítě před pohybem řekne celý příklad, například „8 − 2 = 6“. Karty pořadí zůstávají na stole, takže je číselná osa stále vidět a lze po ní ukazovat prstem.",
-        "Testovací PDF obsahuje dvacet pojmenovaných aut, odpovídající žetony, startovní pozice a padesát závodních karet. Všechna auta hrají stejně; rozdílný vzhled jen zpříjemňuje výběr.",
+        "Sada obsahuje dvacet aut, startovní losy, čtyři barevné sady osobního pořadí a padesát závodních karet. Všechna auta hrají podle stejných pravidel.",
       ],
       learnTitle: "Co si děti procvičí",
       learnIntro:
@@ -599,7 +602,7 @@ export const games: Record<GameKey, Game> = {
       learningPoints: [
         {
           title: "Pohyb po číselné ose",
-          text: "Žetony převádějí operaci do pohybu: při předjíždění doleva, při ztrátě míst doprava.",
+          text: "Auta převádějí operaci do pohybu: při předjíždění doleva, při ztrátě míst doprava.",
         },
         {
           title: "Počítání v souvislostech",
@@ -612,7 +615,7 @@ export const games: Record<GameKey, Game> = {
       ],
       rulesTitle: "Jak závod probíhá",
       rulesIntro:
-        "Hra trvá pět kol, takže všichni vědí, kdy se blíží cíl. Prázdná místa představují ostatní auta v závodním poli.",
+        "Hra trvá pět kol. Vyložte všech 10 nebo 20 aut; na každém místě stojí právě jedno auto, včetně aut, která si hráči nevybrali.",
       steps: [
         {
           title: "Vyberte závod",
@@ -620,51 +623,51 @@ export const games: Record<GameKey, Game> = {
         },
         {
           title: "Vylosujte start",
-          text: "Každý si vybere auto a odpovídající žeton, poté otočí startovní kartu a umístí žeton na vylosovanou pozici.",
+          text: "Každý si vybere auto a barevnou sadu PLAYER, poté vylosuje startovní místo bez vracení karty. Zbylá auta doplní ostatní volné pozice.",
         },
         {
           title: "Jeďte pět kol",
-          text: "Začne nejlepší startovní pozice. Hráči postupně otáčejí kartu, řeknou výpočet a přesunou svůj žeton.",
+          text: "Začne nejlepší startovní pozice, dále se hraje po směru hodin. Otočte kartu, řekněte výpočet a přesuňte auto. Auta, kolem kterých projedete, posuňte o jedno místo a aktualizujte karty pořadí dotčených hráčů.",
         },
         {
           title: "Zkontrolujte cíl",
-          text: "Po pátém kole vítězí nejnižší číslo. Hráči na stejné nejlepší pozici vítězí společně a více žetonů může stát na jednom místě.",
+          text: "Po pěti tazích každého hráče vyhrává hráčské auto s nejnižším číslem pořadí. Každé místo obsazuje právě jedno auto.",
         },
       ],
       modesTitle: "Dvě délky tratě",
       modes: [
         {
           title: "Malý závod · pozice 1–10",
-          text: "Nejlepší pro první partii. Vyjměte změny ±4 a ±5; zbývajících 34 karet udrží příklady na kratší číselné ose.",
+          text: "Nejlepší pro první partii. Vyjměte změny ±4 a ±5; zbývajících 38 karet udrží příklady na kratší číselné ose.",
         },
         {
           title: "Velká cena · pozice 1–20",
-          text: "Použijte všech dvacet pozic a celý balíček 50 karet včetně většího předjíždění, pit stopů, žluté vlajky a Turba.",
+          text: "Použijte všech dvacet aut a celý balíček 50 karet OVERTAKE a OVERTAKEN se změnami o 1 až 5 míst.",
         },
         {
           title: "Okraje trati",
           text: "Auto se nikdy neposune před 1. místo ani za poslední pozici. Odpočítejte jen zbývající místa a na okraji zastavte.",
         },
         {
-          title: "Zvláštní události",
-          text: "Žlutá vlajka znamená bez pohybu. Turbo okamžitě otáčí další kartu; i několik Turb za sebou zůstává jedním tahem.",
+          title: "Změny pořadí ostatních",
+          text: "Přesun vašeho auta mění také pořadí aut, kolem kterých projedete. Jejich hráči si hned aktualizují kartu pořadí; vlastní tah v tomto kole jim zůstává.",
         },
       ],
-      contentsTitle: "Obsah testovací sady",
+      contentsTitle: "Obsah sady",
       contents: [
-        "20 karet aut a 20 odpovídajících žetonů",
-        "20 karet pořadí",
-        "20 startovních karet",
-        "40 karet předjíždění a ztráty pozic",
-        "10 karet zvláštních událostí",
-        "Česká pravidla pro oba závody",
+        "20 různých karet aut",
+        "4 barevné sady pořadí 1–20",
+        "20 společných startovních losů",
+        "50 karet OVERTAKE / OVERTAKEN",
+        "Oboustranné karty STARTING GRID",
+        "Samostatný český návod a volitelné Race Logy",
       ],
-      downloadTitle: "Stáhněte testovací verzi",
+      downloadTitle: "Stáhněte si hru zdarma",
       downloadText:
-        "Toto je kompletní český prototyp určený pro zkoušení pravidel. Grafika a rozložení karet se ještě mohou měnit, pravidla na této stránce odpovídají aktuální verzi.",
-      primaryDownload: "Stáhnout prototyp · české PDF",
-      primaryFile: "/downloads/racing-math-print-and-play-cs-v1.pdf",
-      pdfNote: "A4 · prototyp v1 · 20 aut a 50 závodních karet",
+        "Návod, karty a volitelný Race Log si stáhněte samostatně. Návod je česky, popisky karet a Race Logů anglicky. V PDF zatím zůstává původní název Racing Math.",
+      primaryDownload: "Stáhnout karty · PDF",
+      primaryFile: "/downloads/vm-racing-challenge-cards.pdf",
+      pdfNote: "A4 · tisk 100 % · návod, karty a Race Log",
       faqTitle: "Časté otázky",
       faqs: [
         {
@@ -673,7 +676,7 @@ export const games: Record<GameKey, Game> = {
         },
         {
           q: "Mohou dvě auta stát na stejné pozici?",
-          a: "Ano, tuto pozici sdílejí. Pokud po pátém kole sdílejí i nejlepší pozici, vítězí společně.",
+          a: "Ne. Na každém místě je právě jedno auto. Při přesunu posuňte auta, kolem kterých projedete, o jedno místo a dotčeným hráčům aktualizujte kartu pořadí.",
         },
         {
           q: "Co když by karta posunula auto mimo trať?",

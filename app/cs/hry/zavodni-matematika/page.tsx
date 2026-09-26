@@ -5,7 +5,7 @@ import { pageMetadata } from "@/lib/metadata";
 import { games, paths } from "@/lib/site";
 
 export const metadata: Metadata = pageMetadata({
-  title: "Závodní matematika – hra na číselnou osu",
+  title: "VM Racing Challenge – hra na číselnou osu",
   description: games.racing.cs.summary,
   locale: "cs",
   path: paths.racing.cs,
