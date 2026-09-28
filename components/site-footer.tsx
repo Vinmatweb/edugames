@@ -21,7 +21,7 @@ export function SiteFooter({ locale }: { locale: Locale }) {
           </div>
         </div>
 
-        <nav className="footer-links" aria-label="Footer navigation">
+        <nav className="footer-links" aria-label={locale === "cs" ? "Navigace v zápatí" : "Footer navigation"}>
           <Link href={`${localPath("home", locale)}#games`}>
             {copy.footerGames}
           </Link>

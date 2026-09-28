@@ -57,7 +57,7 @@ export function GamePage({ gameKey, locale }: { gameKey: GameKey; locale: Locale
             {copy.tagline && <p className="game-tagline">{copy.tagline}</p>}
             <p className="game-lead">{copy.summary}</p>
 
-            <ul className="game-fact-row" aria-label="Game facts">
+            <ul className="game-fact-row" aria-label={locale === "cs" ? "Údaje o hře" : "Game facts"}>
               <li>
                 <UsersRound aria-hidden="true" />
                 <strong>{game.players}</strong>
@@ -211,8 +211,10 @@ export function GamePage({ gameKey, locale }: { gameKey: GameKey; locale: Locale
                 <div className="battle-downloads">
                   {[
                     {file: "vm-fantasy-battle-rules-cs.pdf", title: locale === "cs" ? "Návod" : "Rules", text: locale === "cs" ? "Český návod pro 2–4 hráče: Bitva i Souboj. Formát A5, tisk na A4." : "Czech rules for 2–4 players: Battle and Duel. A5 booklet on A4 sheets."},
-                    {file: "vm-fantasy-battle-knights-zombies.pdf", title: locale === "cs" ? "Karty rytířů a zombií" : "Knights & Zombies cards", text: locale === "cs" ? "Dvě armády, útoky, posily a patroni. 16 stran A4, včetně rubů." : "Two armies, attacks, support and patrons. 16 A4 pages, including card backs."},
-                    {file: "vm-fantasy-battle-orcs-goblins.pdf", title: locale === "cs" ? "Karty orků a goblinů" : "Orcs & Goblins cards", text: locale === "cs" ? "Další dvě armády, útoky, posily a patroni. 16 stran A4, včetně rubů." : "Two more armies, attacks, support and patrons. 16 A4 pages, including card backs."},
+                    {file: "vm-fantasy-battle-armies-knights-zombies.pdf", title: locale === "cs" ? "Karty rytířů a zombií" : "Knights & Zombies cards", text: locale === "cs" ? "18 karet rytířů, 18 karet zombií a 2 patroni +5. 10 stran A4 včetně rubů. Akční karty se stahují zvlášť." : "18 Knight cards, 18 Zombie cards and 2 patrons +5. 10 A4 pages including backs. Download action cards separately."},
+                    {file: "vm-fantasy-battle-armies-orcs-goblins.pdf", title: locale === "cs" ? "Karty orků a goblinů" : "Orcs & Goblins cards", text: locale === "cs" ? "18 karet orků, 18 karet goblinů a 2 patroni +5. 10 stran A4 včetně rubů. Akční karty se stahují zvlášť." : "18 Orc cards, 18 Goblin cards and 2 patrons +5. 10 A4 pages including backs. Download action cards separately."},
+                    {file: "vm-fantasy-battle-actions-i.pdf", title: locale === "cs" ? "Akční karty · série I" : "Action cards · Set I", text: locale === "cs" ? "18 karet ATTACK a 9 karet SUPPORT. 6 stran A4 včetně rubů." : "18 ATTACK cards and 9 SUPPORT cards. 6 A4 pages including backs."},
+                    {file: "vm-fantasy-battle-actions-ii.pdf", title: locale === "cs" ? "Akční karty · série II" : "Action cards · Set II", text: locale === "cs" ? "18 karet ATTACK a 9 karet SUPPORT. 6 stran A4 včetně rubů." : "18 ATTACK cards and 9 SUPPORT cards. 6 A4 pages including backs."},
                     {file: "vm-fantasy-battle-logs.pdf", title: "Battle Logy / Battle Logs", text: locale === "cs" ? "Volitelné záznamové listy pro počítání na papír. Do MY ARMY zapisujte změny vlastní armády, do ENEMY ARMY své útoky s iniciálou soupeřovy armády, například O: 10 − 2 = 8. Vhodné pro všechny čtyři armády." : "Optional worksheets for doing the arithmetic on paper. Record changes to your army under MY ARMY and your attacks under ENEMY ARMY, adding the target army’s initial, for example O: 10 − 2 = 8. Suitable for all four armies."},
                   ].map((file) => <div className="battle-download" key={file.file}>
                     <h3>{file.file.includes("logs") ? (locale === "cs" ? "Battle Logy" : "Battle Logs") : file.title}</h3>

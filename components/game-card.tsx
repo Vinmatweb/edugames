@@ -42,7 +42,7 @@ export function GameCard({ gameKey, locale }: { gameKey: GameKey; locale: Locale
         {copy.tagline && <p className="game-tagline">{copy.tagline}</p>}
         <p className="game-card-summary">{copy.summary}</p>
 
-        <ul className="game-meta" aria-label="Game facts">
+        <ul className="game-meta" aria-label={locale === "cs" ? "Údaje o hře" : "Game facts"}>
           <li>
             <UsersRound aria-hidden="true" />
             {game.players} {shared.players}

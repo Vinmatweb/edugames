@@ -61,7 +61,7 @@ export function HomePage({ locale }: { locale: Locale }) {
             </div>
           </div>
 
-          <dl className="hero-stats" aria-label="Library at a glance">
+          <dl className="hero-stats" aria-label={locale === "cs" ? "Přehled her" : "Library at a glance"}>
             <div>
               <dt>2</dt>
               <dd>{copy.statGames}</dd>

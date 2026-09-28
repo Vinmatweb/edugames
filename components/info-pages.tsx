@@ -149,7 +149,7 @@ export function GuidePage({ locale }: { locale: Locale }) {
             <h2>{locale === "en" ? "Pick your first game" : "Vyberte první hru"}</h2>
             <p>
               {locale === "en"
-                ? "Both downloads are free and include an easier way to begin."
+                ? "Both games are free and include an easier way to begin."
                 : "Obě hry jsou zdarma a nabízejí jednodušší variantu pro začátek."}
             </p>
           </div>

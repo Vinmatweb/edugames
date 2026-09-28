@@ -42,7 +42,7 @@ export function SiteHeader({ locale, languageHref }: SiteHeaderProps) {
             </span>
           </Link>
 
-          <nav className="primary-nav" aria-label="Primary navigation">
+          <nav className="primary-nav" aria-label={locale === "cs" ? "Hlavní navigace" : "Primary navigation"}>
             <Link href={`${localPath("home", locale)}#games`}>
               {copy.navGames}
             </Link>
