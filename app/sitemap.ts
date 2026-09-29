@@ -15,7 +15,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
   return routePairs.flatMap((pair) => [
     {
       url: url(pair.en),
-      lastModified: now,
+      lastModified: pair === paths.privacy || pair === paths.terms || pair === paths.about || pair === paths.home ? new Date("2026-09-30T00:00:00+02:00") : now,
       changeFrequency: pair === paths.home ? ("weekly" as const) : ("monthly" as const),
       priority: pair === paths.home ? 1 : 0.8,
       alternates: {
@@ -27,7 +27,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     },
     {
       url: url(pair.cs),
-      lastModified: now,
+      lastModified: pair === paths.privacy || pair === paths.terms || pair === paths.about || pair === paths.home ? new Date("2026-09-30T00:00:00+02:00") : now,
       changeFrequency: pair === paths.home ? ("weekly" as const) : ("monthly" as const),
       priority: pair === paths.home ? 0.9 : 0.75,
       alternates: {

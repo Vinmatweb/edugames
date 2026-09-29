@@ -33,6 +33,7 @@ export function SiteFooter({ locale }: { locale: Locale }) {
 
         <div className="footer-meta">
           <a href="https://vinmat.eu">{copy.footerMain}</a>
+          <a href="mailto:vinmat.sn@gmail.com">{locale === "cs" ? "Kontakt" : "Contact"}: vinmat.sn@gmail.com</a>
           <span>© 2026 VinMat</span>
         </div>
       </div>

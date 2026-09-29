@@ -196,17 +196,18 @@ export function LegalPage({
             <section key={section.title}>
               <h2>{section.title}</h2>
               <p>{section.text}</p>
+              {section.links.map((link) => <p key={link.href}><a className="text-link" href={link.href}>{link.label}<ExternalLink aria-hidden="true" /></a></p>)}
             </section>
           ))}
-          <div className="legal-contact">
+          <div className="legal-contact" id="contact">
             <h2>{locale === "en" ? "Project contact" : "Kontakt k projektu"}</h2>
             <p>
               {locale === "en"
-                ? "For questions about the project, visit the main VinMat website."
-                : "S dotazy k projektu se můžete obrátit na hlavní web VinMat."}
+                ? "For privacy requests, questions about permitted use or to report an error, email VinMat."
+                : "S žádostí týkající se soukromí, dotazem na povolené použití nebo hlášením chyby napište VinMat."}
             </p>
-            <a className="text-link" href="https://vinmat.eu">
-              vinmat.eu
+            <a className="text-link" href="mailto:vinmat.sn@gmail.com">
+              vinmat.sn@gmail.com
               <ExternalLink aria-hidden="true" />
             </a>
           </div>

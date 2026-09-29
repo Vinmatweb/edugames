@@ -107,7 +107,7 @@ export const homeCopy = {
       "One main learning goal per game",
       "Short rounds with a clear finish",
       "Difficulty that grows with the child",
-      "No account, no paywall, no data collection",
+      "No account, no paywall, no advertising trackers",
     ],
     guideCta: "Read the print & play guide",
     nextTitle: "More games are on the workbench",
@@ -150,7 +150,7 @@ export const homeCopy = {
       "Jeden hlavní vzdělávací cíl v každé hře",
       "Krátká kola s jasným koncem",
       "Obtížnost, která roste spolu s dítětem",
-      "Bez účtu, bez placené brány a bez sběru dat",
+      "Bez účtu, bez placené brány a bez reklamního sledování",
     ],
     guideCta: "Přečíst návod k tisku a hraní",
     nextTitle: "Další hry vznikají",
@@ -719,7 +719,7 @@ export const aboutCopy = {
         title: "Free, useful and honest",
         paragraphs: [
           "The printable content stays free for personal and educational use. Each download is labelled with its current stage, so a playtest prototype is not presented as a finished edition.",
-          "This site is written for the adults who choose and prepare the games, while the games themselves are made for children. No account is needed and the current version does not collect personal data.",
+          "This site is written for the adults who choose and prepare the games, while the games themselves are made for children. No account is needed and the current version does not use advertising or analytics trackers. Technical hosting records and email enquiries are explained in the privacy notice.",
         ],
       },
     ],
@@ -757,7 +757,7 @@ export const aboutCopy = {
         title: "Zdarma, užitečně a otevřeně",
         paragraphs: [
           "Materiály zůstávají zdarma pro osobní a vzdělávací použití. U každého souboru je uveden aktuální stav, takže testovací prototyp nevydáváme za hotovou edici.",
-          "Web je napsaný pro dospělé, kteří hry vybírají a připravují, zatímco samotné hry jsou určeny dětem. Není potřeba účet a současná verze neshromažďuje osobní údaje.",
+          "Web je napsaný pro dospělé, kteří hry vybírají a připravují, zatímco samotné hry jsou určeny dětem. Není potřeba účet a současná verze nepoužívá reklamní ani analytické sledování. Technické záznamy hostingu a e-mailové dotazy vysvětlují informace o soukromí.",
         ],
       },
     ],
@@ -865,108 +865,256 @@ export const guideCopy = {
 } as const;
 
 export const legalCopy = {
-  privacy: {
-    en: {
-      eyebrow: "Privacy",
-      title: "A simple site with minimal data.",
-      updated: "Last updated: 25 September 2026",
-      sections: [
+  "privacy": {
+    "en": {
+      "eyebrow": "VinMat Education Games",
+      "title": "Privacy and cookies",
+      "updated": "Last updated: 30 September 2026",
+      "sections": [
         {
-          title: "Current site",
-          text: "VinMat Education Games does not require an account, does not offer comments and does not intentionally collect personal information. Printable files are downloaded directly from this website.",
+          "title": "Scope and contact",
+          "text": "These notices apply to VinMat Education Games at vinmat.eu/edugames/, including its Czech and English pages and downloadable files. Other VinMat projects have their own notices. Contact VinMat about privacy at vinmat.sn@gmail.com.",
+          "links": []
         },
         {
-          title: "Technical records",
-          text: "The hosting provider may process basic server records such as an IP address, requested page, time and browser information to deliver the site, maintain security and diagnose errors. These records are not used here to build a child profile.",
+          "title": "Browsing and downloads",
+          "text": "You can read the site and download games without an account or submitting a name or email address. There are no comments, newsletter sign-ups or payment forms. Downloads are served directly from this website.",
+          "links": []
         },
         {
-          title: "Cookies and advertising",
-          text: "The current version does not place advertising or analytics cookies. If contextual advertising or audience measurement is added later, this policy and the consent controls will be updated before those services are enabled. Child-appropriate and age-restricted ad treatment will be used where required.",
+          "title": "Hosting and technical records",
+          "text": "The site is hosted on GitHub Pages. GitHub records visitors’ IP addresses for security, including visitors without a GitHub account. Hosting infrastructure also processes the information needed to deliver requested pages and files. GitHub explains its processing, retention and safeguards in its privacy statement. VinMat does not use these records to profile children.",
+          "links": [
+            {
+              "label": "GitHub privacy statement",
+              "href": "https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement"
+            }
+          ]
         },
         {
-          title: "External links",
-          text: "Links to the main VinMat website or other external services are governed by those services' own privacy information. Adults should supervise children when leaving this site.",
+          "title": "When you email us",
+          "text": "Your email address, name if supplied, message and attachments are processed to answer your enquiry and follow up on reported issues. Providing them is voluntary; without a reply address we cannot respond. This processing relies on the legitimate interest in handling enquiries and protecting the project (Article 6(1)(f) GDPR). Email is handled through Gmail. Please do not send children’s personal details, photographs or sensitive information that is not needed to resolve your enquiry.",
+          "links": [
+            {
+              "label": "Google privacy policy",
+              "href": "https://policies.google.com/privacy"
+            }
+          ]
         },
-      ],
+        {
+          "title": "Retention and service providers",
+          "text": "Correspondence is kept for the time needed to resolve the enquiry and any related follow-up. If it is needed to establish, exercise or defend a legal claim, the relevant correspondence may be retained until that purpose ends. Hosting and email providers apply their own retention rules to their technical records. GitHub and Google may process data outside the EEA; their privacy notices describe the applicable transfer safeguards, including adequacy arrangements or standard contractual clauses. Data is not sold by VinMat.",
+          "links": []
+        },
+        {
+          "title": "Cookies and analytics — current status",
+          "text": "This section of the website currently does not run AdSense, analytics or advertising trackers, and does not set advertising or analytics cookies. Reading pages and downloading files does not require consent to marketing. Your browser may cache website files as part of normal operation.",
+          "links": []
+        },
+        {
+          "title": "Advertising — planned, not active",
+          "text": "Google AdSense may be introduced later. Advertising can involve Google and its partners processing IP addresses, cookies, device identifiers and information about displayed ads and interactions. Before activation, this notice will be updated to describe the actual services and purposes. Where consent is required, a consent-management interface will offer choices and a way to change or withdraw them. No advertising consent is being requested through this notice.",
+          "links": [
+            {
+              "label": "How Google uses information from partner sites",
+              "href": "https://policies.google.com/technologies/partner-sites"
+            }
+          ]
+        },
+        {
+          "title": "Children and offline play",
+          "text": "The website helps parents, teachers and other adults choose and prepare games for children. The printed games are played offline and do not send data to this website. Children do not need an account or to contact us. If a message unnecessarily includes a child’s personal data, contact us to request its removal. Any future advertising will require an assessment of the audience and appropriate child-directed treatment where applicable.",
+          "links": []
+        },
+        {
+          "title": "Your rights",
+          "text": "Where GDPR applies, you may request access, correction, erasure or restriction of your personal data, and object to processing based on legitimate interests. Portability applies where its legal conditions are met. If processing is based on consent, you may withdraw it without affecting earlier lawful processing. Contact vinmat.sn@gmail.com; we may need proportionate information to verify your request. Requests are normally answered within one month; any lawful extension will be explained. You may complain to the Czech Office for Personal Data Protection or your local supervisory authority. VinMat does not make decisions with legal or similarly significant effects through automated processing.",
+          "links": [
+            {
+              "label": "Czech Office for Personal Data Protection",
+              "href": "https://uoou.gov.cz/"
+            }
+          ]
+        },
+        {
+          "title": "External links and changes",
+          "text": "Following an external link takes you to a service governed by its own privacy information. A link to a provider’s policy does not itself enable that provider’s advertising or analytics on this site. This notice will be updated when the way the website processes data changes; the revision date appears above.",
+          "links": []
+        }
+      ]
     },
-    cs: {
-      eyebrow: "Ochrana soukromí",
-      title: "Jednoduchý web s minimem údajů.",
-      updated: "Poslední aktualizace: 25. září 2026",
-      sections: [
+    "cs": {
+      "eyebrow": "VinMat Education Games",
+      "title": "Soukromí a cookies",
+      "updated": "Poslední aktualizace: 30. září 2026",
+      "sections": [
         {
-          title: "Současná verze webu",
-          text: "VinMat Education Games nevyžaduje účet, nenabízí komentáře a záměrně neshromažďuje osobní údaje. Soubory k tisku se stahují přímo z tohoto webu.",
+          "title": "Rozsah a kontakt",
+          "text": "Tyto informace platí pro VinMat Education Games na vinmat.eu/edugames/, včetně českých a anglických stránek a souborů ke stažení. Ostatní projekty VinMat mají vlastní informace. Ve věcech soukromí kontaktujte VinMat na vinmat.sn@gmail.com.",
+          "links": []
         },
         {
-          title: "Technické záznamy",
-          text: "Poskytovatel hostingu může zpracovávat základní serverové záznamy, například IP adresu, navštívenou stránku, čas a údaje o prohlížeči, aby web doručil, chránil a mohl řešit chyby. Tyto záznamy zde neslouží k vytváření profilu dítěte.",
+          "title": "Prohlížení a stahování",
+          "text": "Web můžete číst a hry stahovat bez účtu, zadání jména nebo e-mailu. Web neobsahuje komentáře, přihlášení k newsletteru ani platební formuláře. Soubory se stahují přímo z tohoto webu.",
+          "links": []
         },
         {
-          title: "Cookies a reklama",
-          text: "Současná verze nepoužívá reklamní ani analytické cookies. Pokud později přibude kontextová reklama nebo měření návštěvnosti, budou před zapnutím upraveny tyto zásady i volby souhlasu. Tam, kde je to nutné, bude nastaven režim odpovídající obsahu určenému dětem a omezení podle věku.",
+          "title": "Hosting a technické záznamy",
+          "text": "Web je provozován na GitHub Pages. GitHub zaznamenává IP adresy návštěvníků pro účely zabezpečení, a to i bez přihlášení k účtu GitHub. Hostingová infrastruktura dále zpracovává údaje potřebné k doručení požadovaných stránek a souborů. Zpracování, uchování a ochranu údajů GitHub popisuje ve svých zásadách. VinMat tyto záznamy nepoužívá k profilování dětí.",
+          "links": [
+            {
+              "label": "Zásady ochrany soukromí GitHub",
+              "href": "https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement"
+            }
+          ]
         },
         {
-          title: "Externí odkazy",
-          text: "Odkazy na hlavní web VinMat nebo jiné externí služby se řídí jejich vlastními pravidly ochrany soukromí. Při odchodu z webu by na děti měl dohlížet dospělý.",
+          "title": "Když nám napíšete e-mail",
+          "text": "Vaši e-mailovou adresu, případně uvedené jméno, zprávu a přílohy zpracováváme k vyřízení dotazu a navazujícímu řešení oznámených problémů. Poskytnutí je dobrovolné; bez zpáteční adresy nemůžeme odpovědět. Základem je oprávněný zájem na vyřizování dotazů a ochraně projektu podle čl. 6 odst. 1 písm. f) GDPR. E-mailovou komunikaci zajišťuje Gmail. Neposílejte osobní údaje dětí, fotografie ani citlivé informace, které nejsou pro vyřízení dotazu potřebné.",
+          "links": [
+            {
+              "label": "Zásady ochrany soukromí Google",
+              "href": "https://policies.google.com/privacy"
+            }
+          ]
         },
-      ],
-    },
+        {
+          "title": "Uchování údajů a poskytovatelé služeb",
+          "text": "Korespondenci uchováváme po dobu potřebnou k vyřízení dotazu a související navazující komunikaci. Je-li potřebná k určení, výkonu nebo obhajobě právního nároku, může být příslušná komunikace uchována do skončení tohoto účelu. Poskytovatelé hostingu a e-mailu uplatňují na své technické záznamy vlastní pravidla uchování. GitHub a Google mohou zpracovávat údaje mimo EHP; použité záruky předávání, například rozhodnutí o odpovídající ochraně nebo standardní smluvní doložky, popisují ve svých zásadách. VinMat osobní údaje neprodává.",
+          "links": []
+        },
+        {
+          "title": "Cookies a analytika — současný stav",
+          "text": "Tato část webu nyní nepoužívá AdSense, analytiku ani reklamní sledovací nástroje a nenastavuje reklamní ani analytické cookies. Čtení stránek a stahování nevyžaduje souhlas s marketingem. Prohlížeč může v rámci běžného provozu ukládat soubory webu do mezipaměti.",
+          "links": []
+        },
+        {
+          "title": "Reklama — plánovaná, zatím neaktivní",
+          "text": "Do budoucna může být zapojen Google AdSense. Reklama může zahrnovat zpracování IP adres, cookies, identifikátorů zařízení a údajů o zobrazených reklamách a interakcích společností Google a jejími partnery. Před spuštěním tyto informace upravíme podle skutečných služeb a účelů. Tam, kde je vyžadován souhlas, nabídne rozhraní pro správu souhlasů volby a možnost je změnit nebo odvolat. Tímto textem se souhlas s reklamou nevyžaduje.",
+          "links": [
+            {
+              "label": "Jak Google používá informace z partnerských webů",
+              "href": "https://policies.google.com/technologies/partner-sites"
+            }
+          ]
+        },
+        {
+          "title": "Děti a hraní mimo web",
+          "text": "Web pomáhá rodičům, učitelům a dalším dospělým vybrat a připravit hry pro děti. Vytištěné hry se hrají mimo web a neposílají mu žádná data. Děti nepotřebují účet ani nás nemusí kontaktovat. Pokud zpráva zbytečně obsahuje osobní údaje dítěte, napište nám kvůli jejich odstranění. Případná budoucí reklama vyžaduje posouzení publika a odpovídající nastavení pro dětský obsah tam, kde je to nutné.",
+          "links": []
+        },
+        {
+          "title": "Vaše práva",
+          "text": "V rozsahu GDPR můžete žádat o přístup, opravu, výmaz nebo omezení zpracování osobních údajů a vznést námitku proti zpracování na základě oprávněného zájmu. Právo na přenositelnost se uplatní při splnění zákonných podmínek. Je-li zpracování založeno na souhlasu, můžete jej odvolat bez vlivu na předchozí zákonné zpracování. Pište na vinmat.sn@gmail.com; k ověření žádosti můžeme potřebovat přiměřené informace. Žádosti obvykle vyřizujeme do jednoho měsíce; případné zákonné prodloužení vysvětlíme. Můžete podat stížnost Úřadu pro ochranu osobních údajů nebo příslušnému dozorovému úřadu ve své zemi. VinMat neprovádí automatizované rozhodování s právními nebo obdobně významnými účinky.",
+          "links": [
+            {
+              "label": "Úřad pro ochranu osobních údajů",
+              "href": "https://uoou.gov.cz/"
+            }
+          ]
+        },
+        {
+          "title": "Externí odkazy a změny",
+          "text": "Po přechodu na externí odkaz se uplatní informace o soukromí dané služby. Odkaz na zásady poskytovatele sám o sobě nezapíná jeho reklamu ani analytiku na tomto webu. Při změně způsobu zpracování údajů tyto informace aktualizujeme; datum revize je uvedeno výše.",
+          "links": []
+        }
+      ]
+    }
   },
-  terms: {
-    en: {
-      eyebrow: "Terms of use",
-      title: "Free to play, clear to share.",
-      updated: "Last updated: 25 September 2026",
-      sections: [
+  "terms": {
+    "en": {
+      "eyebrow": "VinMat Education Games",
+      "title": "Terms of use",
+      "updated": "Last updated: 30 September 2026",
+      "sections": [
         {
-          title: "Permitted use",
-          text: "You may download and print the games for personal, family, classroom and non-commercial educational use. You may print enough copies for the group you directly teach or supervise.",
+          "title": "Project and scope",
+          "text": "These terms cover VinMat Education Games at vinmat.eu/edugames/ and its printable game files. The project offers free educational materials for adults to prepare and use with children. Contact VinMat at vinmat.sn@gmail.com about use, errors or permissions. Other VinMat projects have their own terms.",
+          "links": []
         },
         {
-          title: "Please link instead of re-uploading",
-          text: "Do not sell the files, remove VinMat branding, publish modified versions as official editions or upload the PDFs to another website. Share a link to the relevant game page so players receive the current rules and files.",
+          "title": "Permitted use",
+          "text": "You may download and print the files for personal, family, classroom and other non-commercial educational use. You may print copies for the group you directly teach or supervise. Downloading requires neither registration nor payment. You supply your own printing materials.",
+          "links": []
         },
         {
-          title: "Playtest material",
-          text: "A file labelled prototype or playtest edition may change after testing. Check the game page before printing again. Feedback can improve later editions, but submitting feedback does not transfer ownership of the game or its artwork.",
+          "title": "Sharing and other uses",
+          "text": "Share the game page link so others can obtain the current files. Do not sell the files, re-upload them to another website, remove VinMat branding or present modified files as official editions. For redistribution, commercial use or permission beyond the uses above, contact VinMat in advance. These terms do not limit uses permitted by applicable law.",
+          "links": []
         },
         {
-          title: "Adult preparation",
-          text: "An adult should prepare printed components, supervise cutting tools and decide whether small pieces are suitable for the children playing. Stop using damaged or unsafe components.",
+          "title": "Attribution and third-party rights",
+          "text": "The VinMat name and branding identify this project; downloading files does not transfer ownership of the materials. Where third-party names or materials appear, their respective rights remain unaffected. If you believe content infringes your rights, email the page or file URL and a description of the issue so it can be reviewed.",
+          "links": []
         },
         {
-          title: "No guarantee",
-          text: "The games are provided as-is for voluntary use. VinMat cannot guarantee compatibility with every printer, device, curriculum or individual learning need.",
+          "title": "Versions and feedback",
+          "text": "Rules and files may be corrected or updated. A file marked prototype or playtest edition is intended for testing. Check the game page before printing again. Suggestions do not transfer ownership of your own submitted material to VinMat; do not send content you are not entitled to share.",
+          "links": []
         },
-      ],
+        {
+          "title": "Preparation and educational use",
+          "text": "An adult should prepare the components, supervise scissors and other cutting tools, and assess small pieces and the game’s difficulty for the children involved. Ages and playing times are approximate. The games are educational aids, not a guarantee of a particular learning outcome or a substitute for individual professional support.",
+          "links": []
+        },
+        {
+          "title": "Availability and responsibility",
+          "text": "Files are provided in their current form. Compatibility with every printer or device, uninterrupted availability and error-free content cannot be guaranteed. Check a sample page before printing a full set and report problems by email. Nothing in these terms excludes or limits liability or rights that cannot lawfully be excluded or limited.",
+          "links": []
+        },
+        {
+          "title": "External services and updates",
+          "text": "External links are governed by the relevant service’s terms. Any future advertising will be identified as advertising and does not imply endorsement of the advertised product by VinMat. Updated terms apply from the revision date shown above; they do not retroactively remove permissions already granted for previously downloaded versions.",
+          "links": []
+        }
+      ]
     },
-    cs: {
-      eyebrow: "Podmínky použití",
-      title: "Hraní zdarma a jasná pravidla sdílení.",
-      updated: "Poslední aktualizace: 25. září 2026",
-      sections: [
+    "cs": {
+      "eyebrow": "VinMat Education Games",
+      "title": "Podmínky použití",
+      "updated": "Poslední aktualizace: 30. září 2026",
+      "sections": [
         {
-          title: "Povolené použití",
-          text: "Hry můžete stahovat a tisknout pro osobní, rodinné, školní a jiné nekomerční vzdělávací použití. Lze vytisknout tolik kopií, kolik potřebuje skupina, kterou přímo učíte nebo vedete.",
+          "title": "Projekt a rozsah",
+          "text": "Tyto podmínky se vztahují na VinMat Education Games na vinmat.eu/edugames/ a jeho soubory her k tisku. Projekt nabízí bezplatné vzdělávací materiály, které dospělí připravují a používají s dětmi. S dotazy k použití, chybám nebo svolení kontaktujte VinMat na vinmat.sn@gmail.com. Ostatní projekty VinMat mají vlastní podmínky.",
+          "links": []
         },
         {
-          title: "Sdílejte odkaz, ne kopii souboru",
-          text: "Soubory neprodávejte, neodstraňujte označení VinMat, nevydávejte upravené verze za oficiální edice a nenahrávejte PDF na jiný web. Sdílejte odkaz na stránku hry, aby ostatní získali aktuální pravidla i soubory.",
+          "title": "Povolené použití",
+          "text": "Soubory můžete stahovat a tisknout pro osobní, rodinné, školní a jiné nekomerční vzdělávací použití. Lze vytisknout kopie pro skupinu, kterou přímo učíte nebo vedete. Stažení nevyžaduje registraci ani platbu. Materiál k tisku si zajišťujete sami.",
+          "links": []
         },
         {
-          title: "Testovací materiály",
-          text: "Soubor označený jako prototyp nebo testovací verze se může po zkoušení změnit. Před dalším tiskem zkontrolujte stránku hry. Zpětná vazba může zlepšit další edice, jejím odesláním se však nepřevádí vlastnictví hry ani grafiky.",
+          "title": "Sdílení a další využití",
+          "text": "Sdílejte odkaz na stránku hry, aby ostatní získali aktuální soubory. Soubory neprodávejte, nenahrávejte na jiný web, neodstraňujte označení VinMat a nevydávejte upravené soubory za oficiální edice. Pro další šíření, komerční využití nebo svolení nad rámec výše uvedeného kontaktujte VinMat předem. Podmínky neomezují použití dovolené platnými právními předpisy.",
+          "links": []
         },
         {
-          title: "Příprava dospělou osobou",
-          text: "Tištěné komponenty má připravovat dospělý, který dohlédne na práci s nůžkami a posoudí vhodnost malých dílků pro konkrétní děti. Poškozené nebo nebezpečné komponenty dále nepoužívejte.",
+          "title": "Označení a práva třetích stran",
+          "text": "Název a označení VinMat identifikují tento projekt; stažením se nepřevádí vlastnictví materiálů. Případná práva k názvům či materiálům třetích stran zůstávají nedotčena. Pokud se domníváte, že obsah zasahuje do vašich práv, pošlete e-mailem odkaz na stránku nebo soubor a popis problému k prověření.",
+          "links": []
         },
         {
-          title: "Bez záruky",
-          text: "Hry jsou poskytovány tak, jak jsou, pro dobrovolné použití. VinMat nemůže zaručit kompatibilitu s každou tiskárnou, zařízením, školním plánem ani individuální vzdělávací potřebou.",
+          "title": "Verze a zpětná vazba",
+          "text": "Pravidla a soubory mohou být opravovány a aktualizovány. Soubor označený jako prototyp nebo testovací verze slouží ke zkoušení. Před dalším tiskem zkontrolujte stránku hry. Odesláním námětu nepřevádíte na VinMat vlastnictví svého zaslaného materiálu; neposílejte obsah, který nejste oprávněni sdílet.",
+          "links": []
         },
-      ],
-    },
-  },
+        {
+          "title": "Příprava a vzdělávací použití",
+          "text": "Komponenty má připravovat dospělý, který dohlédne na nůžky a další řezací nástroje a posoudí vhodnost malých dílků i obtížnosti pro konkrétní děti. Věk a délka hry jsou orientační. Hry jsou vzdělávací pomůcky, nikoli záruka konkrétního výsledku učení nebo náhrada individuální odborné podpory.",
+          "links": []
+        },
+        {
+          "title": "Dostupnost a odpovědnost",
+          "text": "Soubory jsou poskytovány v aktuální podobě. Nelze zaručit kompatibilitu s každou tiskárnou či zařízením, nepřetržitou dostupnost ani bezchybnost obsahu. Před tiskem celé sady zkontrolujte zkušební stránku a případné problémy oznamte e-mailem. Těmito podmínkami se nevylučuje ani neomezuje odpovědnost nebo práva, které podle zákona vyloučit či omezit nelze.",
+          "links": []
+        },
+        {
+          "title": "Externí služby a aktualizace",
+          "text": "Externí odkazy se řídí podmínkami příslušné služby. Případná budoucí reklama bude označena jako reklama a neznamená doporučení inzerovaného produktu ze strany VinMat. Aktualizované podmínky platí od data revize uvedeného výše; zpětně neruší již udělená oprávnění k dříve staženým verzím.",
+          "links": []
+        }
+      ]
+    }
+  }
 } as const;
