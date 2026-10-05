@@ -300,15 +300,15 @@ export const games: Record<GameKey, Game> = {
         "Action Set I: 18 ATTACK + 9 SUPPORT cards",
         "Action Set II: 18 ATTACK + 9 SUPPORT cards",
         "2 patron cards (+5) in each army pack",
-        "Separate Battle Logs and Czech rules",
+        "Separate Battle Logs and Czech and English rules",
       ],
       downloadTitle: "Download the free game",
       downloadText:
-        "Download the rules, army packs, action cards and optional Battle Logs separately. For two-player Battle, choose one army pack and one action set (I or II). For three or four players, use both army packs and both action sets. Duel needs only army unit cards. Card labels and logs are in English; print-sheet headings and the printable rules are in Czech.",
+        "Download the rules, army packs, action cards and optional Battle Logs separately. For two-player Battle, choose one army pack and one action set (I or II). For three or four players, use both army packs and both action sets. Duel needs only army unit cards. Card labels and logs are in English; the Czech and English rule booklets are available separately.",
       primaryDownload: "Knights & Zombies · PDF",
       secondaryDownload: "Download universal rules · Czech PDF",
       primaryFile: "/downloads/vm-fantasy-battle-armies-knights-zombies.pdf",
-      secondaryFile: "/downloads/vm-fantasy-battle-rules-cs.pdf",
+      secondaryFile: "/downloads/vm-fantasy-battle-rules-cs-v2.pdf",
       pdfNote: "A4 · 100% scale · 2 army packs + 2 action sets",
       faqTitle: "Common questions",
       faqs: [
