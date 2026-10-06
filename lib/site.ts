@@ -295,12 +295,12 @@ export const games: Record<GameKey, Game> = {
       ],
       contentsTitle: "Current free set",
       contents: [
-        "Army pack: 18 Knight cards + 18 Zombie cards",
-        "Army pack: 18 Orc cards + 18 Goblin cards",
-        "Action Set I: 18 ATTACK + 9 SUPPORT cards",
-        "Action Set II: 18 ATTACK + 9 SUPPORT cards",
-        "2 patron cards (+5) in each army pack",
-        "Separate Battle Logs and Czech and English rules",
+        "20 different car cards",
+        "20 fixed POSITION cards (1st–20th)",
+        "56 OVERTAKE / OVERTAKEN cards",
+        "Double-sided STARTING GRID / START / FINISH card",
+        "Separate rules in English and Czech",
+        "Optional Race Logs in English and Czech",
       ],
       downloadTitle: "Download the free game",
       downloadText:
@@ -412,12 +412,12 @@ export const games: Record<GameKey, Game> = {
       ],
       contentsTitle: "Aktuální sada zdarma",
       contents: [
-        "Balík armád: 18 karet rytířů + 18 karet zombií",
-        "Balík armád: 18 karet orků + 18 karet goblinů",
-        "Akční série I: 18 karet ATTACK + 9 karet SUPPORT",
-        "Akční série II: 18 karet ATTACK + 9 karet SUPPORT",
-        "2 karty patronů (+5) v každém balíku armád",
-        "Samostatné Battle Logy a český návod",
+        "20 různých karet aut",
+        "20 pevných kartiček POSITION (1.–20. místo)",
+        "56 karet OVERTAKE / OVERTAKEN",
+        "Oboustranná karta STARTING GRID / START / FINISH",
+        "Samostatné návody v češtině a angličtině",
+        "Volitelné Race Logy v češtině a angličtině",
       ],
       downloadTitle: "Stáhněte si hru zdarma",
       downloadText:
@@ -476,9 +476,9 @@ export const games: Record<GameKey, Game> = {
       ],
       overviewTitle: "Every calculation changes the race",
       overview: [
-        "Players start on positions 1–10 or 1–20 and draw one racing card in each of five rounds. Overtaking moves a car towards a lower number; losing places moves it towards a higher number.",
+        "The race ends when the shared action deck is empty. Overtaking moves a car towards a lower number; losing places moves it towards a higher number.",
         "A child says the full calculation before moving: for example, “8 − 2 = 6.” The position cards remain on the table, so the number line is always visible and can be followed with a finger.",
-        "The printable set contains twenty cars, starting-position cards, four coloured sets of personal position cards and fifty racing cards. Every car follows the same rules.",
+        "The printable set contains 20 different cars, fixed POSITION cards from 1st to 20th, 56 OVERTAKE / OVERTAKEN cards and a double-sided STARTING GRID / START / FINISH card. All cars follow the same rules.",
       ],
       learnTitle: "What children practise",
       learnIntro:
@@ -499,34 +499,34 @@ export const games: Record<GameKey, Game> = {
       ],
       rulesTitle: "How to run the race",
       rulesIntro:
-        "The game lasts five rounds. Lay out all 10 or 20 cars; each position holds exactly one car, including cars not chosen by players.",
+        "The race continues until every action card has been used. Set out all 10 or 20 cars in unique positions; players control only their chosen cars.",
       steps: [
         {
           title: "Choose the race",
-          text: "Use positions 1–10 for the small race or all positions 1–20 for the Grand Prix. Remove ±4 and ±5 cards from the small-race deck.",
+          text: "For a Short Race, use 10 cars, POSITION cards 1–10, and the 44 action cards from ±1 to ±3. For a Grand Prix, use all 20 cars and all 56 action cards.",
         },
         {
           title: "Draw the starting grid",
-          text: "Each player chooses a car and a coloured PLAYER position deck, then draws a starting position without replacement. Fill the remaining positions with the other cars.",
+          text: "Each player chooses a different car. Shuffle all cars, including the chosen ones, and place them randomly behind START. Arrange them using STARTING GRID: one row for 10 cars or two staggered rows for 20.",
         },
         {
-          title: "Race for five rounds",
-          text: "The best starting position goes first, then play clockwise. Draw a card, say the calculation and move your car. Shift every car you pass by one place and update affected players’ position cards.",
+          title: "Race until the deck is empty",
+          text: "The player whose car starts closest to 1st goes first, then play clockwise. Draw one action card, say the calculation and move your car. Shift each car you pass by one place; only the cars move, while POSITION cards stay fixed.",
         },
         {
           title: "Check the finish",
-          text: "After each player has taken five turns, the player whose car has the lowest position number wins. Each position holds exactly one car.",
+          text: "The race ends when the shared action deck is empty. The player whose car is in the best position wins. No two cars can occupy the same position.",
         },
       ],
       modesTitle: "Two race sizes",
       modes: [
         {
           title: "Small race · positions 1–10",
-          text: "Best for a first game. Remove changes ±4 and ±5; the remaining 38-card deck keeps every calculation within a shorter number line.",
+          text: "Best for a first game. Use 10 cars and 44 action cards with changes from ±1 to ±3.",
         },
         {
           title: "Grand Prix · positions 1–20",
-          text: "Use all twenty cars and the full 50-card deck, with OVERTAKE and OVERTAKEN changes from 1 to 5 places.",
+          text: "Use all 20 cars and the full 56-card deck, with OVERTAKE and OVERTAKEN changes from 1 to 5 places.",
         },
         {
           title: "Track edges",
@@ -534,24 +534,24 @@ export const games: Record<GameKey, Game> = {
         },
         {
           title: "Changes to other cars",
-          text: "Moving past another car changes its position too. Its player updates their position card immediately and still takes their own turn this round.",
+          text: "When you pass cars, shift each by one place. Their owners’ cars have changed position too, and those players still take their turns.",
         },
       ],
       contentsTitle: "Printable set",
       contents: [
         "20 different car cards",
-        "4 coloured sets of position cards 1–20",
-        "20 shared starting-position cards",
-        "50 OVERTAKE / OVERTAKEN cards",
-        "Double-sided STARTING GRID cards",
-        "Separate Czech rules and optional Race Logs",
+        "20 fixed POSITION cards (1st–20th)",
+        "56 OVERTAKE / OVERTAKEN cards",
+        "Double-sided STARTING GRID / START / FINISH card",
+        "Separate rules in English and Czech",
+        "Optional Race Logs in English and Czech",
       ],
       downloadTitle: "Download the free game",
       downloadText:
-        "Download the rules, cards and optional Race Log separately. The printable rules are in Czech; card labels and Race Logs are in English. The PDFs still carry the original Racing Math title.",
+        "Download the rules, cards and optional Race Log separately. The English page links the English manual, cards and log; the Czech page has the Czech versions.",
       primaryDownload: "Download cards · PDF",
-      primaryFile: "/downloads/vm-racing-challenge-cards.pdf",
-      pdfNote: "A4 · 100% scale · rules, cards and Race Log",
+      primaryFile: "/downloads/vm-racing-challenge-cards-en-v8.pdf",
+      pdfNote: "A4 · print at 100% · booklet, cards and optional Race Log",
       faqTitle: "Common questions",
       faqs: [
         {
@@ -560,7 +560,7 @@ export const games: Record<GameKey, Game> = {
         },
         {
           q: "Can two cars stand on the same position?",
-          a: "No. Each position holds one car. When you move, shift the cars you pass by one place and update any affected player’s position card.",
+          a: "No. Each fixed POSITION card marks one place. Move your car to the new position and shift every car you pass by one place.",
         },
         {
           q: "What if a card would move a car beyond the track?",
@@ -592,9 +592,9 @@ export const games: Record<GameKey, Game> = {
       ],
       overviewTitle: "Každý výpočet změní závod",
       overview: [
-        "Hráči startují na pozicích 1–10 nebo 1–20 a v každém z pěti kol otočí jednu závodní kartu. Předjíždění posouvá auto k nižšímu číslu, ztráta míst k vyššímu.",
+        "Závod končí, až když se doberou všechny závodní karty. Předjíždění posouvá auto k nižšímu číslu, ztráta míst k vyššímu.",
         "Dítě před pohybem řekne celý příklad, například „8 − 2 = 6“. Karty pořadí zůstávají na stole, takže je číselná osa stále vidět a lze po ní ukazovat prstem.",
-        "Sada obsahuje dvacet aut, startovní losy, čtyři barevné sady osobního pořadí a padesát závodních karet. Všechna auta hrají podle stejných pravidel.",
+        "Sada obsahuje 20 různých aut, pevné kartičky POSITION od 1. do 20. místa, 56 karet OVERTAKE / OVERTAKEN a oboustrannou kartu STARTING GRID / START / FINISH. Všechna auta mají stejná pravidla.",
       ],
       learnTitle: "Co si děti procvičí",
       learnIntro:
@@ -615,34 +615,34 @@ export const games: Record<GameKey, Game> = {
       ],
       rulesTitle: "Jak závod probíhá",
       rulesIntro:
-        "Hra trvá pět kol. Vyložte všech 10 nebo 20 aut; na každém místě stojí právě jedno auto, včetně aut, která si hráči nevybrali.",
+        "Závod pokračuje, dokud se nepoužijí všechny závodní karty. Vyložte všech 10 nebo 20 aut; hráči ovládají pouze svá vybraná auta.",
       steps: [
         {
           title: "Vyberte závod",
-          text: "Pro Malý závod použijte pozice 1–10, pro Velkou cenu 1–20. Z balíčku Malého závodu vyjměte změny ±4 a ±5.",
+          text: "Pro Malý závod použijte 10 aut, kartičky POSITION 1–10 a 44 závodních karet se změnami ±1 až ±3. Pro Velkou cenu použijte všech 20 aut a všech 56 karet.",
         },
         {
           title: "Vylosujte start",
-          text: "Každý si vybere auto a barevnou sadu PLAYER, poté vylosuje startovní místo bez vracení karty. Zbylá auta doplní ostatní volné pozice.",
+          text: "Každý si vybere jiné auto. Všechna auta včetně vybraných zamíchejte a náhodně rozložte za START. STARTING GRID ukazuje rozložení: 10 aut v jedné řadě, 20 ve dvou střídavých řadách.",
         },
         {
-          title: "Jeďte pět kol",
-          text: "Začne nejlepší startovní pozice, dále se hraje po směru hodin. Otočte kartu, řekněte výpočet a přesuňte auto. Auta, kolem kterých projedete, posuňte o jedno místo a aktualizujte karty pořadí dotčených hráčů.",
+          title: "Závod až do dobrání balíčku",
+          text: "Začíná hráč, jehož auto je nejblíže 1. místu; dále se hraje po směru hodin. Otočte závodní kartu, řekněte výpočet a přesuňte své auto. Auta, která předjedete, posuňte o jedno místo; kartičky POSITION zůstávají na místě.",
         },
         {
           title: "Zkontrolujte cíl",
-          text: "Po pěti tazích každého hráče vyhrává hráčské auto s nejnižším číslem pořadí. Každé místo obsazuje právě jedno auto.",
+          text: "Závod končí, když se doberou všechny závodní karty. Vyhrává hráč, jehož auto je na nejlepším místě. Na každé pozici může stát jen jedno auto.",
         },
       ],
       modesTitle: "Dvě délky tratě",
       modes: [
         {
           title: "Malý závod · pozice 1–10",
-          text: "Nejlepší pro první partii. Vyjměte změny ±4 a ±5; zbývajících 38 karet udrží příklady na kratší číselné ose.",
+          text: "Nejlepší pro první partii. Použijte 10 aut a 44 závodních karet se změnami od ±1 do ±3.",
         },
         {
           title: "Velká cena · pozice 1–20",
-          text: "Použijte všech dvacet aut a celý balíček 50 karet OVERTAKE a OVERTAKEN se změnami o 1 až 5 míst.",
+          text: "Použijte všech 20 aut a celý balíček 56 karet OVERTAKE a OVERTAKEN se změnami o 1 až 5 míst.",
         },
         {
           title: "Okraje trati",
@@ -650,24 +650,24 @@ export const games: Record<GameKey, Game> = {
         },
         {
           title: "Změny pořadí ostatních",
-          text: "Přesun vašeho auta mění také pořadí aut, kolem kterých projedete. Jejich hráči si hned aktualizují kartu pořadí; vlastní tah v tomto kole jim zůstává.",
+          text: "Když předjedete ostatní auta, každé se posune o jedno místo. Změní se tak i pozice aut ovládaných soupeři, kteří přesto ve svém tahu pokračují.",
         },
       ],
       contentsTitle: "Obsah sady",
       contents: [
         "20 různých karet aut",
-        "4 barevné sady pořadí 1–20",
-        "20 společných startovních losů",
-        "50 karet OVERTAKE / OVERTAKEN",
-        "Oboustranné karty STARTING GRID",
-        "Samostatný český návod a volitelné Race Logy",
+        "20 pevných kartiček POSITION (1.–20. místo)",
+        "56 karet OVERTAKE / OVERTAKEN",
+        "Oboustranná karta STARTING GRID / START / FINISH",
+        "Samostatné návody v češtině a angličtině",
+        "Volitelné Race Logy v češtině a angličtině",
       ],
       downloadTitle: "Stáhněte si hru zdarma",
       downloadText:
-        "Návod, karty a volitelný Race Log si stáhněte samostatně. Návod je česky, popisky karet a Race Logů anglicky. V PDF zatím zůstává původní název Racing Math.",
+        "Návod, karty i volitelný Race Log si stáhněte samostatně. Česká stránka nabízí české verze dokumentů; na anglické najdete anglické.",
       primaryDownload: "Stáhnout karty · PDF",
-      primaryFile: "/downloads/vm-racing-challenge-cards.pdf",
-      pdfNote: "A4 · tisk 100 % · návod, karty a Race Log",
+      primaryFile: "/downloads/vm-racing-challenge-cards-cs-v3.pdf",
+      pdfNote: "A4 · tisk 100 % · skládaný návod, karty a volitelný Race Log",
       faqTitle: "Časté otázky",
       faqs: [
         {
@@ -676,7 +676,7 @@ export const games: Record<GameKey, Game> = {
         },
         {
           q: "Mohou dvě auta stát na stejné pozici?",
-          a: "Ne. Na každém místě je právě jedno auto. Při přesunu posuňte auta, kolem kterých projedete, o jedno místo a dotčeným hráčům aktualizujte kartu pořadí.",
+          a: "Ne. Každá pevná kartička POSITION označuje jedno místo. Přesuňte své auto na novou pozici a auta, která předjedete, posuňte o jedno místo.",
         },
         {
           q: "Co když by karta posunula auto mimo trať?",
