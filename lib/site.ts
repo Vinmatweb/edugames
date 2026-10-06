@@ -77,7 +77,7 @@ export const homeCopy = {
     intro:
       "Short card and board games that turn arithmetic, comparison and strategic thinking into shared play. Choose a game, print it and start in a few minutes.",
     statGames: "original games",
-    statAge: "designed for ages",
+    statAge: "age range across the library",
     statPrice: "to download",
     gamesTitle: "Choose today’s game",
     gamesIntro:
@@ -110,9 +110,6 @@ export const homeCopy = {
       "No account, no paywall, no advertising trackers",
     ],
     guideCta: "Read the print & play guide",
-    nextTitle: "More games are on the workbench",
-    nextText:
-      "New card, board and travel games will join the library after they have been tested and the rules are ready for families and classrooms.",
   },
   cs: {
     eyebrow: "Hry k vytištění zdarma",
@@ -120,7 +117,7 @@ export const homeCopy = {
     intro:
       "Krátké karetní a deskové hry, které mění počítání, porovnávání i jednoduchou strategii ve společnou zábavu. Vyberte hru, vytiskněte ji a za pár minut můžete začít.",
     statGames: "originální hry",
-    statAge: "určeno pro věk",
+    statAge: "věkové rozpětí her",
     statPrice: "ke stažení",
     gamesTitle: "Vyberte dnešní hru",
     gamesIntro:
@@ -153,9 +150,6 @@ export const homeCopy = {
       "Bez účtu, bez placené brány a bez reklamního sledování",
     ],
     guideCta: "Přečíst návod k tisku a hraní",
-    nextTitle: "Další hry vznikají",
-    nextText:
-      "Knihovna se bude rozšiřovat o nové karetní, deskové i cestovní hry, jakmile projdou zkoušením a budou mít srozumitelná pravidla pro rodiny i školy.",
   },
 } as const;
 

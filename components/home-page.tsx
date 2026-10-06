@@ -4,7 +4,6 @@ import {
   Check,
   Download,
   HeartHandshake,
-  Layers3,
   Sparkles,
 } from "lucide-react";
 
@@ -67,7 +66,7 @@ export function HomePage({ locale }: { locale: Locale }) {
               <dd>{copy.statGames}</dd>
             </div>
             <div>
-              <dt>6–9</dt>
+              <dt>4–10</dt>
               <dd>{copy.statAge}</dd>
             </div>
             <div>
@@ -138,15 +137,6 @@ export function HomePage({ locale }: { locale: Locale }) {
           </div>
         </section>
 
-        <section className="next-section shell section-block">
-          <div className="next-panel">
-            <Layers3 aria-hidden="true" />
-            <div>
-              <h2>{copy.nextTitle}</h2>
-              <p>{copy.nextText}</p>
-            </div>
-          </div>
-        </section>
       </main>
 
       <SiteFooter locale={locale} />
