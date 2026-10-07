@@ -14,7 +14,7 @@ const armies = [
     image: "army-knights.webp",
     thumbnail: "army-knights-thumb.webp",
     imageAlt: "Modře odění rytíři a jejich Strážný anděl nad nimi",
-    short: "Chrání své království silou, disciplínou a pevnou zbrojí."
+    short: "Chrání své království silou, disciplínou a pevnou zbrojí.",
     paragraphs: [
       "Odvážní rytíři chrání své království silou, disciplínou a pevnou zbrojí. Jejich patronem je anděl strážný, který nad armádou bdí.",
       "Strážný anděl může jednou za Bitvu podpořit armádu o +5. Balík karet obsahuje 18 jednotkových karet rytířů a kartu patrona; akční karty a pravidla se stahují zvlášť.",
@@ -29,7 +29,7 @@ const armies = [
     image: "army-undead.webp",
     thumbnail: "army-undead-thumb.webp",
     imageAlt: "Řady nemrtvých bojovníků vedené Nekromancerem se zelenou magií",
-    short: "Nemrtví se neúnavně valí vpřed pod vedením Nekromancera."
+    short: "Nemrtví se neúnavně valí vpřed pod vedením Nekromancera.",
     paragraphs: [
       "Nemrtví se pomalu, ale neúnavně valí vpřed. Vede je nekromant, který svou temnou magií povolává další bojovníky.",
       "Nekromancer může jednou za Bitvu podpořit armádu o +5. Balík karet obsahuje 18 jednotkových karet nemrtvých a kartu patrona; akční karty a pravidla se stahují zvlášť.",
@@ -44,7 +44,7 @@ const armies = [
     image: "army-orcs.webp",
     thumbnail: "army-orcs-thumb.webp",
     imageAlt: "Mohutná orčí armáda s korunovaným vůdcem vepředu",
-    short: "Síla, odolnost a neústupnost v čele s náčelníkem."
+    short: "Síla, odolnost a neústupnost v čele s náčelníkem.",
     paragraphs: [
       "Orčí bojovníci spoléhají na sílu, odolnost a neústupnost. Jejich náčelník stojí v čele armády a žene ji do bitvy.",
       "Orčí náčelník může jednou za Bitvu podpořit armádu o +5. Balík karet obsahuje 18 jednotkových karet orků a kartu patrona; akční karty a pravidla se stahují zvlášť.",
@@ -59,7 +59,7 @@ const armies = [
     image: "army-goblins.webp",
     thumbnail: "army-goblins-thumb.webp",
     imageAlt: "Skřetí bojovníci vedení šamanem v kápi s magickou holí",
-    short: "Mrštní a mazaní bojovníci, které vede šaman."
+    short: "Mrštní a mazaní bojovníci, které vede šaman.",
     paragraphs: [
       "Skřeti jsou mrštní a mazaní protivníci, kteří dokážou překvapit i silnější armádu. Jejich šaman je vede pomocí lstí a magie.",
       "Gobliní šaman může jednou za Bitvu podpořit armádu o +5. Balík karet obsahuje 18 jednotkových karet skřetů a kartu patrona; akční karty a pravidla se stahují zvlášť.",
