@@ -206,7 +206,7 @@ export const games: Record<GameKey, Game> = {
     key: "fantasy",
     image: "/images/fantasy-battle-169.webp",
     players: "2–4",
-    age: "6–9",
+    age: "4–10",
     time: "10–20",
     routeKey: "fantasy",
     accent: "fantasy",
@@ -216,7 +216,7 @@ export const games: Record<GameKey, Game> = {
       category: "Card game · arithmetic",
       summary:
         "Build an army from number cards, launch attacks and call for support. Every move turns into a calculation the whole table can see.",
-      status: "4 armies · 2 games · ready to print",
+      status: "10 armies · 2 games · ready to print",
       coverAlt:
         "A knight, zombie, orc and goblin facing each other in a sunset arena",
       skills: [
@@ -228,7 +228,7 @@ export const games: Record<GameKey, Game> = {
       overview: [
         "Each unit card has a value. The cards in front of a player show the current size of that army. An ATTACK subtracts units, SUPPORT adds units and a patron can grant one carefully timed +5 boost.",
         "After every change, the player rebuilds the army with a new combination of cards. A total of 7 might be 5 + 2, 4 + 3 or a single 7. The arithmetic is visible, movable and easy for another player to check.",
-        "Choose from four armies: Knights, Zombies, Orcs and Goblins. With two or three players, everyone plays for themselves; four-player Battle uses two teams.",
+        "Choose from ten armies: Knights, Zombies, Orcs, Goblins, Fairies, Wolves, Dwarves, Elves, Dragons and Trolls. With two or three players, everyone plays for themselves; four-player Battle uses two teams.",
       ],
       learnTitle: "What children practise",
       learnIntro:
@@ -298,7 +298,7 @@ export const games: Record<GameKey, Game> = {
       ],
       downloadTitle: "Download the free game",
       downloadText:
-        "Download the rules, army packs, action cards and optional Battle Logs separately. For two-player Battle, choose one army pack and one action set (I or II). For three or four players, use both army packs and both action sets. Duel needs only army unit cards. Card labels and logs are in English; the Czech and English rule booklets are available separately.",
+        "Download the rules, five army packs, action cards and optional Battle Logs separately. For two-player Battle, choose an army pack and one action set (I or II). For three or four players, use four armies and both action sets. Duel needs only army unit cards. Card labels and logs are in English; the Czech and English rule booklets are available separately.",
       primaryDownload: "Knights & Zombies · PDF",
       secondaryDownload: "Download universal rules · Czech PDF",
       primaryFile: "/downloads/vm-fantasy-battle-armies-knights-zombies.pdf",
@@ -333,7 +333,7 @@ export const games: Record<GameKey, Game> = {
       category: "Karetní hra · počítání",
       summary:
         "Sestavte armádu z číselných karet, útočte a povolávejte posily. Každý tah se promění ve výpočet, který vidí celý stůl.",
-      status: "4 armády · 2 hry · připraveno k tisku",
+      status: "10 armád · 2 hry · připraveno k tisku",
       coverAlt:
         "Rytíř, nemrtvý, ork a skřet proti sobě v aréně při západu slunce",
       skills: [
@@ -345,7 +345,7 @@ export const games: Record<GameKey, Game> = {
       overview: [
         "Každá karta jednotek má hodnotu. Součet karet před hráčem udává velikost jeho armády. ATTACK jednotky ubírá, SUPPORT je přidává a patron může jednou za hru přinést dobře načasovaných +5.",
         "Po každé změně hráč sestaví armádu znovu v jiné kombinaci. Sedm může být 5 + 2, 4 + 3 nebo jedna karta 7. Výpočet je vidět, lze s ním pohybovat a ostatní ho snadno zkontrolují.",
-        "Na výběr jsou čtyři armády: rytíři, nemrtví, orkové a skřeti. Ve dvou a třech se hraje každý za sebe, ve čtyřech Bitva ve dvou týmech.",
+        "Na výběr je deset armád: rytíři, nemrtví, orkové, skřeti, víly, vlci, trpaslíci, elfové, draci a trollové. Ve dvou a třech se hraje každý za sebe, ve čtyřech Bitva ve dvou týmech.",
       ],
       learnTitle: "Co si děti procvičí",
       learnIntro:
@@ -415,7 +415,7 @@ export const games: Record<GameKey, Game> = {
       ],
       downloadTitle: "Stáhněte si hru zdarma",
       downloadText:
-        "Návod, balíky armád, akční karty a volitelné Battle Logy si stáhněte samostatně. Pro Bitvu ve dvou vyberte jeden balík armád a jednu akční sérii (I nebo II). Pro tři až čtyři hráče použijte oba balíky armád a obě akční série. Na Souboj stačí jen karty jednotek armád. Popisky karet a logů jsou anglicky; záhlaví tiskových archů a návod jsou česky.",
+        "Návod, pět balíků armád, akční karty a volitelné Battle Logy si stáhněte samostatně. Pro Bitvu ve dvou vyberte armádu a jednu akční sérii (I nebo II). Pro tři až čtyři hráče zvolte čtyři armády a použijte obě akční série. Na Souboj stačí jen karty jednotek. Popisky karet a logů jsou anglicky; záhlaví tiskových archů a návod jsou česky.",
       primaryDownload: "Rytíři a nemrtví · PDF",
       secondaryDownload: "Stáhnout univerzální pravidla · PDF",
       primaryFile: "/downloads/vm-fantasy-battle-armies-knights-zombies.pdf",

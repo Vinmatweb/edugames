@@ -214,9 +214,12 @@ export function GamePage({ gameKey, locale }: { gameKey: GameKey; locale: Locale
                     {file: locale === "cs" ? "vm-fantasy-battle-rules-cs-v2.pdf" : "vm-fantasy-battle-rules-en-v2.pdf", title: locale === "cs" ? "Návod · čeština" : "Rules · English", text: locale === "cs" ? "Opravená česká pravidla pro Bitvu i Přebíjenou. Formát A5, tisk na A4." : "Updated English rules for Battle and High Card Battle. A5 booklet printed on A4."},
                     {file: "vm-fantasy-battle-armies-knights-zombies.pdf", title: locale === "cs" ? "Karty rytířů a nemrtvých" : "Knights & Zombies cards", text: locale === "cs" ? "18 karet rytířů, 18 karet nemrtvých a 2 patroni +5. 10 stran A4 včetně rubů. Akční karty se stahují zvlášť." : "18 Knight cards, 18 Zombie cards and 2 patrons +5. 10 A4 pages including backs. Download action cards separately."},
                     {file: "vm-fantasy-battle-armies-orcs-goblins.pdf", title: locale === "cs" ? "Karty orků a skřetů" : "Orcs & Goblins cards", text: locale === "cs" ? "18 karet orků, 18 karet skřetů a 2 patroni +5. 10 stran A4 včetně rubů. Akční karty se stahují zvlášť." : "18 Orc cards, 18 Goblin cards and 2 patrons +5. 10 A4 pages including backs. Download action cards separately."},
+                    {file: "vm-fantasy-battle-armies-fairies-wolves.pdf", title: locale === "cs" ? "Karty víl a vlků" : "Fairies & Wolves cards", text: locale === "cs" ? "Karty obou armád a jejich patronů. 10 stran A4 včetně rubů." : "Cards for both armies and their patrons. 10 A4 pages including backs."},
+                    {file: "vm-fantasy-battle-armies-dwarves-trolls.pdf", title: locale === "cs" ? "Karty trpaslíků a trollů" : "Dwarves & Trolls cards", text: locale === "cs" ? "Karty obou armád a jejich patronů. 12 stran A4 včetně rubů." : "Cards for both armies and their patrons. 12 A4 pages including backs."},
+                    {file: "vm-fantasy-battle-armies-elves-dragons.pdf", title: locale === "cs" ? "Karty elfů a draků" : "Elves & Dragons cards", text: locale === "cs" ? "Karty obou armád a jejich patronů. 12 stran A4 včetně rubů." : "Cards for both armies and their patrons. 12 A4 pages including backs."},
                     {file: "vm-fantasy-battle-actions-i.pdf", title: locale === "cs" ? "Akční karty · série I" : "Action cards · Set I", text: locale === "cs" ? "18 karet ATTACK a 9 karet SUPPORT. 6 stran A4 včetně rubů." : "18 ATTACK cards and 9 SUPPORT cards. 6 A4 pages including backs."},
                     {file: "vm-fantasy-battle-actions-ii.pdf", title: locale === "cs" ? "Akční karty · série II" : "Action cards · Set II", text: locale === "cs" ? "18 karet ATTACK a 9 karet SUPPORT. 6 stran A4 včetně rubů." : "18 ATTACK cards and 9 SUPPORT cards. 6 A4 pages including backs."},
-                    {file: "vm-fantasy-battle-logs.pdf", title: "Battle Logy / Battle Logs", text: locale === "cs" ? "Volitelné záznamové listy pro počítání na papír. Do MY ARMY zapisujte změny vlastní armády, do ENEMY ARMY své útoky s iniciálou soupeřovy armády, například O: 10 − 2 = 8. Vhodné pro všechny čtyři armády." : "Optional worksheets for doing the arithmetic on paper. Record changes to your army under MY ARMY and your attacks under ENEMY ARMY, adding the target army’s initial, for example O: 10 − 2 = 8. Suitable for all four armies."},
+                    {file: "vm-fantasy-battle-logs.pdf", title: "Battle Logy / Battle Logs", text: locale === "cs" ? "Volitelné záznamové listy pro počítání na papír. Do MY ARMY zapisujte změny vlastní armády, do ENEMY ARMY své útoky s iniciálou soupeřovy armády, například O: 10 − 2 = 8. Vhodné pro všech deset armád." : "Optional worksheets for doing the arithmetic on paper. Record changes to your army under MY ARMY and your attacks under ENEMY ARMY, adding the target army’s initial, for example O: 10 − 2 = 8. Suitable for all ten armies."},
                   ].map((file) => <div className="battle-download" key={file.file}>
                     <h3>{file.file.includes("logs") ? (locale === "cs" ? "Battle Logy" : "Battle Logs") : file.title}</h3>
                     <p>{file.text}</p>
@@ -250,7 +253,7 @@ export function GamePage({ gameKey, locale }: { gameKey: GameKey; locale: Locale
           </div>
         </section>
 
-        {gameKey === "fantasy" && locale === "cs" && <FantasyArmySelector />}
+        {gameKey === "fantasy" && <FantasyArmySelector locale={locale} />}
 
         <section className="faq-section shell section-block">
           <div className="faq-heading">

@@ -41,9 +41,27 @@ export default function sitemap(): MetadataRoute.Sitemap {
   ]),
     {
       url: url(paths.fantasy.cs + "/armady"),
-      lastModified: new Date("2026-10-07T00:00:00+02:00"),
+      lastModified: new Date("2026-10-08T00:00:00+02:00"),
       changeFrequency: "monthly",
       priority: 0.65,
+      alternates: {
+        languages: {
+          en: url(paths.fantasy.en + "/armies"),
+          cs: url(paths.fantasy.cs + "/armady"),
+        },
+      },
+    },
+    {
+      url: url(paths.fantasy.en + "/armies"),
+      lastModified: new Date("2026-10-08T00:00:00+02:00"),
+      changeFrequency: "monthly",
+      priority: 0.65,
+      alternates: {
+        languages: {
+          en: url(paths.fantasy.en + "/armies"),
+          cs: url(paths.fantasy.cs + "/armady"),
+        },
+      },
     },
   ];
 }
