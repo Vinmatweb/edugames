@@ -13,6 +13,7 @@ import {
 } from "lucide-react";
 
 import { AdSlot } from "@/components/ad-slot";
+import { FantasyArmySelector } from "@/components/fantasy-armies";
 import { SiteFooter } from "@/components/site-footer";
 import { SiteHeader } from "@/components/site-header";
 import {
@@ -248,6 +249,8 @@ export function GamePage({ gameKey, locale }: { gameKey: GameKey; locale: Locale
             </aside>
           </div>
         </section>
+
+        {gameKey === "fantasy" && locale === "cs" && <FantasyArmySelector />}
 
         <section className="faq-section shell section-block">
           <div className="faq-heading">

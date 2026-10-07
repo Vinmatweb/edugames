@@ -12,7 +12,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
   const now = new Date("2026-09-25T00:00:00Z");
   const routePairs = Object.values(paths);
 
-  return routePairs.flatMap((pair) => [
+  return [
+    ...routePairs.flatMap((pair) => [
     {
       url: url(pair.en),
       lastModified: pair === paths.privacy || pair === paths.terms || pair === paths.about || pair === paths.home ? new Date("2026-09-30T00:00:00+02:00") : now,
@@ -37,5 +38,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
         },
       },
     },
-  ]);
+  ]),
+    {
+      url: url(paths.fantasy.cs + "/armady"),
+      lastModified: new Date("2026-10-07T00:00:00+02:00"),
+      changeFrequency: "monthly",
+      priority: 0.65,
+    },
+  ];
 }
