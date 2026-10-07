@@ -209,25 +209,61 @@ export function GamePage({ gameKey, locale }: { gameKey: GameKey; locale: Locale
                 {copy.pdfNote}
               </p>
               {gameKey === "fantasy" ? (
-                <div className="battle-downloads">
-                  {[
-                    {file: locale === "cs" ? "vm-fantasy-battle-rules-cs-v2.pdf" : "vm-fantasy-battle-rules-en-v2.pdf", title: locale === "cs" ? "Návod · čeština" : "Rules · English", text: locale === "cs" ? "Opravená česká pravidla pro Bitvu i Přebíjenou. Formát A5, tisk na A4." : "Updated English rules for Battle and High Card Battle. A5 booklet printed on A4."},
-                    {file: "vm-fantasy-battle-armies-knights-zombies.pdf", title: locale === "cs" ? "Karty rytířů a nemrtvých" : "Knights & Zombies cards", text: locale === "cs" ? "18 karet rytířů, 18 karet nemrtvých a 2 patroni +5. 10 stran A4 včetně rubů. Akční karty se stahují zvlášť." : "18 Knight cards, 18 Zombie cards and 2 patrons +5. 10 A4 pages including backs. Download action cards separately."},
-                    {file: "vm-fantasy-battle-armies-orcs-goblins.pdf", title: locale === "cs" ? "Karty orků a skřetů" : "Orcs & Goblins cards", text: locale === "cs" ? "18 karet orků, 18 karet skřetů a 2 patroni +5. 10 stran A4 včetně rubů. Akční karty se stahují zvlášť." : "18 Orc cards, 18 Goblin cards and 2 patrons +5. 10 A4 pages including backs. Download action cards separately."},
-                    {file: "vm-fantasy-battle-armies-fairies-wolves.pdf", title: locale === "cs" ? "Karty víl a vlků" : "Fairies & Wolves cards", text: locale === "cs" ? "Karty obou armád a jejich patronů. 10 stran A4 včetně rubů." : "Cards for both armies and their patrons. 10 A4 pages including backs."},
-                    {file: "vm-fantasy-battle-armies-dwarves-trolls.pdf", title: locale === "cs" ? "Karty trpaslíků a trollů" : "Dwarves & Trolls cards", text: locale === "cs" ? "Karty obou armád a jejich patronů. 12 stran A4 včetně rubů." : "Cards for both armies and their patrons. 12 A4 pages including backs."},
-                    {file: "vm-fantasy-battle-armies-elves-dragons.pdf", title: locale === "cs" ? "Karty elfů a draků" : "Elves & Dragons cards", text: locale === "cs" ? "Karty obou armád a jejich patronů. 12 stran A4 včetně rubů." : "Cards for both armies and their patrons. 12 A4 pages including backs."},
-                    {file: "vm-fantasy-battle-actions-i.pdf", title: locale === "cs" ? "Akční karty · série I" : "Action cards · Set I", text: locale === "cs" ? "18 karet ATTACK a 9 karet SUPPORT. 6 stran A4 včetně rubů." : "18 ATTACK cards and 9 SUPPORT cards. 6 A4 pages including backs."},
-                    {file: "vm-fantasy-battle-actions-ii.pdf", title: locale === "cs" ? "Akční karty · série II" : "Action cards · Set II", text: locale === "cs" ? "18 karet ATTACK a 9 karet SUPPORT. 6 stran A4 včetně rubů." : "18 ATTACK cards and 9 SUPPORT cards. 6 A4 pages including backs."},
-                    {file: "vm-fantasy-battle-logs.pdf", title: "Battle Logy / Battle Logs", text: locale === "cs" ? "Volitelné záznamové listy pro počítání na papír. Do MY ARMY zapisujte změny vlastní armády, do ENEMY ARMY své útoky s iniciálou soupeřovy armády, například O: 10 − 2 = 8. Vhodné pro všech deset armád." : "Optional worksheets for doing the arithmetic on paper. Record changes to your army under MY ARMY and your attacks under ENEMY ARMY, adding the target army’s initial, for example O: 10 − 2 = 8. Suitable for all ten armies."},
-                  ].map((file) => <div className="battle-download" key={file.file}>
-                    <h3>{file.file.includes("logs") ? (locale === "cs" ? "Battle Logy" : "Battle Logs") : file.title}</h3>
-                    <p>{file.text}</p>
-                    <a className={buttonVariants({variant: "outline", className: "button-secondary"})} href={assetPath(`/downloads/${file.file}`)} download><Download aria-hidden="true" />{locale === "cs" ? "Stáhnout PDF" : "Download PDF"}</a>
-                  </div>)}
+                <div className="battle-downloads battle-downloads--fantasy">
+                  <div className="battle-download battle-download--rules">
+                    <h3>{locale === "cs" ? "Návod · čeština" : "Rules · English"}</h3>
+                    <p>{locale === "cs" ? "Opravená pravidla pro Bitvu i Přebíjenou. Formát A5, tisk na A4." : "Updated rules for Battle and High Card Clash. A5 booklet printed on A4."}</p>
+                    <a className={buttonVariants({variant: "outline", className: "button-secondary"})} href={assetPath(locale === "cs" ? "/downloads/vm-fantasy-battle-rules-cs-v2.pdf" : "/downloads/vm-fantasy-battle-rules-en-v2.pdf")} download><Download aria-hidden="true" />{locale === "cs" ? "Stáhnout PDF" : "Download PDF"}</a>
+                  </div>
+                  <div className="battle-download battle-download--action-one">
+                    <h3>{locale === "cs" ? "Akční karty · série I" : "Action cards · Set I"}</h3>
+                    <p>{locale === "cs" ? "18 karet ATTACK a 9 karet SUPPORT. 6 stran A4 včetně rubů." : "18 ATTACK cards and 9 SUPPORT cards. 6 A4 pages including backs."}</p>
+                    <a className={buttonVariants({variant: "outline", className: "button-secondary"})} href={assetPath("/downloads/vm-fantasy-battle-actions-i.pdf")} download><Download aria-hidden="true" />{locale === "cs" ? "Stáhnout PDF" : "Download PDF"}</a>
+                  </div>
+                  <div className="battle-download battle-download--action-two">
+                    <h3>{locale === "cs" ? "Akční karty · série II" : "Action cards · Set II"}</h3>
+                    <p>{locale === "cs" ? "18 karet ATTACK a 9 karet SUPPORT. 6 stran A4 včetně rubů." : "18 ATTACK cards and 9 SUPPORT cards. 6 A4 pages including backs."}</p>
+                    <a className={buttonVariants({variant: "outline", className: "button-secondary"})} href={assetPath("/downloads/vm-fantasy-battle-actions-ii.pdf")} download><Download aria-hidden="true" />{locale === "cs" ? "Stáhnout PDF" : "Download PDF"}</a>
+                  </div>
+                  <div className="battle-download battle-download--knights-zombies">
+                    <h3>{locale === "cs" ? "Rytíři a nemrtví" : "Knights & Zombies"}</h3>
+                    <p>{locale === "cs" ? "Dvě armády a jejich patroni +5. 10 stran A4 včetně rubů." : "Two armies and their +5 patrons. 10 A4 pages including backs."}</p>
+                    <a className={buttonVariants({variant: "outline", className: "button-secondary"})} href={assetPath("/downloads/vm-fantasy-battle-armies-knights-zombies.pdf")} download><Download aria-hidden="true" />{locale === "cs" ? "Stáhnout PDF" : "Download PDF"}</a>
+                  </div>
+                  <div className="battle-download battle-download--orcs-goblins">
+                    <h3>{locale === "cs" ? "Orkové a skřeti" : "Orcs & Goblins"}</h3>
+                    <p>{locale === "cs" ? "Dvě armády a jejich patroni +5. 10 stran A4 včetně rubů." : "Two armies and their +5 patrons. 10 A4 pages including backs."}</p>
+                    <a className={buttonVariants({variant: "outline", className: "button-secondary"})} href={assetPath("/downloads/vm-fantasy-battle-armies-orcs-goblins.pdf")} download><Download aria-hidden="true" />{locale === "cs" ? "Stáhnout PDF" : "Download PDF"}</a>
+                  </div>
+                  <div className="battle-download battle-download--fairies-wolves">
+                    <h3>{locale === "cs" ? "Víly a vlci" : "Fairies & Wolves"}</h3>
+                    <p>{locale === "cs" ? "Dvě armády a jejich patroni +5. 10 stran A4 včetně rubů." : "Two armies and their +5 patrons. 10 A4 pages including backs."}</p>
+                    <a className={buttonVariants({variant: "outline", className: "button-secondary"})} href={assetPath("/downloads/vm-fantasy-battle-armies-fairies-wolves.pdf")} download><Download aria-hidden="true" />{locale === "cs" ? "Stáhnout PDF" : "Download PDF"}</a>
+                  </div>
+                  <div className="battle-download battle-download--dwarves-trolls">
+                    <h3>{locale === "cs" ? "Trpaslíci a trollové" : "Dwarves & Trolls"}</h3>
+                    <p>{locale === "cs" ? "Dvě armády a jejich patroni +5. 12 stran A4 včetně rubů." : "Two armies and their +5 patrons. 12 A4 pages including backs."}</p>
+                    <a className={buttonVariants({variant: "outline", className: "button-secondary"})} href={assetPath("/downloads/vm-fantasy-battle-armies-dwarves-trolls.pdf")} download><Download aria-hidden="true" />{locale === "cs" ? "Stáhnout PDF" : "Download PDF"}</a>
+                  </div>
+                  <div className="battle-download battle-download--elves-dragons">
+                    <h3>{locale === "cs" ? "Elfové a draci" : "Elves & Dragons"}</h3>
+                    <p>{locale === "cs" ? "Dvě armády a jejich patroni +5. 12 stran A4 včetně rubů." : "Two armies and their +5 patrons. 12 A4 pages including backs."}</p>
+                    <a className={buttonVariants({variant: "outline", className: "button-secondary"})} href={assetPath("/downloads/vm-fantasy-battle-armies-elves-dragons.pdf")} download><Download aria-hidden="true" />{locale === "cs" ? "Stáhnout PDF" : "Download PDF"}</a>
+                  </div>
+                  <div className="battle-download battle-download--all-armies">
+                    <h3>{locale === "cs" ? "Všech deset armád" : "All ten armies"}</h3>
+                    <p>{locale === "cs" ? "Prohlédni si jejich ilustrace, patrony a podrobné popisy." : "Browse their illustrations, patrons and detailed descriptions."}</p>
+                    <Link className={buttonVariants({variant: "outline", className: "button-secondary"})} href={(locale === "cs" ? "/cs/hry/fantasy-battle/armady" : "/games/fantasy-battle/armies")}>
+                      <ArrowRight aria-hidden="true" />{locale === "cs" ? "Prohlédnout armády" : "Explore armies"}
+                    </Link>
+                  </div>
+                  <div className="battle-download battle-download--logs">
+                    <h3>{locale === "cs" ? "Battle Logy" : "Battle Logs"}</h3>
+                    <p>{locale === "cs" ? "Volitelné listy pro zápis výpočtů. Do MY ARMY zapisuj změny své armády, do ENEMY ARMY útoky s iniciálou soupeřovy armády, například O: 10 − 2 = 8." : "Optional worksheets for written calculations. Record changes under MY ARMY and attacks under ENEMY ARMY with the target army's initial, for example O: 10 − 2 = 8."}</p>
+                    <a className={buttonVariants({variant: "outline", className: "button-secondary"})} href={assetPath("/downloads/vm-fantasy-battle-logs.pdf")} download><Download aria-hidden="true" />{locale === "cs" ? "Stáhnout PDF" : "Download PDF"}</a>
+                  </div>
                 </div>
-              ) : (
-                <div className="battle-downloads">
+              )                <div className="battle-downloads">
                   {[
                     {file: locale === "cs" ? "vm-racing-challenge-rules-cs-v2.pdf" : "vm-racing-challenge-rules-en-v2.pdf", title: locale === "cs" ? "Návod · čeština" : "Rules · English", text: locale === "cs" ? "Opravený návod pro 2–4 hráče: Malý závod i Velká cena. Závod končí dobráním balíčku. Formát A5, tisk na A4." : "Updated rules for 2–4 players: Short Race and Grand Prix. Play until the action deck is empty. A5 booklet printed on A4."},
                     {file: locale === "cs" ? "vm-racing-challenge-cards-cs-v3.pdf" : "vm-racing-challenge-cards-en-v8.pdf", title: locale === "cs" ? "Herní karty · česky" : "Game cards · English", text: locale === "cs" ? "20 aut, 20 pevných kartiček POSITION, 56 závodních karet a oboustranná karta STARTING GRID / START / FINISH. 10 stran A4 včetně rubů." : "20 cars, 20 fixed POSITION cards, 56 action cards and a double-sided STARTING GRID / START / FINISH card. 10 A4 pages including backs."},

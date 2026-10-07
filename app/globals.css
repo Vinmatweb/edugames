@@ -1854,3 +1854,48 @@ a {
   .army-detail-image img { max-height: 560px; }
   .army-detail-copy { padding: 24px; }
 }
+
+
+/* Fantasy Battle downloads: three essentials first, then a 2-by-3 army grid. */
+.battle-downloads--fantasy {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  grid-template-areas:
+    "rules ."
+    "action-one ."
+    "action-two ."
+    "knights-zombies dwarves-trolls"
+    "orcs-goblins elves-dragons"
+    "fairies-wolves all-armies"
+    ". logs";
+  align-items: stretch;
+}
+.battle-downloads--fantasy .battle-download {
+  margin: 0;
+}
+.battle-download--rules { grid-area: rules; }
+.battle-download--action-one { grid-area: action-one; }
+.battle-download--action-two { grid-area: action-two; }
+.battle-download--knights-zombies { grid-area: knights-zombies; }
+.battle-download--orcs-goblins { grid-area: orcs-goblins; }
+.battle-download--fairies-wolves { grid-area: fairies-wolves; }
+.battle-download--dwarves-trolls { grid-area: dwarves-trolls; }
+.battle-download--elves-dragons { grid-area: elves-dragons; }
+.battle-download--all-armies { grid-area: all-armies; }
+.battle-download--logs { grid-area: logs; }
+
+@media (max-width: 700px) {
+  .battle-downloads--fantasy {
+    grid-template-columns: minmax(0, 1fr);
+    grid-template-areas:
+      "rules"
+      "action-one"
+      "action-two"
+      "knights-zombies"
+      "dwarves-trolls"
+      "orcs-goblins"
+      "elves-dragons"
+      "fairies-wolves"
+      "all-armies"
+      "logs";
+  }
+}
