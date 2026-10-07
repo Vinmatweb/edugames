@@ -98,13 +98,13 @@ export function FantasyArmySelector() {
                 height={400}
                 loading="lazy"
               />
-              <span className="army-selector-copy">
+              <div className="army-selector-copy">
                 <h3>{army.name}</h3>
                 <p>{army.short}</p>
                 <span className="army-selector-cta">
                   Zjistit více <ArrowRight aria-hidden="true" />
                 </span>
-              </span>
+              </div>
             </Link>
           ))}
         </div>
