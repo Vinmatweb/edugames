@@ -335,7 +335,7 @@ export const games: Record<GameKey, Game> = {
         "Sestavte armádu z číselných karet, útočte a povolávejte posily. Každý tah se promění ve výpočet, který vidí celý stůl.",
       status: "4 armády · 2 hry · připraveno k tisku",
       coverAlt:
-        "Rytíř, zombie, ork a goblin proti sobě v aréně při západu slunce",
+        "Rytíř, nemrtvý, ork a skřet proti sobě v aréně při západu slunce",
       skills: [
         "Sčítání a odčítání do 20",
         "Rozklad stejného čísla různými způsoby",
@@ -345,7 +345,7 @@ export const games: Record<GameKey, Game> = {
       overview: [
         "Každá karta jednotek má hodnotu. Součet karet před hráčem udává velikost jeho armády. ATTACK jednotky ubírá, SUPPORT je přidává a patron může jednou za hru přinést dobře načasovaných +5.",
         "Po každé změně hráč sestaví armádu znovu v jiné kombinaci. Sedm může být 5 + 2, 4 + 3 nebo jedna karta 7. Výpočet je vidět, lze s ním pohybovat a ostatní ho snadno zkontrolují.",
-        "Na výběr jsou čtyři armády: rytíři, zombie, orkové a goblini. Ve dvou a třech se hraje každý za sebe, ve čtyřech Bitva ve dvou týmech.",
+        "Na výběr jsou čtyři armády: rytíři, nemrtví, orkové a skřeti. Ve dvou a třech se hraje každý za sebe, ve čtyřech Bitva ve dvou týmech.",
       ],
       learnTitle: "Co si děti procvičí",
       learnIntro:
@@ -416,7 +416,7 @@ export const games: Record<GameKey, Game> = {
       downloadTitle: "Stáhněte si hru zdarma",
       downloadText:
         "Návod, balíky armád, akční karty a volitelné Battle Logy si stáhněte samostatně. Pro Bitvu ve dvou vyberte jeden balík armád a jednu akční sérii (I nebo II). Pro tři až čtyři hráče použijte oba balíky armád a obě akční série. Na Souboj stačí jen karty jednotek armád. Popisky karet a logů jsou anglicky; záhlaví tiskových archů a návod jsou česky.",
-      primaryDownload: "Rytíři a zombie · PDF",
+      primaryDownload: "Rytíři a nemrtví · PDF",
       secondaryDownload: "Stáhnout univerzální pravidla · PDF",
       primaryFile: "/downloads/vm-fantasy-battle-armies-knights-zombies.pdf",
       secondaryFile: "/downloads/vm-fantasy-battle-rules-cs.pdf",
@@ -437,7 +437,7 @@ export const games: Record<GameKey, Game> = {
         },
         {
           q: "Které soubory potřebují čtyři hráči?",
-          a: "Stáhněte oba balíky armád (rytíře a zombie i orky a gobliny) a obě akční série (I a II). Každý hráč si vybere jednu armádu; Bitva ve čtyřech se hraje ve dvou týmech s celkem 36 kartami ATTACK a 18 kartami SUPPORT.",
+          a: "Stáhněte oba balíky armád (rytíře a nemrtvé i orky a skřety) a obě akční série (I a II). Každý hráč si vybere jednu armádu; Bitva ve čtyřech se hraje ve dvou týmech s celkem 36 kartami ATTACK a 18 kartami SUPPORT.",
         },
       ],
       relatedEyebrow: "Zkuste jiný druh počítání",
