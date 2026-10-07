@@ -263,7 +263,8 @@ export function GamePage({ gameKey, locale }: { gameKey: GameKey; locale: Locale
                     <a className={buttonVariants({variant: "outline", className: "button-secondary"})} href={assetPath("/downloads/vm-fantasy-battle-logs.pdf")} download><Download aria-hidden="true" />{locale === "cs" ? "Stáhnout PDF" : "Download PDF"}</a>
                   </div>
                 </div>
-              )                <div className="battle-downloads">
+              ) : (
+                <div className="battle-downloads">
                   {[
                     {file: locale === "cs" ? "vm-racing-challenge-rules-cs-v2.pdf" : "vm-racing-challenge-rules-en-v2.pdf", title: locale === "cs" ? "Návod · čeština" : "Rules · English", text: locale === "cs" ? "Opravený návod pro 2–4 hráče: Malý závod i Velká cena. Závod končí dobráním balíčku. Formát A5, tisk na A4." : "Updated rules for 2–4 players: Short Race and Grand Prix. Play until the action deck is empty. A5 booklet printed on A4."},
                     {file: locale === "cs" ? "vm-racing-challenge-cards-cs-v3.pdf" : "vm-racing-challenge-cards-en-v8.pdf", title: locale === "cs" ? "Herní karty · česky" : "Game cards · English", text: locale === "cs" ? "20 aut, 20 pevných kartiček POSITION, 56 závodních karet a oboustranná karta STARTING GRID / START / FINISH. 10 stran A4 včetně rubů." : "20 cars, 20 fixed POSITION cards, 56 action cards and a double-sided STARTING GRID / START / FINISH card. 10 A4 pages including backs."},
