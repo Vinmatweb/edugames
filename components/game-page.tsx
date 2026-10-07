@@ -38,6 +38,17 @@ export function GamePage({ gameKey, locale }: { gameKey: GameKey; locale: Locale
   const copy = game[locale];
   const shared = sharedCopy[locale];
   const alternateLocale: Locale = locale === "en" ? "cs" : "en";
+  const contentsCard = (
+    <aside className="contents-card">
+      <PackageOpen aria-hidden="true" />
+      <h3>{copy.contentsTitle}</h3>
+      <ul>
+        {copy.contents.map((item) => (
+          <li key={item}>{item}</li>
+        ))}
+      </ul>
+    </aside>
+  );
 
   return (
     <div className={`site-page game-theme game-theme--${game.accent}`}>
@@ -199,7 +210,7 @@ export function GamePage({ gameKey, locale }: { gameKey: GameKey; locale: Locale
         </section>
 
         <section id="downloads" className="download-section section-block">
-          <div className="shell download-grid">
+          <div className={`shell download-grid${gameKey === "fantasy" ? " download-grid--fantasy" : ""}`}>
             <div className="download-copy">
               <p className="eyebrow">{shared.free}</p>
               <h2>{copy.downloadTitle}</h2>
@@ -250,18 +261,12 @@ export function GamePage({ gameKey, locale }: { gameKey: GameKey; locale: Locale
                     <p>{locale === "cs" ? "Dvě armády a jejich patroni +5. 12 stran A4 včetně rubů." : "Two armies and their +5 patrons. 12 A4 pages including backs."}</p>
                     <a className={buttonVariants({variant: "outline", className: "button-secondary"})} href={assetPath("/downloads/vm-fantasy-battle-armies-elves-dragons.pdf")} download><Download aria-hidden="true" />{locale === "cs" ? "Stáhnout PDF" : "Download PDF"}</a>
                   </div>
-                  <div className="battle-download battle-download--all-armies">
-                    <h3>{locale === "cs" ? "Všech deset armád" : "All ten armies"}</h3>
-                    <p>{locale === "cs" ? "Prohlédni si jejich ilustrace, patrony a podrobné popisy." : "Browse their illustrations, patrons and detailed descriptions."}</p>
-                    <Link className={buttonVariants({variant: "outline", className: "button-secondary"})} href={(locale === "cs" ? "/cs/hry/fantasy-battle/armady" : "/games/fantasy-battle/armies")}>
-                      <ArrowRight aria-hidden="true" />{locale === "cs" ? "Prohlédnout armády" : "Explore armies"}
-                    </Link>
-                  </div>
                   <div className="battle-download battle-download--logs">
                     <h3>{locale === "cs" ? "Battle Logy" : "Battle Logs"}</h3>
                     <p>{locale === "cs" ? "Volitelné listy pro zápis výpočtů. Do MY ARMY zapisuj změny své armády, do ENEMY ARMY útoky s iniciálou soupeřovy armády, například O: 10 − 2 = 8." : "Optional worksheets for written calculations. Record changes under MY ARMY and attacks under ENEMY ARMY with the target army's initial, for example O: 10 − 2 = 8."}</p>
                     <a className={buttonVariants({variant: "outline", className: "button-secondary"})} href={assetPath("/downloads/vm-fantasy-battle-logs.pdf")} download><Download aria-hidden="true" />{locale === "cs" ? "Stáhnout PDF" : "Download PDF"}</a>
                   </div>
+                  {contentsCard}
                 </div>
               ) : (
                 <div className="battle-downloads">
@@ -278,15 +283,7 @@ export function GamePage({ gameKey, locale }: { gameKey: GameKey; locale: Locale
               )}
             </div>
 
-            <aside className="contents-card">
-              <PackageOpen aria-hidden="true" />
-              <h3>{copy.contentsTitle}</h3>
-              <ul>
-                {copy.contents.map((item) => (
-                  <li key={item}>{item}</li>
-                ))}
-              </ul>
-            </aside>
+            {gameKey !== "fantasy" && contentsCard}
           </div>
         </section>
 
