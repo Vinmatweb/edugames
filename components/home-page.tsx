@@ -9,6 +9,7 @@ import {
 
 import { buttonVariants } from "@/components/ui/button";
 import { AdSlot } from "@/components/ad-slot";
+import { AdsenseLoader } from "@/components/adsense-loader";
 import { GameCard } from "@/components/game-card";
 import { SiteFooter } from "@/components/site-footer";
 import { SiteHeader } from "@/components/site-header";
@@ -24,6 +25,7 @@ export function HomePage({ locale }: { locale: Locale }) {
 
   return (
     <div className="site-page">
+      <AdsenseLoader />
       <SiteHeader locale={locale} languageHref={languageHref} />
 
       <main id="main-content">
