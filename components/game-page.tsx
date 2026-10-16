@@ -13,6 +13,7 @@ import {
 } from "lucide-react";
 
 import { AdSlot } from "@/components/ad-slot";
+import { AdsenseLoader } from "@/components/adsense-loader";
 import { FantasyArmySelector } from "@/components/fantasy-armies";
 import { SiteFooter } from "@/components/site-footer";
 import { SiteHeader } from "@/components/site-header";
@@ -52,6 +53,7 @@ export function GamePage({ gameKey, locale }: { gameKey: GameKey; locale: Locale
 
   return (
     <div className={`site-page game-theme game-theme--${game.accent}`}>
+      <AdsenseLoader />
       <SiteHeader
         locale={locale}
         languageHref={localPath(game.routeKey, alternateLocale)}
