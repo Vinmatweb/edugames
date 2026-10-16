@@ -2,6 +2,7 @@ import Link from "next/link";
 import { ArrowLeft, ArrowRight, Download, Shield } from "lucide-react";
 
 import { buttonVariants } from "@/components/ui/button";
+import { AdsenseLoader } from "@/components/adsense-loader";
 import { SiteFooter } from "@/components/site-footer";
 import { SiteHeader } from "@/components/site-header";
 import { assetPath, localPath, type Locale } from "@/lib/site";
@@ -280,6 +281,7 @@ export function FantasyArmiesPage({ locale }: { locale: Locale }) {
 
   return (
     <div className="site-page game-theme game-theme--fantasy">
+      <AdsenseLoader />
       <SiteHeader locale={locale} languageHref={galleryPath(otherLocale)} />
       <main id="main-content">
         <header className="army-directory-hero shell">
