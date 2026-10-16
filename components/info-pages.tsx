@@ -11,6 +11,7 @@ import {
 } from "lucide-react";
 
 import { SiteFooter } from "@/components/site-footer";
+import { AdsenseLoader } from "@/components/adsense-loader";
 import { SiteHeader } from "@/components/site-header";
 import { buttonVariants } from "@/components/ui/button";
 import {
@@ -28,6 +29,7 @@ export function AboutPage({ locale }: { locale: Locale }) {
 
   return (
     <div className="site-page">
+      <AdsenseLoader />
       <SiteHeader locale={locale} languageHref={localPath("about", other)} />
       <main id="main-content">
         <section className="info-hero shell">
@@ -97,6 +99,7 @@ export function GuidePage({ locale }: { locale: Locale }) {
 
   return (
     <div className="site-page">
+      <AdsenseLoader />
       <SiteHeader locale={locale} languageHref={localPath("guide", other)} />
       <main id="main-content">
         <section className="info-hero info-hero--guide shell">
