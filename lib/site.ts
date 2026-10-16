@@ -107,7 +107,7 @@ export const homeCopy = {
       "One main learning goal per game",
       "Short rounds with a clear finish",
       "Difficulty that grows with the child",
-      "No account, no paywall, no advertising trackers",
+      "No account, no paywall, no registration required",
     ],
     guideCta: "Read the print & play guide",
   },
@@ -147,7 +147,7 @@ export const homeCopy = {
       "Jeden hlavní vzdělávací cíl v každé hře",
       "Krátká kola s jasným koncem",
       "Obtížnost, která roste spolu s dítětem",
-      "Bez účtu, bez placené brány a bez reklamního sledování",
+      "Bez účtu, bez placené brány a bez povinné registrace",
     ],
     guideCta: "Přečíst návod k tisku a hraní",
   },
@@ -861,7 +861,7 @@ export const legalCopy = {
     "en": {
       "eyebrow": "VinMat Education Games",
       "title": "Privacy and cookies",
-      "updated": "Last updated: 30 September 2026",
+      "updated": "Last updated: 16 October 2026",
       "sections": [
         {
           "title": "Scope and contact",
@@ -899,13 +899,13 @@ export const legalCopy = {
           "links": []
         },
         {
-          "title": "Cookies and analytics — current status",
-          "text": "This section of the website currently does not run AdSense, analytics or advertising trackers, and does not set advertising or analytics cookies. Reading pages and downloading files does not require consent to marketing. Your browser may cache website files as part of normal operation.",
+          "title": "Cookies, advertising and analytics",
+          "text": "Google AdSense code is integrated on the English and Czech home pages, game pages, the Fantasy Battle army guide, the print-and-play guide and the About page. AdSense may serve ads after vinmat.eu is approved and when inventory is available. This project does not currently use Google Analytics. Reading pages and downloading files does not require an account. Where consent is legally required for advertising technologies, choices are offered through a Google-certified consent management platform.",
           "links": []
         },
         {
-          "title": "Advertising — planned, not active",
-          "text": "Google AdSense may be introduced later. Advertising can involve Google and its partners processing IP addresses, cookies, device identifiers and information about displayed ads and interactions. Before activation, this notice will be updated to describe the actual services and purposes. Where consent is required, a consent-management interface will offer choices and a way to change or withdraw them. No advertising consent is being requested through this notice.",
+          "title": "Google AdSense",
+          "text": "On pages where AdSense is enabled, Google and its advertising partners may process IP addresses, cookies, local storage or device identifiers and information about displayed ads and interactions for advertising, security, fraud prevention, frequency capping and reporting, subject to applicable consent choices. If a specific page, user context or ad request must receive child or teen age-restricted treatment under applicable law or Google policy, the corresponding Google age-treatment signal is used; personalized advertising and remarketing are disabled for requests receiving age-restricted treatment.",
           "links": [
             {
               "label": "How Google uses information from partner sites",
@@ -915,7 +915,7 @@ export const legalCopy = {
         },
         {
           "title": "Children and offline play",
-          "text": "The website helps parents, teachers and other adults choose and prepare games for children. The printed games are played offline and do not send data to this website. Children do not need an account or to contact us. If a message unnecessarily includes a child’s personal data, contact us to request its removal. Any future advertising will require an assessment of the audience and appropriate child-directed treatment where applicable.",
+          "text": "The website helps parents, teachers and other adults choose and prepare games for children. The printed games are played offline and do not send data to this website. Children do not need an account or to contact us. If a message unnecessarily includes a child’s personal data, contact us to request its removal. Advertising requests receive appropriate child or teen age-restricted treatment where required by law or Google policy.",
           "links": []
         },
         {
@@ -938,7 +938,7 @@ export const legalCopy = {
     "cs": {
       "eyebrow": "VinMat Education Games",
       "title": "Soukromí a cookies",
-      "updated": "Poslední aktualizace: 30. září 2026",
+      "updated": "Poslední aktualizace: 16. října 2026",
       "sections": [
         {
           "title": "Rozsah a kontakt",
@@ -976,13 +976,13 @@ export const legalCopy = {
           "links": []
         },
         {
-          "title": "Cookies a analytika — současný stav",
-          "text": "Tato část webu nyní nepoužívá AdSense, analytiku ani reklamní sledovací nástroje a nenastavuje reklamní ani analytické cookies. Čtení stránek a stahování nevyžaduje souhlas s marketingem. Prohlížeč může v rámci běžného provozu ukládat soubory webu do mezipaměti.",
+          "title": "Cookies, reklama a analytika",
+          "text": "Kód Google AdSense je integrován na české a anglické hlavní stránce, stránkách her, přehledu armád Fantasy Battle, průvodci tiskem a stránce O projektu. AdSense může zobrazovat reklamy po schválení domény vinmat.eu a podle dostupnosti reklam. Tento projekt nyní nepoužívá Google Analytics. Čtení stránek a stahování nevyžaduje účet. Tam, kde je pro reklamní technologie právně vyžadován souhlas, jsou volby nabídnuty prostřednictvím platformy CMP certifikované společností Google.",
           "links": []
         },
         {
-          "title": "Reklama — plánovaná, zatím neaktivní",
-          "text": "Do budoucna může být zapojen Google AdSense. Reklama může zahrnovat zpracování IP adres, cookies, identifikátorů zařízení a údajů o zobrazených reklamách a interakcích společností Google a jejími partnery. Před spuštěním tyto informace upravíme podle skutečných služeb a účelů. Tam, kde je vyžadován souhlas, nabídne rozhraní pro správu souhlasů volby a možnost je změnit nebo odvolat. Tímto textem se souhlas s reklamou nevyžaduje.",
+          "title": "Google AdSense",
+          "text": "Na stránkách s aktivovaným AdSense mohou Google a jeho reklamní partneři v povoleném rozsahu zpracovávat IP adresy, cookies, místní úložiště nebo identifikátory zařízení a údaje o zobrazených reklamách a interakcích pro reklamu, zabezpečení, prevenci podvodů, omezení frekvence a reportování, vždy s ohledem na příslušné volby souhlasu. Pokud musí konkrétní stránka, kontext uživatele nebo reklamní požadavek podle zákona či pravidel Googlu obdržet věkově omezené zpracování pro děti nebo dospívající, použije se odpovídající signál Googlu; pro takové požadavky se nepoužívá personalizovaná reklama ani remarketing.",
           "links": [
             {
               "label": "Jak Google používá informace z partnerských webů",
@@ -992,7 +992,7 @@ export const legalCopy = {
         },
         {
           "title": "Děti a hraní mimo web",
-          "text": "Web pomáhá rodičům, učitelům a dalším dospělým vybrat a připravit hry pro děti. Vytištěné hry se hrají mimo web a neposílají mu žádná data. Děti nepotřebují účet ani nás nemusí kontaktovat. Pokud zpráva zbytečně obsahuje osobní údaje dítěte, napište nám kvůli jejich odstranění. Případná budoucí reklama vyžaduje posouzení publika a odpovídající nastavení pro dětský obsah tam, kde je to nutné.",
+          "text": "Web pomáhá rodičům, učitelům a dalším dospělým vybrat a připravit hry pro děti. Vytištěné hry se hrají mimo web a neposílají mu žádná data. Děti nepotřebují účet ani nás nemusí kontaktovat. Pokud zpráva zbytečně obsahuje osobní údaje dítěte, napište nám kvůli jejich odstranění. Reklamní požadavky používají odpovídající věkově omezené zpracování pro děti nebo dospívající tam, kde to vyžaduje zákon nebo pravidla Googlu.",
           "links": []
         },
         {
