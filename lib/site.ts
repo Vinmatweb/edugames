@@ -711,7 +711,7 @@ export const aboutCopy = {
         title: "Free, useful and honest",
         paragraphs: [
           "The printable content stays free for personal and educational use. Each download is labelled with its current stage, so a playtest prototype is not presented as a finished edition.",
-          "This site is written for the adults who choose and prepare the games, while the games themselves are made for children. No account is needed and the current version does not use advertising or analytics trackers. Technical hosting records and email enquiries are explained in the privacy notice.",
+          "This site is written for the adults who choose and prepare the games, while the games themselves are made for children. No account is needed. The website may display advertisements through Google AdSense. Information about advertising, cookies, technical hosting records and email enquiries is provided in the privacy notice.",
         ],
       },
     ],
@@ -749,7 +749,7 @@ export const aboutCopy = {
         title: "Zdarma, užitečně a otevřeně",
         paragraphs: [
           "Materiály zůstávají zdarma pro osobní a vzdělávací použití. U každého souboru je uveden aktuální stav, takže testovací prototyp nevydáváme za hotovou edici.",
-          "Web je napsaný pro dospělé, kteří hry vybírají a připravují, zatímco samotné hry jsou určeny dětem. Není potřeba účet a současná verze nepoužívá reklamní ani analytické sledování. Technické záznamy hostingu a e-mailové dotazy vysvětlují informace o soukromí.",
+          "Web je napsaný pro dospělé, kteří hry vybírají a připravují, zatímco samotné hry jsou určeny dětem. Není potřeba účet. Web může zobrazovat reklamy prostřednictvím Google AdSense. Informace o reklamě, cookies, technických záznamech hostingu a e-mailových dotazech najdete v informacích o soukromí.",
         ],
       },
     ],
