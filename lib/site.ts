@@ -205,7 +205,7 @@ export const games: Record<GameKey, Game> = {
   fantasy: {
     key: "fantasy",
     image: "/images/fantasy-battle-169.webp",
-    players: "2–4",
+    players: "2–10",
     age: "4–10",
     time: "10–20",
     routeKey: "fantasy",
@@ -228,7 +228,7 @@ export const games: Record<GameKey, Game> = {
       overview: [
         "Each unit card has a value. The cards in front of a player show the current size of that army. An ATTACK subtracts units, SUPPORT adds units and a patron can grant one carefully timed +5 boost.",
         "After every change, the player rebuilds the army with a new combination of cards. A total of 7 might be 5 + 2, 4 + 3 or a single 7. The arithmetic is visible, movable and easy for another player to check.",
-        "Choose from ten armies: Knights, Zombies, Orcs, Goblins, Fairies, Wolves, Dwarves, Elves, Dragons and Trolls. With two or three players, everyone plays for themselves; four-player Battle uses two teams.",
+        "Choose from ten armies: Knights, Zombies, Orcs, Goblins, Fairies, Animals, Dwarves, Skeletons, Elves and Dragons. Battle is for 2–4 players; High Card Battle supports 2–10. With two or three players, everyone plays for themselves; four-player Battle uses two teams.",
       ],
       learnTitle: "What children practise",
       learnIntro:
@@ -284,25 +284,25 @@ export const games: Record<GameKey, Game> = {
         },
         {
           title: "High-card clash",
-          text: "For a faster second game, every player flips one army card. The highest value wins the round; tied leaders flip again. Most won rounds wins.",
+          text: "For 2–10 players, shuffle all 18 army cards with the patron. Everyone reveals one card; a patron beats every number. Only tied leaders reveal again while the others wait. The winner takes every revealed card. Count won cards and cards left in your deck only at the end; the highest total wins.",
         },
       ],
       contentsTitle: "Current free set",
       contents: [
         "10 armies with +5 patron cards",
         "2 action card sets: ATTACK and SUPPORT",
-        "Battle with 3 difficulty levels and a quick High Card Clash",
+        "Battle for 2–4; High Card Battle for 2–10",
         "Rules in English and Czech",
         "Optional Battle Logs for written calculations",
       ],
       downloadTitle: "Download the free game",
       downloadText:
-        "Download the rules, five army packs, action cards and optional Battle Logs separately. For two-player Battle, choose an army pack and one action set (I or II). For three or four players, use four armies and both action sets. Duel needs only army unit cards. Card labels and logs are in English; the Czech and English rule booklets are available separately.",
+        "Download the rules, five army packs, action cards and optional Battle Logs separately. For two-player Battle, choose an army pack and one action set (I or II). For three or four players, each chooses a different army; use both action sets. High Card Battle needs army cards and patrons, without action cards. Card labels and logs are in English; the Czech and English rule booklets are available separately.",
       primaryDownload: "Knights & Zombies · PDF",
       secondaryDownload: "Download universal rules · Czech PDF",
       primaryFile: "/downloads/vm-fantasy-battle-armies-knights-zombies.pdf",
-      secondaryFile: "/downloads/vm-fantasy-battle-rules-cs-v2.pdf",
-      pdfNote: "A4 · 100% scale · 2 army packs + 2 action sets",
+      secondaryFile: "/downloads/vm-fantasy-battle-rules-cs-v3.pdf",
+      pdfNote: "A4 · 100% scale · duplex: flip on the long edge",
       faqTitle: "Common questions",
       faqs: [
         {
@@ -319,7 +319,7 @@ export const games: Record<GameKey, Game> = {
         },
         {
           q: "Which files do four players need?",
-          a: "Download both army packs (Knights & Zombies and Orcs & Goblins) and both action sets (I and II). Each player chooses one army; four-player Battle uses two teams and a total of 36 ATTACK and 18 SUPPORT cards.",
+          a: "Choose any four different armies from the five packs, plus both action sets (I and II). Each player chooses one army; four-player Battle uses two teams and a total of 36 ATTACK and 18 SUPPORT cards.",
         },
       ],
       relatedEyebrow: "Try another kind of maths",
@@ -344,7 +344,7 @@ export const games: Record<GameKey, Game> = {
       overview: [
         "Každá karta jednotek má hodnotu. Součet karet před hráčem udává velikost jeho armády. ATTACK jednotky ubírá, SUPPORT je přidává a patron může jednou za hru přinést dobře načasovaných +5.",
         "Po každé změně hráč sestaví armádu znovu v jiné kombinaci. Sedm může být 5 + 2, 4 + 3 nebo jedna karta 7. Výpočet je vidět, lze s ním pohybovat a ostatní ho snadno zkontrolují.",
-        "Na výběr je deset armád: rytíři, nemrtví, orkové, skřeti, víly, vlci, trpaslíci, elfové, draci a trollové. Ve dvou a třech se hraje každý za sebe, ve čtyřech Bitva ve dvou týmech.",
+        "Na výběr je deset armád: rytíři, zombíci, orkové, skřeti, víly, zvířata, trpaslíci, kostlivci, elfové a draci. Bitva je pro 2–4 hráče, přebíjená pro 2–10. Ve dvou a třech se hraje každý za sebe, ve čtyřech Bitva ve dvou týmech.",
       ],
       learnTitle: "Co si děti procvičí",
       learnIntro:
@@ -400,25 +400,25 @@ export const games: Record<GameKey, Game> = {
         },
         {
           title: "Přebíjená",
-          text: "Pro rychlou druhou hru všichni otočí kartu armády. Nejvyšší hodnota vyhraje kolo; hráči ve shodě otočí další kartu. Vítězí nejvíce vyhraných kol.",
+          text: "Pro 2–10 hráčů: zamíchejte všech 18 karet armády i patrona. Všichni otočí kartu; patron poráží každé číslo. Při shodě pokračují jen hráči s nejvyšší hodnotou, ostatní čekají. Vítěz bere všechny otočené karty. Až na konci spočítejte získané karty i ty, které zbyly v balíčku; nejvyšší počet vyhrává.",
         },
       ],
       contentsTitle: "Aktuální sada zdarma",
       contents: [
         "10 armád a jejich patroni +5",
         "2 série akčních karet ATTACK a SUPPORT",
-        "Bitva se 3 obtížnostmi a rychlá Přebíjená",
+        "Bitva pro 2–4; přebíjená pro 2–10 hráčů",
         "Návody v češtině a angličtině",
         "Volitelné Battle Logy pro zápis výpočtů",
       ],
       downloadTitle: "Stáhněte si hru zdarma",
       downloadText:
-        "Návod, pět balíků armád, akční karty a volitelné Battle Logy si stáhněte samostatně. Pro Bitvu ve dvou vyberte armádu a jednu akční sérii (I nebo II). Pro tři až čtyři hráče zvolte čtyři armády a použijte obě akční série. Na Souboj stačí jen karty jednotek. Popisky karet a logů jsou anglicky; záhlaví tiskových archů a návod jsou česky.",
-      primaryDownload: "Rytíři a nemrtví · PDF",
+        "Návod, pět balíků armád, akční karty a volitelné Battle Logy si stáhněte samostatně. Pro Bitvu ve dvou vyberte armádu a jednu akční sérii (I nebo II). Pro tři až čtyři hráče vyberte každému jinou armádu a použijte obě akční série. Na přebíjenou použijte karty armády i patrona, bez akčních karet. Popisky karet a logů jsou anglicky; záhlaví tiskových archů a návod jsou česky.",
+      primaryDownload: "Rytíři a zombíci · PDF",
       secondaryDownload: "Stáhnout univerzální pravidla · PDF",
       primaryFile: "/downloads/vm-fantasy-battle-armies-knights-zombies.pdf",
-      secondaryFile: "/downloads/vm-fantasy-battle-rules-cs.pdf",
-      pdfNote: "A4 · tisk 100 % · 2 balíky armád + 2 akční série",
+      secondaryFile: "/downloads/vm-fantasy-battle-rules-cs-v3.pdf",
+      pdfNote: "A4 · tisk 100 % · oboustranně přes dlouhou hranu",
       faqTitle: "Časté otázky",
       faqs: [
         {
@@ -435,7 +435,7 @@ export const games: Record<GameKey, Game> = {
         },
         {
           q: "Které soubory potřebují čtyři hráči?",
-          a: "Stáhněte oba balíky armád (rytíře a nemrtvé i orky a skřety) a obě akční série (I a II). Každý hráč si vybere jednu armádu; Bitva ve čtyřech se hraje ve dvou týmech s celkem 36 kartami ATTACK a 18 kartami SUPPORT.",
+          a: "Vyberte libovolné čtyři různé armády z pěti balíků a obě akční série (I a II). Každý hráč si vybere jednu armádu; Bitva ve čtyřech se hraje ve dvou týmech s celkem 36 kartami ATTACK a 18 kartami SUPPORT.",
         },
       ],
       relatedEyebrow: "Zkuste jiný druh počítání",

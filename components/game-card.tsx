@@ -45,7 +45,7 @@ export function GameCard({ gameKey, locale }: { gameKey: GameKey; locale: Locale
         <ul className="game-meta" aria-label={locale === "cs" ? "Údaje o hře" : "Game facts"}>
           <li>
             <UsersRound aria-hidden="true" />
-            {game.players} {shared.players}
+            {gameKey === "fantasy" ? (locale === "cs" ? "Bitva 2–4 · Přebíjená 2–10" : "Battle 2–4 · High Card 2–10") : `${game.players} ${shared.players}`}
           </li>
           <li>
             <span className="meta-age" aria-hidden="true">

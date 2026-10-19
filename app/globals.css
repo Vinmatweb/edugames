@@ -1866,9 +1866,9 @@ a {
     "rules contents"
     "action-one contents"
     "action-two contents"
-    "knights-zombies dwarves-trolls"
+    "knights-zombies dwarves-skeletons"
     "orcs-goblins elves-dragons"
-    "fairies-wolves logs";
+    "fairies-animals logs";
   align-items: stretch;
 }
 .battle-downloads--fantasy .battle-download {
@@ -1879,8 +1879,8 @@ a {
 .battle-download--action-two { grid-area: action-two; }
 .battle-download--knights-zombies { grid-area: knights-zombies; }
 .battle-download--orcs-goblins { grid-area: orcs-goblins; }
-.battle-download--fairies-wolves { grid-area: fairies-wolves; }
-.battle-download--dwarves-trolls { grid-area: dwarves-trolls; }
+.battle-download--fairies-animals { grid-area: fairies-animals; }
+.battle-download--dwarves-skeletons { grid-area: dwarves-skeletons; }
 .battle-download--elves-dragons { grid-area: elves-dragons; }
 .battle-download--logs { grid-area: logs; }
 .battle-downloads--fantasy .contents-card {
@@ -1896,11 +1896,20 @@ a {
       "action-one"
       "action-two"
       "knights-zombies"
-      "dwarves-trolls"
+      "dwarves-skeletons"
       "orcs-goblins"
       "elves-dragons"
-      "fairies-wolves"
+      "fairies-animals"
       "logs"
       "contents";
   }
 }
+
+/* Approved card 10 and patron artwork, shown side by side. */
+.army-detail-image--pair { display: grid; grid-template-columns: repeat(2,minmax(0,1fr)); gap: 12px; align-content: center; padding: 20px; background: #eaf0f6; }
+.army-detail-image--pair figure { min-width: 0; margin: 0; }
+.army-detail-image--pair img { width: 100%; height: auto; min-height: 0; max-height: none; aspect-ratio: 62 / 84; object-fit: contain; border-radius: 10px; background: #dce5ee; }
+.army-detail-image--pair figcaption { margin-top: 10px; color: var(--navy); text-align: center; font-size: .78rem; font-weight: 750; line-height: 1.45; }
+.army-patron { flex-wrap: wrap; border-radius: 14px; }
+.mode-player-note { color: var(--navy); font-weight: 750; line-height: 1.6; }
+.patron-download { margin-top: 24px; }

@@ -9,215 +9,377 @@ import { assetPath, localPath, type Locale } from "@/lib/site";
 
 const armies = [
   {
-    id: "rytiri",
-    name: { cs: "Rytíři", en: "Knights" },
-    patron: { cs: "Strážný anděl", en: "Guardian Angel" },
-    image: "army-knights.webp",
-    thumbnail: "army-knights-thumb.webp",
-    imageAlt: { cs: "Modře odění rytíři a jejich Strážný anděl nad nimi", en: "Blue-armoured knights beneath their Guardian Angel" },
-    short: { cs: "Chrání své království silou, disciplínou a pevnou zbrojí.", en: "They defend their kingdom with strength, discipline and sturdy armour." },
-    paragraphs: {
-      cs: [
+    "id": "rytiri",
+    "name": {
+      "cs": "Rytíři",
+      "en": "Knights"
+    },
+    "patron": {
+      "cs": "Strážný anděl",
+      "en": "Guardian Angel"
+    },
+    "image": "army-knights.webp",
+    "thumbnail": "army-knights-thumb.webp",
+    "imageAlt": {
+      "cs": "Modře odění rytíři a jejich Strážný anděl nad nimi",
+      "en": "Blue-armoured knights beneath their Guardian Angel"
+    },
+    "short": {
+      "cs": "Chrání své království silou, disciplínou a pevnou zbrojí.",
+      "en": "They defend their kingdom with strength, discipline and sturdy armour."
+    },
+    "paragraphs": {
+      "cs": [
         "Odvážní rytíři chrání své království silou, disciplínou a pevnou zbrojí. Jejich patronem je anděl strážný, který nad armádou bdí.",
-        "Strážný anděl může jednou za Bitvu podpořit armádu o +5. Balík obsahuje karty rytířů a nemrtvých včetně patronů; akční karty a pravidla se stahují zvlášť.",
+        "Strážný anděl může jednou za Bitvu podpořit armádu o +5. Balík obsahuje karty rytířů a zombíků včetně patronů; akční karty a pravidla se stahují zvlášť."
       ],
-      en: [
+      "en": [
         "Brave knights defend their kingdom with strength, discipline and sturdy armour. Their Guardian Angel watches over the army.",
-        "The Guardian Angel can add +5 once per Battle. This pack contains the Knights and Zombies cards, including their patrons; action cards and rules are downloaded separately.",
-      ],
+        "The Guardian Angel can add +5 once per Battle. This pack contains the Knights and Zombies cards, including their patrons; action cards and rules are downloaded separately."
+      ]
     },
-    pack: { cs: "rytířů a nemrtvých", en: "Knights & Zombies" },
-    downloadFile: "vm-fantasy-battle-armies-knights-zombies.pdf",
+    "pack": {
+      "cs": "rytířů a zombíků",
+      "en": "Knights & Zombies"
+    },
+    "downloadFile": "vm-fantasy-battle-armies-knights-zombies.pdf",
+    "patronImage": null
   },
   {
-    id: "nemrtvi",
-    name: { cs: "Nemrtví", en: "Zombies" },
-    patron: { cs: "Nekromancer", en: "Necromancer" },
-    image: "army-undead.webp",
-    thumbnail: "army-undead-thumb.webp",
-    imageAlt: { cs: "Řady nemrtvých bojovníků vedené Nekromancerem se zelenou magií", en: "Ranks of undead warriors led by a Necromancer and green magic" },
-    short: { cs: "Neúnavně se valí vpřed pod vedením Nekromancera.", en: "They keep advancing under the Necromancer's command." },
-    paragraphs: {
-      cs: [
+    "id": "nemrtvi",
+    "name": {
+      "cs": "Zombíci",
+      "en": "Zombies"
+    },
+    "patron": {
+      "cs": "Nekromancer",
+      "en": "Necromancer"
+    },
+    "image": "army-undead.webp",
+    "thumbnail": "army-undead-thumb.webp",
+    "imageAlt": {
+      "cs": "Řady nemrtvých bojovníků vedené Nekromancerem se zelenou magií",
+      "en": "Ranks of undead warriors led by a Necromancer and green magic"
+    },
+    "short": {
+      "cs": "Neúnavně se valí vpřed pod vedením Nekromancera.",
+      "en": "They keep advancing under the Necromancer's command."
+    },
+    "paragraphs": {
+      "cs": [
         "Nemrtví se pomalu, ale neúnavně valí vpřed. Vede je nekromant, který svou temnou magií povolává další bojovníky.",
-        "Nekromancer může jednou za Bitvu podpořit armádu o +5. Balík obsahuje karty rytířů a nemrtvých včetně patronů; akční karty a pravidla se stahují zvlášť.",
+        "Nekromancer může jednou za Bitvu podpořit armádu o +5. Balík obsahuje karty rytířů a zombíků včetně patronů; akční karty a pravidla se stahují zvlášť."
       ],
-      en: [
+      "en": [
         "The Zombies advance slowly but relentlessly. Their Necromancer uses dark magic to call more fighters into the battle.",
-        "The Necromancer can add +5 once per Battle. This pack contains the Knights and Zombies cards, including their patrons; action cards and rules are downloaded separately.",
-      ],
+        "The Necromancer can add +5 once per Battle. This pack contains the Knights and Zombies cards, including their patrons; action cards and rules are downloaded separately."
+      ]
     },
-    pack: { cs: "rytířů a nemrtvých", en: "Knights & Zombies" },
-    downloadFile: "vm-fantasy-battle-armies-knights-zombies.pdf",
+    "pack": {
+      "cs": "rytířů a zombíků",
+      "en": "Knights & Zombies"
+    },
+    "downloadFile": "vm-fantasy-battle-armies-knights-zombies.pdf",
+    "patronImage": null
   },
   {
-    id: "orkove",
-    name: { cs: "Orkové", en: "Orcs" },
-    patron: { cs: "Orčí náčelník", en: "Orc Chieftain" },
-    image: "army-orcs.webp",
-    thumbnail: "army-orcs-thumb.webp",
-    imageAlt: { cs: "Mohutná orčí armáda s korunovaným vůdcem vepředu", en: "A mighty Orc army with its crowned leader at the front" },
-    short: { cs: "Síla, odolnost a neústupnost v čele s náčelníkem.", en: "Strength and resilience led by a determined chieftain." },
-    paragraphs: {
-      cs: [
+    "id": "orkove",
+    "name": {
+      "cs": "Orkové",
+      "en": "Orcs"
+    },
+    "patron": {
+      "cs": "Orčí náčelník",
+      "en": "Orc Chieftain"
+    },
+    "image": "army-orcs.webp",
+    "thumbnail": "army-orcs-thumb.webp",
+    "imageAlt": {
+      "cs": "Mohutná orčí armáda s korunovaným vůdcem vepředu",
+      "en": "A mighty Orc army with its crowned leader at the front"
+    },
+    "short": {
+      "cs": "Síla, odolnost a neústupnost v čele s náčelníkem.",
+      "en": "Strength and resilience led by a determined chieftain."
+    },
+    "paragraphs": {
+      "cs": [
         "Orčí bojovníci spoléhají na sílu, odolnost a neústupnost. Jejich náčelník stojí v čele armády a žene ji do bitvy.",
-        "Orčí náčelník může jednou za Bitvu podpořit armádu o +5. Balík obsahuje karty orků a skřetů včetně patronů; akční karty a pravidla se stahují zvlášť.",
+        "Orčí náčelník může jednou za Bitvu podpořit armádu o +5. Balík obsahuje karty orků a skřetů včetně patronů; akční karty a pravidla se stahují zvlášť."
       ],
-      en: [
+      "en": [
         "Orc warriors rely on strength, resilience and determination. Their chieftain leads from the front and drives the army into battle.",
-        "The Orc Chieftain can add +5 once per Battle. This pack contains the Orcs and Goblins cards, including their patrons; action cards and rules are downloaded separately.",
-      ],
+        "The Orc Chieftain can add +5 once per Battle. This pack contains the Orcs and Goblins cards, including their patrons; action cards and rules are downloaded separately."
+      ]
     },
-    pack: { cs: "orků a skřetů", en: "Orcs & Goblins" },
-    downloadFile: "vm-fantasy-battle-armies-orcs-goblins.pdf",
+    "pack": {
+      "cs": "orků a skřetů",
+      "en": "Orcs & Goblins"
+    },
+    "downloadFile": "vm-fantasy-battle-armies-orcs-goblins.pdf",
+    "patronImage": null
   },
   {
-    id: "skreti",
-    name: { cs: "Skřeti", en: "Goblins" },
-    patron: { cs: "Gobliní šaman", en: "Goblin Shaman" },
-    image: "army-goblins.webp",
-    thumbnail: "army-goblins-thumb.webp",
-    imageAlt: { cs: "Skřetí bojovníci vedení šamanem v kápi s magickou holí", en: "Goblin fighters led by a hooded shaman with a magical staff" },
-    short: { cs: "Mrštní a mazaní bojovníci, které vede šaman.", en: "Quick and cunning fighters guided by their shaman." },
-    paragraphs: {
-      cs: [
+    "id": "skreti",
+    "name": {
+      "cs": "Skřeti",
+      "en": "Goblins"
+    },
+    "patron": {
+      "cs": "Gobliní šaman",
+      "en": "Goblin Shaman"
+    },
+    "image": "army-goblins.webp",
+    "thumbnail": "army-goblins-thumb.webp",
+    "imageAlt": {
+      "cs": "Skřetí bojovníci vedení šamanem v kápi s magickou holí",
+      "en": "Goblin fighters led by a hooded shaman with a magical staff"
+    },
+    "short": {
+      "cs": "Mrštní a mazaní bojovníci, které vede šaman.",
+      "en": "Quick and cunning fighters guided by their shaman."
+    },
+    "paragraphs": {
+      "cs": [
         "Skřeti jsou mrštní a mazaní protivníci, kteří dokážou překvapit i silnější armádu. Jejich šaman je vede pomocí lstí a magie.",
-        "Gobliní šaman může jednou za Bitvu podpořit armádu o +5. Balík obsahuje karty orků a skřetů včetně patronů; akční karty a pravidla se stahují zvlášť.",
+        "Gobliní šaman může jednou za Bitvu podpořit armádu o +5. Balík obsahuje karty orků a skřetů včetně patronů; akční karty a pravidla se stahují zvlášť."
       ],
-      en: [
+      "en": [
         "Goblins are nimble, cunning opponents who can surprise even a stronger army. Their shaman guides them with tricks and magic.",
-        "The Goblin Shaman can add +5 once per Battle. This pack contains the Orcs and Goblins cards, including their patrons; action cards and rules are downloaded separately.",
-      ],
+        "The Goblin Shaman can add +5 once per Battle. This pack contains the Orcs and Goblins cards, including their patrons; action cards and rules are downloaded separately."
+      ]
     },
-    pack: { cs: "orků a skřetů", en: "Orcs & Goblins" },
-    downloadFile: "vm-fantasy-battle-armies-orcs-goblins.pdf",
+    "pack": {
+      "cs": "orků a skřetů",
+      "en": "Orcs & Goblins"
+    },
+    "downloadFile": "vm-fantasy-battle-armies-orcs-goblins.pdf",
+    "patronImage": null
   },
   {
-    id: "vily",
-    name: { cs: "Víly", en: "Fairies" },
-    patron: { cs: "Smaragdová královna", en: "Emerald Queen" },
-    image: "army-fairies.webp",
-    thumbnail: "army-fairies-thumb.webp",
-    imageAlt: { cs: "Smaragdová královna vede deset víl z kouzelného lesa", en: "The Emerald Queen leads ten fairies from an enchanted forest" },
-    short: { cs: "Obratné bojovnice z kouzelného lesa vedené smaragdovou královnou.", en: "Agile forest fighters led by the Emerald Queen." },
-    paragraphs: {
-      cs: [
+    "id": "vily",
+    "name": {
+      "cs": "Víly",
+      "en": "Fairies"
+    },
+    "patron": {
+      "cs": "Smaragdová královna",
+      "en": "Emerald Queen"
+    },
+    "image": "cards-fairies-10.webp",
+    "thumbnail": "cards-fairies-10-thumb.webp",
+    "imageAlt": {
+      "cs": "Karta 10 armády Víly",
+      "en": "Card 10 from the Fairies army"
+    },
+    "short": {
+      "cs": "Bojovnice i bojovníci s křídly a kouzly pod ochranou své královny.",
+      "en": "Agile forest fighters led by the Emerald Queen."
+    },
+    "paragraphs": {
+      "cs": [
         "Víly z kouzelného lesa spojují rychlost, obratnost a magii. Jejich armádu vede smaragdová královna, která chrání svůj lid.",
-        "Smaragdová královna může jednou za Bitvu podpořit armádu o +5. Karty víl a vlků včetně jejich patronů najdeš ve společném PDF balíku.",
+        "Smaragdová královna může jednou za Bitvu podpořit armádu o +5. Karty víl a zvířat včetně jejich patronů najdeš ve společném PDF balíku."
       ],
-      en: [
+      "en": [
         "Fairies from the enchanted forest combine speed, agility and magic. The Emerald Queen leads the army and protects her people.",
-        "The Emerald Queen can add +5 once per Battle. The Fairies and Wolves cards, including their patrons, are in one shared PDF pack.",
-      ],
+        "The Emerald Queen can add +5 once per Battle. The Fairies and Animals cards, including their patrons, are in one shared PDF pack."
+      ]
     },
-    pack: { cs: "víl a vlků", en: "Fairies & Wolves" },
-    downloadFile: "vm-fantasy-battle-armies-fairies-wolves.pdf",
+    "pack": {
+      "cs": "víl a zvířat",
+      "en": "Fairies & Animals"
+    },
+    "downloadFile": "vm-fantasy-battle-armies-fairies-animals-v7.pdf",
+    "patronImage": "cards-fairies-patron.webp"
   },
   {
-    id: "vlci",
-    name: { cs: "Vlci", en: "Wolves" },
-    patron: { cs: "Vlčí alfa", en: "Wolf Alpha" },
-    image: "army-wolves.webp",
-    thumbnail: "army-wolves-thumb.webp",
-    imageAlt: { cs: "Vlčí smečku pod měsíční oblohou vede její alfa", en: "A wolf pack led by its Alpha beneath the moonlit sky" },
-    short: { cs: "Smečka spoléhá na rychlost, souhru a instinkt.", en: "The pack relies on speed, teamwork and instinct." },
-    paragraphs: {
-      cs: [
-        "Vlčí smečka spoléhá na rychlost, souhru a instinkt. Pod měsíční oblohou ji vede Alfa, který drží smečku pohromadě.",
-        "Vlčí alfa může jednou za Bitvu podpořit armádu o +5. Karty vlků a víl včetně jejich patronů najdeš ve společném PDF balíku.",
-      ],
-      en: [
-        "The wolf pack relies on speed, teamwork and instinct. Beneath the moonlit sky, its Alpha keeps the pack together.",
-        "The Wolf Alpha can add +5 once per Battle. The Wolves and Fairies cards, including their patrons, are in one shared PDF pack.",
-      ],
+    "id": "zvirata",
+    "name": {
+      "cs": "Zvířata",
+      "en": "Animals"
     },
-    pack: { cs: "víl a vlků", en: "Fairies & Wolves" },
-    downloadFile: "vm-fantasy-battle-armies-fairies-wolves.pdf",
+    "patron": {
+      "cs": "Král zvířat",
+      "en": "King of Beasts"
+    },
+    "image": "cards-animals-10.webp",
+    "thumbnail": "cards-animals-patron-thumb.webp",
+    "patronImage": "cards-animals-patron.webp",
+    "imageAlt": {
+      "cs": "Drak na kartě zvířecí armády s hodnotou 10",
+      "en": "The dragon on the Animals army card with a strength of 10"
+    },
+    "short": {
+      "cs": "Od bojové krysy po draka. Sílu pomáhají spočítat zlaté stopy.",
+      "en": "From a battle rat to a dragon. Golden paw prints help count each card’s strength."
+    },
+    "paragraphs": {
+      "cs": [
+        "Zvířecí armáda spoléhá na sílu zubů, klů a drápů. Každá karta představuje jedno zvíře v brnění, od malé krysy až po draka s hodnotou 10.",
+        "Číslo vyjadřuje sílu zvířete, nikoli počet zvířat na obrázku. Na kartách od 2 výše pomáhá hodnotu spočítat stejný počet zlatých stop. Lev patří výhradně patronovi: mohutnému Králi zvířat.",
+        "Král zvířat přidává jednou za Bitvu +5. V přebíjené je patron nejsilnější kartou. Zvířata nahrazují původní vlky a sdílejí balík s vílami."
+      ],
+      "en": [
+        "The Animals army draws its power from teeth, tusks and claws. Each card shows one armoured animal, from a small rat to a dragon with a strength of 10.",
+        "The number shows the animal’s strength, not how many animals are pictured. On cards from 2 upwards, a matching number of golden paw prints helps children count the value. The lion appears only as the mighty King of Beasts patron.",
+        "The King of Beasts adds +5 once per Battle. In High Card Battle, a patron beats every numbered card. Animals replace the original Wolves army and share a pack with the Fairies."
+      ]
+    },
+    "pack": {
+      "cs": "víl a zvířat",
+      "en": "Fairies & Animals"
+    },
+    "downloadFile": "vm-fantasy-battle-armies-fairies-animals-v7.pdf"
   },
   {
-    id: "trpaslici",
-    name: { cs: "Trpaslíci", en: "Dwarves" },
-    patron: { cs: "Král pod horou", en: "Mountain King" },
-    image: "army-dwarves.webp",
-    thumbnail: "army-dwarves-thumb.webp",
-    imageAlt: { cs: "Deset trpaslíků chrání horskou pevnost pod vedením krále", en: "Ten Dwarves defend their mountain fortress under their king" },
-    short: { cs: "Houževnatí obránci horských pevností s králem v čele.", en: "Stout defenders of mountain strongholds, led by their king." },
-    paragraphs: {
-      cs: [
+    "id": "trpaslici",
+    "name": {
+      "cs": "Trpaslíci",
+      "en": "Dwarves"
+    },
+    "patron": {
+      "cs": "Král pod horou",
+      "en": "Mountain King"
+    },
+    "image": "cards-dwarves-10.webp",
+    "thumbnail": "cards-dwarves-10-thumb.webp",
+    "imageAlt": {
+      "cs": "Karta 10 armády Trpaslíci",
+      "en": "Card 10 from the Dwarves army"
+    },
+    "short": {
+      "cs": "Houževnatí obránci horských pevností s králem v čele.",
+      "en": "Stout defenders of mountain strongholds, led by their king."
+    },
+    "paragraphs": {
+      "cs": [
         "Trpaslíci z horských pevností spoléhají na pevné brnění, zkušenosti a vytrvalost. Král pod horou vede jejich obranu.",
-        "Král pod horou může jednou za Bitvu podpořit armádu o +5. Karty trpaslíků a trollů včetně jejich patronů jsou v jednom PDF balíku.",
+        "Král pod horou může jednou za Bitvu podpořit armádu o +5. Karty trpaslíků a kostlivců včetně jejich patronů jsou v jednom PDF balíku."
       ],
-      en: [
+      "en": [
         "Dwarves from the mountain strongholds rely on sturdy armour, experience and endurance. The Mountain King leads their defence.",
-        "The Mountain King can add +5 once per Battle. The Dwarves and Trolls cards, including their patrons, are in one shared PDF pack.",
-      ],
+        "The Mountain King can add +5 once per Battle. The Dwarves and Skeletons cards, including their patrons, are in one shared PDF pack."
+      ]
     },
-    pack: { cs: "trpaslíků a trollů", en: "Dwarves & Trolls" },
-    downloadFile: "vm-fantasy-battle-armies-dwarves-trolls.pdf",
+    "pack": {
+      "cs": "trpaslíků a kostlivců",
+      "en": "Dwarves & Skeletons"
+    },
+    "downloadFile": "vm-fantasy-battle-armies-dwarves-skeletons-v1.pdf",
+    "patronImage": "cards-dwarves-patron.webp"
   },
   {
-    id: "elfove",
-    name: { cs: "Elfové", en: "Elves" },
-    patron: { cs: "Elfí patron", en: "Elven Patron" },
-    image: "army-elves.webp",
-    thumbnail: "army-elves-thumb.webp",
-    imageAlt: { cs: "Deset elfích bojovníků v tichém stříbrném lese", en: "Ten Elven fighters in a quiet silver forest" },
-    short: { cs: "Přesní bojovníci, kteří čerpají sílu z lesní magie.", en: "Precise fighters drawing strength from forest magic." },
-    paragraphs: {
-      cs: [
+    "id": "elfove",
+    "name": {
+      "cs": "Elfové",
+      "en": "Elves"
+    },
+    "patron": {
+      "cs": "Elfí patronka",
+      "en": "Elven Queen"
+    },
+    "image": "cards-elves-10.webp",
+    "thumbnail": "cards-elves-10-thumb.webp",
+    "imageAlt": {
+      "cs": "Karta 10 armády Elfové",
+      "en": "Card 10 from the Elves army"
+    },
+    "short": {
+      "cs": "Přesní bojovníci, kteří čerpají sílu z lesní magie.",
+      "en": "Precise fighters drawing strength from forest magic."
+    },
+    "paragraphs": {
+      "cs": [
         "Elfové spojují obratnost, přesné údery a kouzelnou sílu přírody. Ve stříbrném lese brání své území s rozvahou.",
-        "Elfí patron může jednou za Bitvu podpořit armádu o +5. Karty elfů a draků včetně jejich patronů jsou v jednom PDF balíku.",
+        "Elfí patronka se zářivou aurou chrání celou armádu. Jednou za Bitvu může přidat +5; v přebíjené poráží každou číselnou kartu."
       ],
-      en: [
+      "en": [
         "Elves combine agility, precise strikes and the magic of nature. They defend their silver forest with patience and care.",
-        "The Elven Patron can add +5 once per Battle. The Elves and Dragons cards, including their patrons, are in one shared PDF pack.",
-      ],
+        "The Elven Queen radiates a protective aura. Once per Battle, she can add +5; in High Card Battle, her card beats every numbered card."
+      ]
     },
-    pack: { cs: "elfů a draků", en: "Elves & Dragons" },
-    downloadFile: "vm-fantasy-battle-armies-elves-dragons.pdf",
+    "pack": {
+      "cs": "elfů a draků",
+      "en": "Elves & Dragons"
+    },
+    "downloadFile": "vm-fantasy-battle-armies-elves-dragons-v3.pdf",
+    "patronImage": "cards-elves-patron.webp"
   },
   {
-    id: "draci",
-    name: { cs: "Draci", en: "Dragons" },
-    patron: { cs: "Dračí patron", en: "Dragon Patron" },
-    image: "army-dragons.webp",
-    thumbnail: "army-dragons-thumb.webp",
-    imageAlt: { cs: "Deset draků stojí v údolí pod ochranou fialového patrona", en: "Ten dragons gather in a valley beneath their purple patron" },
-    short: { cs: "Mocná letka draků s patronem, který chrání celé údolí.", en: "A mighty flight of dragons protected by their patron." },
-    paragraphs: {
-      cs: [
+    "id": "draci",
+    "name": {
+      "cs": "Draci",
+      "en": "Dragons"
+    },
+    "patron": {
+      "cs": "Dračí patron",
+      "en": "Dragon Patron"
+    },
+    "image": "cards-dragons-10.webp",
+    "thumbnail": "cards-dragons-10-thumb.webp",
+    "imageAlt": {
+      "cs": "Karta 10 armády Draci",
+      "en": "Card 10 from the Dragons army"
+    },
+    "short": {
+      "cs": "Mocná letka draků s patronem, který chrání celé údolí.",
+      "en": "A mighty flight of dragons protected by their patron."
+    },
+    "paragraphs": {
+      "cs": [
         "Draci ovládají bojiště svou silou, křídly a odvahou. V čele legie stojí mocný patron, který chrání celé dračí údolí.",
-        "Dračí patron může jednou za Bitvu podpořit armádu o +5. Karty draků a elfů včetně jejich patronů jsou v jednom PDF balíku.",
+        "Dračí patron může jednou za Bitvu podpořit armádu o +5. Karty draků a elfů včetně jejich patronů jsou v jednom PDF balíku."
       ],
-      en: [
+      "en": [
         "Dragons command the battlefield with their strength, wings and courage. Their powerful patron protects the whole legion.",
-        "The Dragon Patron can add +5 once per Battle. The Dragons and Elves cards, including their patrons, are in one shared PDF pack.",
-      ],
+        "The Dragon Patron can add +5 once per Battle. The Dragons and Elves cards, including their patrons, are in one shared PDF pack."
+      ]
     },
-    pack: { cs: "elfů a draků", en: "Elves & Dragons" },
-    downloadFile: "vm-fantasy-battle-armies-elves-dragons.pdf",
+    "pack": {
+      "cs": "elfů a draků",
+      "en": "Elves & Dragons"
+    },
+    "downloadFile": "vm-fantasy-battle-armies-elves-dragons-v3.pdf",
+    "patronImage": "cards-dragons-patron.webp"
   },
   {
-    id: "trollove",
-    name: { cs: "Trollové", en: "Trolls" },
-    patron: { cs: "Korunovaný šampion", en: "Crowned Champion" },
-    image: "army-trolls.webp",
-    thumbnail: "army-trolls-thumb.webp",
-    imageAlt: { cs: "Mohutní trollové po boku svého korunovaného šampiona", en: "Mighty trolls stand beside their crowned champion" },
-    short: { cs: "Mohutní a vytrvalí bojovníci vedení korunovaným šampionem.", en: "Mighty, resilient fighters led by their crowned champion." },
-    paragraphs: {
-      cs: [
-        "Mohutní trollové se jen tak nezastaví. Do bitvy přinášejí hrubou sílu a vytrvalost; jejich korunovaný šampion stojí v čele.",
-        "Korunovaný šampion může jednou za Bitvu podpořit armádu o +5. Karty trollů a trpaslíků včetně jejich patronů jsou v jednom PDF balíku.",
-      ],
-      en: [
-        "Mighty trolls are hard to stop. They bring raw strength and endurance to battle, with their Crowned Champion at the front.",
-        "The Crowned Champion can add +5 once per Battle. The Trolls and Dwarves cards, including their patrons, are in one shared PDF pack.",
-      ],
+    "id": "kostlivci",
+    "name": {
+      "cs": "Kostlivci",
+      "en": "Skeletons"
     },
-    pack: { cs: "trpaslíků a trollů", en: "Dwarves & Trolls" },
-    downloadFile: "vm-fantasy-battle-armies-dwarves-trolls.pdf",
-  },
+    "patron": {
+      "cs": "Král kostlivců",
+      "en": "Skeleton King"
+    },
+    "image": "cards-skeletons-10.webp",
+    "thumbnail": "cards-skeletons-10-thumb.webp",
+    "patronImage": "cards-skeletons-patron.webp",
+    "imageAlt": {
+      "cs": "Deset kostlivých bojovníků na kartě s hodnotou 10",
+      "en": "Ten skeletal warriors on the card with a value of 10"
+    },
+    "short": {
+      "cs": "Kostlivá legie v prastaré zbroji pod velením svého krále.",
+      "en": "A skeletal legion in ancient armour, commanded by its king."
+    },
+    "paragraphs": {
+      "cs": [
+        "Kostlivci vyrážejí ze starých pevností v oprýskané zbroji. Na každé kartě stojí různě vyzbrojení bojovníci a jejich počet odpovídá hodnotě karty.",
+        "Král kostlivců září temnou magií a drží celou legii pohromadě. Jednou za Bitvu může přidat +5; v přebíjené jeho karta poráží každé číslo. Kostní béžovošedá barva odlišuje armádu od ostatních."
+      ],
+      "en": [
+        "Skeletons march from ancient strongholds in weathered armour. Each card features distinct warriors, and their count matches the card’s value.",
+        "The Skeleton King radiates dark magic and holds the legion together. Once per Battle, he can add +5; in High Card Battle, his card beats every number. Bone-grey beige makes this army easy to recognise."
+      ]
+    },
+    "pack": {
+      "cs": "trpaslíků a kostlivců",
+      "en": "Dwarves & Skeletons"
+    },
+    "downloadFile": "vm-fantasy-battle-armies-dwarves-skeletons-v1.pdf"
+  }
 ] as const;
 
 function galleryPath(locale: Locale) {
@@ -254,7 +416,7 @@ export function FantasyArmySelector({ locale }: { locale: Locale }) {
             >
               <img
                 src={assetPath("/images/fantasy-armies/" + army.thumbnail)}
-                alt={army.imageAlt[locale]}
+                alt={army.id === "zvirata" ? army.patron[locale] : army.imageAlt[locale]}
                 width={320}
                 height={400}
                 loading="lazy"
@@ -293,8 +455,8 @@ export function FantasyArmiesPage({ locale }: { locale: Locale }) {
           <h1>{isCs ? "Poznej všech deset armád" : "Meet all ten armies"}</h1>
           <p>
             {isCs
-              ? "Každá armáda má vlastní ilustraci a patrona. Všechny používají stejná pravidla; vyber si proto hlavně podle toho, za koho chceš hrát."
-              : "Each army has its own illustration and patron. They all use the same rules, so choose the one you would most like to play."}
+              ? "Deset armád, pět balíků karet a dva způsoby hraní. Bitva je pro 2–4 hráče, přebíjená pro 2–10. Zvířata nahradila vlky a kostlivci sdílejí balík s trpaslíky."
+              : "Ten armies, five card packs and two ways to play. Battle is for 2–4 players and High Card Battle for 2–10. Animals replace Wolves, and Skeletons share a pack with Dwarves."}
           </p>
         </header>
 
@@ -309,14 +471,11 @@ export function FantasyArmiesPage({ locale }: { locale: Locale }) {
                   (index % 2 === 1 ? " army-detail-card--reverse" : "")
                 }
               >
-                <div className="army-detail-image">
-                  <img
-                    src={assetPath("/images/fantasy-armies/" + army.image)}
-                    alt={army.imageAlt[locale]}
-                    width={800}
-                    height={1000}
-                    loading={index === 0 ? "eager" : "lazy"}
-                  />
+                <div className={"army-detail-image" + (army.patronImage ? " army-detail-image--pair" : "")}>
+                  {army.patronImage ? <>
+                    <figure><img src={assetPath("/images/fantasy-armies/" + army.image)} alt={army.imageAlt[locale]} width={744} height={1008} loading="lazy" /><figcaption>{isCs ? "Karta 10" : "Card 10"}</figcaption></figure>
+                    <figure><img src={assetPath("/images/fantasy-armies/" + army.patronImage)} alt={army.patron[locale]} width={744} height={1008} loading="lazy" /><figcaption>{army.patron[locale]} · +5</figcaption></figure>
+                  </> : <img src={assetPath("/images/fantasy-armies/" + army.image)} alt={army.imageAlt[locale]} width={800} height={1000} loading={index === 0 ? "eager" : "lazy"} />}
                 </div>
                 <div className="army-detail-copy">
                   <span className="army-detail-number">

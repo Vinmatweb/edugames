@@ -89,6 +89,8 @@ export function GamePage({ gameKey, locale }: { gameKey: GameKey; locale: Locale
               </li>
             </ul>
 
+            {gameKey === "fantasy" && <p className="mode-player-note">{locale === "cs" ? "Bitva: 2–4 hráči · Přebíjená: 2–10 hráčů" : "Battle: 2–4 players · High Card Battle: 2–10 players"}</p>}
+
             <div className="hero-actions">
               <a
                 className={buttonVariants({
@@ -192,16 +194,16 @@ export function GamePage({ gameKey, locale }: { gameKey: GameKey; locale: Locale
           {gameKey === "fantasy" ? (
             <div className="mode-grid">
               <article>
-                <h3>{locale === "cs" ? "Bitva · počítání" : "Battle · arithmetic"}</h3>
+                <h3>{locale === "cs" ? "Bitva · počítání · 2–4 hráči" : "Battle · arithmetic · 2–4 players"}</h3>
                 <p>{locale === "cs" ? "Útoky a posily procvičují sčítání a odčítání. Vyberte jednu ze tří obtížností:" : "Attacks and support practise addition and subtraction. Choose one of three difficulty levels:"}</p>
                 <ul className="battle-levels">
                   {copy.modes.slice(0, 3).map((mode) => <li key={mode.title}><h4>{mode.title}</h4><p>{mode.text}</p></li>)}
                 </ul>
               </article>
               <article>
-                <h3>{locale === "cs" ? "Souboj · porovnávání (přebíjená)" : "Duel · comparing numbers (high-card game)"}</h3>
+                <h3>{locale === "cs" ? "Přebíjená · porovnávání · 2–10 hráčů" : "High Card Battle · comparing · 2–10 players"}</h3>
                 <p>{copy.modes[3].text}</p>
-                <p>{locale === "cs" ? "Každý hráč použije 18 karet jedné armády. Karty ATTACK, SUPPORT a patroni zůstanou stranou. Jakmile někdo na začátku kola nemůže otočit kartu, hra končí. Dojdou-li karty při remíze, za poslední kolo se bod neuděluje." : "Each player uses the 18 cards of one army. Leave ATTACK, SUPPORT and patron cards aside. The game ends when a player cannot reveal a card at the start of a round. If cards run out during a tie, no point is awarded for that last round."}</p>
+                <p>{locale === "cs" ? "Hraje se, dokud mohou proti sobě otočit kartu alespoň dva hráči. Pokud při rozstřelu může pokračovat právě jeden z hráčů ve shodě, bere všechny karty na stole. Pokud žádný, hra končí a nerozhodnuté karty se nepočítají. Karty zbylé v balíčku se započítají. Při shodném výsledku je remíza." : "Keep playing while at least two players can reveal a card against each other. If exactly one tied player can continue a showdown, they take every card on the table. If none can continue, the game ends and those unresolved cards do not count. Count cards left in your deck too. Equal final totals are a draw."}</p>
               </article>
             </div>
           ) : (
@@ -222,11 +224,12 @@ export function GamePage({ gameKey, locale }: { gameKey: GameKey; locale: Locale
                 {copy.pdfNote}
               </p>
               {gameKey === "fantasy" ? (
+                <>
                 <div className="battle-downloads battle-downloads--fantasy">
                   <div className="battle-download battle-download--rules">
                     <h3>{locale === "cs" ? "Návod · čeština" : "Rules · English"}</h3>
-                    <p>{locale === "cs" ? "Opravená pravidla pro Bitvu i Přebíjenou. Formát A5, tisk na A4." : "Updated rules for Battle and High Card Clash. A5 booklet printed on A4."}</p>
-                    <a className={buttonVariants({variant: "outline", className: "button-secondary"})} href={assetPath(locale === "cs" ? "/downloads/vm-fantasy-battle-rules-cs-v2.pdf" : "/downloads/vm-fantasy-battle-rules-en-v2.pdf")} download><Download aria-hidden="true" />{locale === "cs" ? "Stáhnout PDF" : "Download PDF"}</a>
+                    <p>{locale === "cs" ? "Bitva pro 2–4 hráče a přebíjená pro 2–10. Formát A5, tisk na A4." : "Battle for 2–4 and High Card Battle for 2–10. A5 booklet printed on A4."}</p>
+                    <a className={buttonVariants({variant: "outline", className: "button-secondary"})} href={assetPath(locale === "cs" ? "/downloads/vm-fantasy-battle-rules-cs-v3.pdf" : "/downloads/vm-fantasy-battle-rules-en-v3.pdf")} download><Download aria-hidden="true" />{locale === "cs" ? "Stáhnout PDF" : "Download PDF"}</a>
                   </div>
                   <div className="battle-download battle-download--action-one">
                     <h3>{locale === "cs" ? "Akční karty · série I" : "Action cards · Set I"}</h3>
@@ -239,7 +242,7 @@ export function GamePage({ gameKey, locale }: { gameKey: GameKey; locale: Locale
                     <a className={buttonVariants({variant: "outline", className: "button-secondary"})} href={assetPath("/downloads/vm-fantasy-battle-actions-ii.pdf")} download><Download aria-hidden="true" />{locale === "cs" ? "Stáhnout PDF" : "Download PDF"}</a>
                   </div>
                   <div className="battle-download battle-download--knights-zombies">
-                    <h3>{locale === "cs" ? "Rytíři a nemrtví" : "Knights & Zombies"}</h3>
+                    <h3>{locale === "cs" ? "Rytíři a zombíci" : "Knights & Zombies"}</h3>
                     <p>{locale === "cs" ? "Dvě armády a jejich patroni +5. 10 stran A4 včetně rubů." : "Two armies and their +5 patrons. 10 A4 pages including backs."}</p>
                     <a className={buttonVariants({variant: "outline", className: "button-secondary"})} href={assetPath("/downloads/vm-fantasy-battle-armies-knights-zombies.pdf")} download><Download aria-hidden="true" />{locale === "cs" ? "Stáhnout PDF" : "Download PDF"}</a>
                   </div>
@@ -248,20 +251,20 @@ export function GamePage({ gameKey, locale }: { gameKey: GameKey; locale: Locale
                     <p>{locale === "cs" ? "Dvě armády a jejich patroni +5. 10 stran A4 včetně rubů." : "Two armies and their +5 patrons. 10 A4 pages including backs."}</p>
                     <a className={buttonVariants({variant: "outline", className: "button-secondary"})} href={assetPath("/downloads/vm-fantasy-battle-armies-orcs-goblins.pdf")} download><Download aria-hidden="true" />{locale === "cs" ? "Stáhnout PDF" : "Download PDF"}</a>
                   </div>
-                  <div className="battle-download battle-download--fairies-wolves">
-                    <h3>{locale === "cs" ? "Víly a vlci" : "Fairies & Wolves"}</h3>
+                  <div className="battle-download battle-download--fairies-animals">
+                    <h3>{locale === "cs" ? "Víly a zvířata" : "Fairies & Animals"}</h3>
                     <p>{locale === "cs" ? "Dvě armády a jejich patroni +5. 10 stran A4 včetně rubů." : "Two armies and their +5 patrons. 10 A4 pages including backs."}</p>
-                    <a className={buttonVariants({variant: "outline", className: "button-secondary"})} href={assetPath("/downloads/vm-fantasy-battle-armies-fairies-wolves.pdf")} download><Download aria-hidden="true" />{locale === "cs" ? "Stáhnout PDF" : "Download PDF"}</a>
+                    <a className={buttonVariants({variant: "outline", className: "button-secondary"})} href={assetPath("/downloads/vm-fantasy-battle-armies-fairies-animals-v7.pdf")} download><Download aria-hidden="true" />{locale === "cs" ? "Stáhnout PDF" : "Download PDF"}</a>
                   </div>
-                  <div className="battle-download battle-download--dwarves-trolls">
-                    <h3>{locale === "cs" ? "Trpaslíci a trollové" : "Dwarves & Trolls"}</h3>
-                    <p>{locale === "cs" ? "Dvě armády a jejich patroni +5. 12 stran A4 včetně rubů." : "Two armies and their +5 patrons. 12 A4 pages including backs."}</p>
-                    <a className={buttonVariants({variant: "outline", className: "button-secondary"})} href={assetPath("/downloads/vm-fantasy-battle-armies-dwarves-trolls.pdf")} download><Download aria-hidden="true" />{locale === "cs" ? "Stáhnout PDF" : "Download PDF"}</a>
+                  <div className="battle-download battle-download--dwarves-skeletons">
+                    <h3>{locale === "cs" ? "Trpaslíci a kostlivci" : "Dwarves & Skeletons"}</h3>
+                    <p>{locale === "cs" ? "Dvě armády a jejich patroni +5. 10 stran A4 včetně rubů." : "Two armies and their +5 patrons. 10 A4 pages including backs."}</p>
+                    <a className={buttonVariants({variant: "outline", className: "button-secondary"})} href={assetPath("/downloads/vm-fantasy-battle-armies-dwarves-skeletons-v1.pdf")} download><Download aria-hidden="true" />{locale === "cs" ? "Stáhnout PDF" : "Download PDF"}</a>
                   </div>
                   <div className="battle-download battle-download--elves-dragons">
                     <h3>{locale === "cs" ? "Elfové a draci" : "Elves & Dragons"}</h3>
-                    <p>{locale === "cs" ? "Dvě armády a jejich patroni +5. 12 stran A4 včetně rubů." : "Two armies and their +5 patrons. 12 A4 pages including backs."}</p>
-                    <a className={buttonVariants({variant: "outline", className: "button-secondary"})} href={assetPath("/downloads/vm-fantasy-battle-armies-elves-dragons.pdf")} download><Download aria-hidden="true" />{locale === "cs" ? "Stáhnout PDF" : "Download PDF"}</a>
+                    <p>{locale === "cs" ? "Dvě armády a jejich patroni +5. 10 stran A4 včetně rubů." : "Two armies and their +5 patrons. 10 A4 pages including backs."}</p>
+                    <a className={buttonVariants({variant: "outline", className: "button-secondary"})} href={assetPath("/downloads/vm-fantasy-battle-armies-elves-dragons-v3.pdf")} download><Download aria-hidden="true" />{locale === "cs" ? "Stáhnout PDF" : "Download PDF"}</a>
                   </div>
                   <div className="battle-download battle-download--logs">
                     <h3>{locale === "cs" ? "Battle Logy" : "Battle Logs"}</h3>
@@ -270,6 +273,12 @@ export function GamePage({ gameKey, locale }: { gameKey: GameKey; locale: Locale
                   </div>
                   {contentsCard}
                 </div>
+                <div className="battle-download patron-download">
+                  <h3>{locale === "cs" ? "Samostatný list čtyř patronů" : "Four patrons on one sheet"}</h3>
+                  <p>{locale === "cs" ? "Trpaslíci, kostlivci, elfové a draci. Všichni čtyři patroni na jednom líci A4, odpovídající ruby na druhé straně." : "Dwarves, Skeletons, Elves and Dragons. All four patrons on one A4 front, with matching backs on the second page."}</p>
+                  <a className={buttonVariants({variant: "outline", className: "button-secondary"})} href={assetPath("/downloads/vm-fantasy-battle-patrons-dwarves-skeletons-elves-dragons-v1.pdf")} download><Download aria-hidden="true" />{locale === "cs" ? "Stáhnout patrony · PDF" : "Download patrons · PDF"}</a>
+                </div>
+                </>
               ) : (
                 <div className="battle-downloads">
                   {[
