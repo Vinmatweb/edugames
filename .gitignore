@@ -44,3 +44,8 @@ next-env.d.ts
 /.codex/
 /outputs/
 /work/
+
+# Exact printable PDFs assembled from versioned binary parts during build.
+/public/downloads/vm-fantasy-battle-armies-fairies-animals-v7.pdf
+/public/downloads/vm-fantasy-battle-armies-dwarves-skeletons-v1.pdf
+/public/downloads/vm-fantasy-battle-armies-elves-dragons-v3.pdf

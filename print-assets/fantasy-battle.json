@@ -1,0 +1,141 @@
+{
+  "version": 1,
+  "files": [
+    {
+      "output": "public/downloads/vm-fantasy-battle-armies-fairies-animals-v7.pdf",
+      "size": 28231796,
+      "sha256": "4bab015ecefa29104b56ea5331788bf562cd14c4e1d7895431c0ee7655a9c4ce",
+      "parts": [
+        {
+          "path": "print-assets/fantasy-battle/fairies-animals-v7/part-00.bin",
+          "size": 4194304,
+          "sha256": "c13ac5d071c66278d077b56b96b938bcc7d9ddc89e20257895ad31428959bc98"
+        },
+        {
+          "path": "print-assets/fantasy-battle/fairies-animals-v7/part-01.bin",
+          "size": 4194304,
+          "sha256": "28bb514c04402fd61216eee1505bf8617fc555772d521ed60410f3340cbe9a0e"
+        },
+        {
+          "path": "print-assets/fantasy-battle/fairies-animals-v7/part-02.bin",
+          "size": 4194304,
+          "sha256": "5e5d037be3b2310fac00d47bef905ee3e9beac468fd2f87bc24d9bcf21a06014"
+        },
+        {
+          "path": "print-assets/fantasy-battle/fairies-animals-v7/part-03.bin",
+          "size": 4194304,
+          "sha256": "9d4374c9b7098d43230f73aec66f7ac9d6c14d35e7b498c93e656e31bb0e95a8"
+        },
+        {
+          "path": "print-assets/fantasy-battle/fairies-animals-v7/part-04.bin",
+          "size": 4194304,
+          "sha256": "feece26eb6f016621a516f4142e9b2f5c8de0ddcf4e9960e39a935131178cc38"
+        },
+        {
+          "path": "print-assets/fantasy-battle/fairies-animals-v7/part-05.bin",
+          "size": 4194304,
+          "sha256": "6f8fbf10719aa41bc0017932dc8d3824021a76fc84f3b34723a6ecf1c7d8dfec"
+        },
+        {
+          "path": "print-assets/fantasy-battle/fairies-animals-v7/part-06.bin",
+          "size": 3065972,
+          "sha256": "be311f2665a7fb687e9a62a8dfabc6ccf8e783d418b6c44a6949983391386397"
+        }
+      ]
+    },
+    {
+      "output": "public/downloads/vm-fantasy-battle-armies-dwarves-skeletons-v1.pdf",
+      "size": 32560084,
+      "sha256": "81db17b7a28b7f58641d51c859c0827fff5ca70e74e91af221c6902f82c81367",
+      "parts": [
+        {
+          "path": "print-assets/fantasy-battle/dwarves-skeletons-v1/part-00.bin",
+          "size": 4194304,
+          "sha256": "72fbd3c35c0ad4d932ffdeaf21ee93089f00e83d31fece4b7abf748812482970"
+        },
+        {
+          "path": "print-assets/fantasy-battle/dwarves-skeletons-v1/part-01.bin",
+          "size": 4194304,
+          "sha256": "41d5aaf920e44c64713b23d4a2c757eb82c1dd3d4f3cb18aca71b78cec7bfb20"
+        },
+        {
+          "path": "print-assets/fantasy-battle/dwarves-skeletons-v1/part-02.bin",
+          "size": 4194304,
+          "sha256": "6e671a608454a1307691ae88a099b64f5fa78c26c00f540b15c0bd1ed452c679"
+        },
+        {
+          "path": "print-assets/fantasy-battle/dwarves-skeletons-v1/part-03.bin",
+          "size": 4194304,
+          "sha256": "82bbb8618ee08db9c1ddbeab968810bd228b683cf7a7f87b2f941016215880ba"
+        },
+        {
+          "path": "print-assets/fantasy-battle/dwarves-skeletons-v1/part-04.bin",
+          "size": 4194304,
+          "sha256": "c3bc9a00333a1f141fb4d4c8c20e23d81aa06c81009d8e8c0f7307677643801c"
+        },
+        {
+          "path": "print-assets/fantasy-battle/dwarves-skeletons-v1/part-05.bin",
+          "size": 4194304,
+          "sha256": "154d296c5b4a6668a4ef2d86876dd40b1ddab35fd5e0ee20fd56707e43406849"
+        },
+        {
+          "path": "print-assets/fantasy-battle/dwarves-skeletons-v1/part-06.bin",
+          "size": 4194304,
+          "sha256": "4e6475f9ec353839ceb85ecf865e13f4e9adf034e61c2529939850998a3912cd"
+        },
+        {
+          "path": "print-assets/fantasy-battle/dwarves-skeletons-v1/part-07.bin",
+          "size": 3199956,
+          "sha256": "35a02913c89e3b847cc57e92067e91ec8d888830bffc05efc527edf534d03beb"
+        }
+      ]
+    },
+    {
+      "output": "public/downloads/vm-fantasy-battle-armies-elves-dragons-v3.pdf",
+      "size": 32028919,
+      "sha256": "d433ec4603aaf3da718ae745a588a87a8cb743d59e84f781c3ca0df92329bac0",
+      "parts": [
+        {
+          "path": "print-assets/fantasy-battle/elves-dragons-v3/part-00.bin",
+          "size": 4194304,
+          "sha256": "bc6b57893785cdcb5e1e545d2d7e5a7f34ca8672bdbb67e03670cfb38c56aec6"
+        },
+        {
+          "path": "print-assets/fantasy-battle/elves-dragons-v3/part-01.bin",
+          "size": 4194304,
+          "sha256": "ed92a69ba236bc10f8e1986bd2932b5cb51de96c5f08828c373385f44ce3a435"
+        },
+        {
+          "path": "print-assets/fantasy-battle/elves-dragons-v3/part-02.bin",
+          "size": 4194304,
+          "sha256": "3c362b146c91d5da62e70bd3dd16eeb4e3aebce62abef8e3192d80e04f0b2a09"
+        },
+        {
+          "path": "print-assets/fantasy-battle/elves-dragons-v3/part-03.bin",
+          "size": 4194304,
+          "sha256": "02dcc1136acfda1a589c7856ef1decdf982976f84ac6943c63170aad2ecd8e10"
+        },
+        {
+          "path": "print-assets/fantasy-battle/elves-dragons-v3/part-04.bin",
+          "size": 4194304,
+          "sha256": "8fae80963a920309a787ec037f4332bba17312b39930608474ba40a37ca4bcca"
+        },
+        {
+          "path": "print-assets/fantasy-battle/elves-dragons-v3/part-05.bin",
+          "size": 4194304,
+          "sha256": "b972335b3a01ba3993d1fb471439b646024e93cb798e63841712c61846ed0665"
+        },
+        {
+          "path": "print-assets/fantasy-battle/elves-dragons-v3/part-06.bin",
+          "size": 4194304,
+          "sha256": "2ee0c4e28b7a33c6acb825edff0682d1cd4cdb90b40187f9533cb7cf02be1997"
+        },
+        {
+          "path": "print-assets/fantasy-battle/elves-dragons-v3/part-07.bin",
+          "size": 2668791,
+          "sha256": "fec17b13ac2d1909e1d1f3e4736907c1b9874a3dfab609293689afb6969dad10"
+        }
+      ]
+    }
+  ]
+}
