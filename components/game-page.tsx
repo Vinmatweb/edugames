@@ -89,7 +89,7 @@ export function GamePage({ gameKey, locale }: { gameKey: GameKey; locale: Locale
               </li>
             </ul>
 
-            {gameKey === "fantasy" && <p className="mode-player-note">{locale === "cs" ? "Bitva: 2–4 hráči · Přebíjená: 2–10 hráčů" : "Battle: 2–4 players · High Card Battle: 2–10 players"}</p>}
+            {gameKey === "fantasy" && <p className="mode-player-note">{locale === "cs" ? "Bitva: 2–4 hráči · Přebíjená: 2–9 hráčů" : "Battle: 2–4 players · High Card Battle: 2–9 players"}</p>}
 
             <div className="hero-actions">
               <a
@@ -201,7 +201,7 @@ export function GamePage({ gameKey, locale }: { gameKey: GameKey; locale: Locale
                 </ul>
               </article>
               <article>
-                <h3>{locale === "cs" ? "Přebíjená · porovnávání · 2–10 hráčů" : "High Card Battle · comparing · 2–10 players"}</h3>
+                <h3>{locale === "cs" ? "Přebíjená · porovnávání · 2–9 hráčů" : "High Card Battle · comparing · 2–9 players"}</h3>
                 <p>{copy.modes[3].text}</p>
                 <p>{locale === "cs" ? "Hraje se, dokud mohou proti sobě otočit kartu alespoň dva hráči. Pokud při rozstřelu může pokračovat právě jeden z hráčů ve shodě, bere všechny karty na stole. Pokud žádný, hra končí a nerozhodnuté karty se nepočítají. Karty zbylé v balíčku se započítají. Při shodném výsledku je remíza." : "Keep playing while at least two players can reveal a card against each other. If exactly one tied player can continue a showdown, they take every card on the table. If none can continue, the game ends and those unresolved cards do not count. Count cards left in your deck too. Equal final totals are a draw."}</p>
               </article>
@@ -228,8 +228,8 @@ export function GamePage({ gameKey, locale }: { gameKey: GameKey; locale: Locale
                 <div className="battle-downloads battle-downloads--fantasy">
                   <div className="battle-download battle-download--rules">
                     <h3>{locale === "cs" ? "Návod · čeština" : "Rules · English"}</h3>
-                    <p>{locale === "cs" ? "Bitva pro 2–4 hráče a přebíjená pro 2–10. Formát A5, tisk na A4." : "Battle for 2–4 and High Card Battle for 2–10. A5 booklet printed on A4."}</p>
-                    <a className={buttonVariants({variant: "outline", className: "button-secondary"})} href={assetPath(locale === "cs" ? "/downloads/vm-fantasy-battle-rules-cs-v3.pdf" : "/downloads/vm-fantasy-battle-rules-en-v3.pdf")} download><Download aria-hidden="true" />{locale === "cs" ? "Stáhnout PDF" : "Download PDF"}</a>
+                    <p>{locale === "cs" ? "Bitva pro 2–4 hráče a přebíjená pro 2–9. Formát A5, tisk na A4." : "Battle for 2–4 and High Card Battle for 2–9. A5 booklet printed on A4."}</p>
+                    <a className={buttonVariants({variant: "outline", className: "button-secondary"})} href={assetPath(locale === "cs" ? "/downloads/vm-fantasy-battle-rules-cs-v4.pdf" : "/downloads/vm-fantasy-battle-rules-en-v4.pdf")} download><Download aria-hidden="true" />{locale === "cs" ? "Stáhnout PDF" : "Download PDF"}</a>
                   </div>
                   <div className="battle-download battle-download--action-one">
                     <h3>{locale === "cs" ? "Akční karty · série I" : "Action cards · Set I"}</h3>

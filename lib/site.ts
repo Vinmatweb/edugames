@@ -205,7 +205,7 @@ export const games: Record<GameKey, Game> = {
   fantasy: {
     key: "fantasy",
     image: "/images/fantasy-battle-169.webp",
-    players: "2–10",
+    players: "2–9",
     age: "4–10",
     time: "10–20",
     routeKey: "fantasy",
@@ -228,7 +228,7 @@ export const games: Record<GameKey, Game> = {
       overview: [
         "Each unit card has a value. The cards in front of a player show the current size of that army. An ATTACK subtracts units, SUPPORT adds units and a patron can grant one carefully timed +5 boost.",
         "After every change, the player rebuilds the army with a new combination of cards. A total of 7 might be 5 + 2, 4 + 3 or a single 7. The arithmetic is visible, movable and easy for another player to check.",
-        "Choose from nine armies: Knights, Zombies, Orcs, Goblins, Fairies, Dwarves, Skeletons, Elves and Dragons. Battle is for 2–4 players; High Card Battle supports 2–10. With two or three players, everyone plays for themselves; four-player Battle uses two teams.",
+        "Choose from nine armies: Knights, Zombies, Orcs, Goblins, Fairies, Dwarves, Skeletons, Elves and Dragons. Battle is for 2–4 players; High Card Battle supports 2–9. With two or three players, everyone plays for themselves; four-player Battle uses two teams.",
       ],
       learnTitle: "What children practise",
       learnIntro:
@@ -284,14 +284,14 @@ export const games: Record<GameKey, Game> = {
         },
         {
           title: "High-card clash",
-          text: "For 2–10 players, shuffle all 18 army cards with the patron. Everyone reveals one card; a patron beats every number. Only tied leaders reveal again while the others wait. The winner takes every revealed card. Count won cards and cards left in your deck only at the end; the highest total wins.",
+          text: "For 2–9 players, each chooses a different army and shuffles its 18 unit cards with the patron. Everyone reveals one card; a patron beats every number. Only tied leaders reveal again while the others wait. The winner sets every revealed card aside; won cards never return to the deck. Count won cards and cards left in your deck only at the end; the highest total wins.",
         },
       ],
       contentsTitle: "Current free set",
       contents: [
         "9 armies with +5 patron cards",
         "2 action card sets: ATTACK and SUPPORT",
-        "Battle for 2–4; High Card Battle for 2–10",
+        "Battle for 2–4; High Card Battle for 2–9",
         "Rules in English and Czech",
         "Optional Battle Logs for written calculations",
       ],
@@ -301,11 +301,11 @@ export const games: Record<GameKey, Game> = {
       primaryDownload: "Knights & Zombies · PDF",
       secondaryDownload: "Download universal rules · Czech PDF",
       primaryFile: "/downloads/vm-fantasy-battle-armies-knights-zombies.pdf",
-      secondaryFile: "/downloads/vm-fantasy-battle-rules-cs-v3.pdf",
+      secondaryFile: "/downloads/vm-fantasy-battle-rules-cs-v4.pdf",
       pdfNote: "A4 · 100% scale · duplex: flip on the long edge",
       faqTitle: "Common questions",
       faqs: [
-        { q: "Can ten people play with nine armies?", a: "Yes, in High Card Battle. Print one army twice and give each player their own complete deck of 18 cards plus its patron. Count all cards won at the end, regardless of their army. For Battle, choose different armies for the 2–4 players." },
+        { q: "How many people can play?", a: "Battle is for 2–4 players; High Card Battle is for 2–9. Choose a different army for each player from the nine available. Each army has 18 unit cards and its patron." },
         {
           q: "Does a child need to calculate alone?",
           a: "No. Let the child point to cards or count along the number range. Another player can help, then ask the child to say the complete calculation aloud.",
@@ -345,7 +345,7 @@ export const games: Record<GameKey, Game> = {
       overview: [
         "Každá karta jednotek má hodnotu. Součet karet před hráčem udává velikost jeho armády. ATTACK jednotky ubírá, SUPPORT je přidává a patron může jednou za hru přinést dobře načasovaných +5.",
         "Po každé změně hráč sestaví armádu znovu v jiné kombinaci. Sedm může být 5 + 2, 4 + 3 nebo jedna karta 7. Výpočet je vidět, lze s ním pohybovat a ostatní ho snadno zkontrolují.",
-        "Na výběr je devět armád: rytíři, zombíci, orkové, skřeti, víly, trpaslíci, kostlivci, elfové a draci. Bitva je pro 2–4 hráče, přebíjená pro 2–10. Ve dvou a třech se hraje každý za sebe, ve čtyřech Bitva ve dvou týmech.",
+        "Na výběr je devět armád: rytíři, zombíci, orkové, skřeti, víly, trpaslíci, kostlivci, elfové a draci. Bitva je pro 2–4 hráče, přebíjená pro 2–9. Ve dvou a třech se hraje každý za sebe, ve čtyřech Bitva ve dvou týmech.",
       ],
       learnTitle: "Co si děti procvičí",
       learnIntro:
@@ -401,14 +401,14 @@ export const games: Record<GameKey, Game> = {
         },
         {
           title: "Přebíjená",
-          text: "Pro 2–10 hráčů: zamíchejte všech 18 karet armády i patrona. Všichni otočí kartu; patron poráží každé číslo. Při shodě pokračují jen hráči s nejvyšší hodnotou, ostatní čekají. Vítěz bere všechny otočené karty. Až na konci spočítejte získané karty i ty, které zbyly v balíčku; nejvyšší počet vyhrává.",
+          text: "Pro 2–9 hráčů: každý si zvolí jinou armádu a zamíchá všech jejích 18 karet i patrona. Všichni otočí kartu; patron poráží každé číslo. Při shodě pokračují jen hráči s nejvyšší hodnotou, ostatní čekají. Vítěz odloží všechny otočené karty stranou; do balíčku se nevracejí. Až na konci spočítejte získané karty i ty, které zbyly v balíčku; nejvyšší počet vyhrává.",
         },
       ],
       contentsTitle: "Aktuální sada zdarma",
       contents: [
         "9 armád a jejich patroni +5",
         "2 série akčních karet ATTACK a SUPPORT",
-        "Bitva pro 2–4; přebíjená pro 2–10 hráčů",
+        "Bitva pro 2–4; přebíjená pro 2–9 hráčů",
         "Návody v češtině a angličtině",
         "Volitelné Battle Logy pro zápis výpočtů",
       ],
@@ -418,11 +418,11 @@ export const games: Record<GameKey, Game> = {
       primaryDownload: "Rytíři a zombíci · PDF",
       secondaryDownload: "Stáhnout univerzální pravidla · PDF",
       primaryFile: "/downloads/vm-fantasy-battle-armies-knights-zombies.pdf",
-      secondaryFile: "/downloads/vm-fantasy-battle-rules-cs-v3.pdf",
+      secondaryFile: "/downloads/vm-fantasy-battle-rules-cs-v4.pdf",
       pdfNote: "A4 · tisk 100 % · oboustranně přes dlouhou hranu",
       faqTitle: "Časté otázky",
       faqs: [
-        { q: "Může hrát deset lidí, když je armád devět?", a: "Ano, v přebíjené. Jednu armádu vytiskněte dvakrát a každému dejte vlastní úplný balíček 18 karet a patrona. Na konci se počítají všechny získané karty bez ohledu na jejich armádu. Pro Bitvu vyberte 2–4 různé armády." },
+        { q: "Kolik hráčů může hrát?", a: "Bitva je pro 2–4 hráče, přebíjená pro 2–9. Každému vyberte jinou z devíti dostupných armád. Každá armáda má 18 jednotkových karet a svého patrona." },
         {
           q: "Musí dítě počítat úplně samo?",
           a: "Nemusí. Nechte ho ukazovat na karty nebo počítat po číselné řadě. Jiný hráč může pomoci, ale dítě pak řekne celý příklad nahlas.",
