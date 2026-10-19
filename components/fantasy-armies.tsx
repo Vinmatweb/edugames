@@ -42,8 +42,7 @@ const armies = [
       "cs": "rytířů a zombíků",
       "en": "Knights & Zombies"
     },
-    "downloadFile": "vm-fantasy-battle-armies-knights-zombies.pdf",
-    "patronImage": null
+    "downloadFile": "vm-fantasy-battle-armies-knights-zombies.pdf"
   },
   {
     "id": "nemrtvi",
@@ -79,8 +78,7 @@ const armies = [
       "cs": "rytířů a zombíků",
       "en": "Knights & Zombies"
     },
-    "downloadFile": "vm-fantasy-battle-armies-knights-zombies.pdf",
-    "patronImage": null
+    "downloadFile": "vm-fantasy-battle-armies-knights-zombies.pdf"
   },
   {
     "id": "orkove",
@@ -116,8 +114,7 @@ const armies = [
       "cs": "orků a skřetů",
       "en": "Orcs & Goblins"
     },
-    "downloadFile": "vm-fantasy-battle-armies-orcs-goblins.pdf",
-    "patronImage": null
+    "downloadFile": "vm-fantasy-battle-armies-orcs-goblins.pdf"
   },
   {
     "id": "skreti",
@@ -153,8 +150,7 @@ const armies = [
       "cs": "orků a skřetů",
       "en": "Orcs & Goblins"
     },
-    "downloadFile": "vm-fantasy-battle-armies-orcs-goblins.pdf",
-    "patronImage": null
+    "downloadFile": "vm-fantasy-battle-armies-orcs-goblins.pdf"
   },
   {
     "id": "vily",
@@ -166,11 +162,11 @@ const armies = [
       "cs": "Smaragdová královna",
       "en": "Emerald Queen"
     },
-    "image": "cards-fairies-10.webp",
-    "thumbnail": "cards-fairies-10-thumb.webp",
+    "image": "army-fairies-v2.webp",
+    "thumbnail": "army-fairies-v2-thumb.webp",
     "imageAlt": {
-      "cs": "Karta 10 armády Víly",
-      "en": "Card 10 from the Fairies army"
+      "cs": "Deset víl a vílích bojovníků se Smaragdovou královnou v kouzelném lese",
+      "en": "Ten female and male fairy fighters with the Emerald Queen in an enchanted forest"
     },
     "short": {
       "cs": "Bojovnice i bojovníci s křídly a kouzly pod ochranou své královny.",
@@ -179,58 +175,18 @@ const armies = [
     "paragraphs": {
       "cs": [
         "Víly z kouzelného lesa spojují rychlost, obratnost a magii. Jejich armádu vede smaragdová královna, která chrání svůj lid.",
-        "Smaragdová královna může jednou za Bitvu podpořit armádu o +5. Karty víl a zvířat včetně jejich patronů najdeš ve společném PDF balíku."
+        "Smaragdová královna může jednou za Bitvu podpořit armádu o +5. Samostatný balík obsahuje všech 18 karet víl i jejich patronku; akční karty a návod se stahují zvlášť."
       ],
       "en": [
         "Fairies from the enchanted forest combine speed, agility and magic. The Emerald Queen leads the army and protects her people.",
-        "The Emerald Queen can add +5 once per Battle. The Fairies and Animals cards, including their patrons, are in one shared PDF pack."
+        "The Emerald Queen can add +5 once per Battle. The standalone pack contains all 18 Fairies cards and their patron; download action cards and rules separately."
       ]
     },
     "pack": {
-      "cs": "víl a zvířat",
-      "en": "Fairies & Animals"
+      "cs": "víl",
+      "en": "Fairies"
     },
-    "downloadFile": "vm-fantasy-battle-armies-fairies-animals-v7.pdf",
-    "patronImage": "cards-fairies-patron.webp"
-  },
-  {
-    "id": "zvirata",
-    "name": {
-      "cs": "Zvířata",
-      "en": "Animals"
-    },
-    "patron": {
-      "cs": "Král zvířat",
-      "en": "King of Beasts"
-    },
-    "image": "cards-animals-10.webp",
-    "thumbnail": "cards-animals-patron-thumb.webp",
-    "patronImage": "cards-animals-patron.webp",
-    "imageAlt": {
-      "cs": "Drak na kartě zvířecí armády s hodnotou 10",
-      "en": "The dragon on the Animals army card with a strength of 10"
-    },
-    "short": {
-      "cs": "Od bojové krysy po draka. Sílu pomáhají spočítat zlaté stopy.",
-      "en": "From a battle rat to a dragon. Golden paw prints help count each card’s strength."
-    },
-    "paragraphs": {
-      "cs": [
-        "Zvířecí armáda spoléhá na sílu zubů, klů a drápů. Každá karta představuje jedno zvíře v brnění, od malé krysy až po draka s hodnotou 10.",
-        "Číslo vyjadřuje sílu zvířete, nikoli počet zvířat na obrázku. Na kartách od 2 výše pomáhá hodnotu spočítat stejný počet zlatých stop. Lev patří výhradně patronovi: mohutnému Králi zvířat.",
-        "Král zvířat přidává jednou za Bitvu +5. V přebíjené je patron nejsilnější kartou. Zvířata nahrazují původní vlky a sdílejí balík s vílami."
-      ],
-      "en": [
-        "The Animals army draws its power from teeth, tusks and claws. Each card shows one armoured animal, from a small rat to a dragon with a strength of 10.",
-        "The number shows the animal’s strength, not how many animals are pictured. On cards from 2 upwards, a matching number of golden paw prints helps children count the value. The lion appears only as the mighty King of Beasts patron.",
-        "The King of Beasts adds +5 once per Battle. In High Card Battle, a patron beats every numbered card. Animals replace the original Wolves army and share a pack with the Fairies."
-      ]
-    },
-    "pack": {
-      "cs": "víl a zvířat",
-      "en": "Fairies & Animals"
-    },
-    "downloadFile": "vm-fantasy-battle-armies-fairies-animals-v7.pdf"
+    "downloadFile": "vm-fantasy-battle-army-fairies-v1.pdf"
   },
   {
     "id": "trpaslici",
@@ -242,11 +198,11 @@ const armies = [
       "cs": "Král pod horou",
       "en": "Mountain King"
     },
-    "image": "cards-dwarves-10.webp",
-    "thumbnail": "cards-dwarves-10-thumb.webp",
+    "image": "army-dwarves-v2.webp",
+    "thumbnail": "army-dwarves-v2-thumb.webp",
     "imageAlt": {
-      "cs": "Karta 10 armády Trpaslíci",
-      "en": "Card 10 from the Dwarves army"
+      "cs": "Deset trpasličích bojovníků se svým Králem pod horou před horskou pevností",
+      "en": "Ten Dwarven warriors with their Mountain King before a mountain fortress"
     },
     "short": {
       "cs": "Houževnatí obránci horských pevností s králem v čele.",
@@ -266,8 +222,7 @@ const armies = [
       "cs": "trpaslíků a kostlivců",
       "en": "Dwarves & Skeletons"
     },
-    "downloadFile": "vm-fantasy-battle-armies-dwarves-skeletons-v1.pdf",
-    "patronImage": "cards-dwarves-patron.webp"
+    "downloadFile": "vm-fantasy-battle-armies-dwarves-skeletons-v1.pdf"
   },
   {
     "id": "elfove",
@@ -279,11 +234,11 @@ const armies = [
       "cs": "Elfí patronka",
       "en": "Elven Queen"
     },
-    "image": "cards-elves-10.webp",
-    "thumbnail": "cards-elves-10-thumb.webp",
+    "image": "army-elves-v2.webp",
+    "thumbnail": "army-elves-v2-thumb.webp",
     "imageAlt": {
-      "cs": "Karta 10 armády Elfové",
-      "en": "Card 10 from the Elves army"
+      "cs": "Deset elfích bojovníků s patronkou obklopenou zářivou modrou aurou",
+      "en": "Ten Elven warriors with their queen surrounded by a luminous blue aura"
     },
     "short": {
       "cs": "Přesní bojovníci, kteří čerpají sílu z lesní magie.",
@@ -303,8 +258,7 @@ const armies = [
       "cs": "elfů a draků",
       "en": "Elves & Dragons"
     },
-    "downloadFile": "vm-fantasy-battle-armies-elves-dragons-v3.pdf",
-    "patronImage": "cards-elves-patron.webp"
+    "downloadFile": "vm-fantasy-battle-armies-elves-dragons-v3.pdf"
   },
   {
     "id": "draci",
@@ -316,11 +270,11 @@ const armies = [
       "cs": "Dračí patron",
       "en": "Dragon Patron"
     },
-    "image": "cards-dragons-10.webp",
-    "thumbnail": "cards-dragons-10-thumb.webp",
+    "image": "army-dragons-v2.webp",
+    "thumbnail": "army-dragons-v2-thumb.webp",
     "imageAlt": {
-      "cs": "Karta 10 armády Draci",
-      "en": "Card 10 from the Dragons army"
+      "cs": "Deset různých draků s mohutným fialovým patronem v horském údolí",
+      "en": "Ten distinct dragons with their mighty purple patron in a mountain valley"
     },
     "short": {
       "cs": "Mocná letka draků s patronem, který chrání celé údolí.",
@@ -340,8 +294,7 @@ const armies = [
       "cs": "elfů a draků",
       "en": "Elves & Dragons"
     },
-    "downloadFile": "vm-fantasy-battle-armies-elves-dragons-v3.pdf",
-    "patronImage": "cards-dragons-patron.webp"
+    "downloadFile": "vm-fantasy-battle-armies-elves-dragons-v3.pdf"
   },
   {
     "id": "kostlivci",
@@ -353,12 +306,11 @@ const armies = [
       "cs": "Král kostlivců",
       "en": "Skeleton King"
     },
-    "image": "cards-skeletons-10.webp",
-    "thumbnail": "cards-skeletons-10-thumb.webp",
-    "patronImage": "cards-skeletons-patron.webp",
+    "image": "army-skeletons-v1.webp",
+    "thumbnail": "army-skeletons-v1-thumb.webp",
     "imageAlt": {
-      "cs": "Deset kostlivých bojovníků na kartě s hodnotou 10",
-      "en": "Ten skeletal warriors on the card with a value of 10"
+      "cs": "Deset kostlivých bojovníků s korunovaným Králem kostlivců v ruinách pevnosti",
+      "en": "Ten skeletal warriors with the crowned Skeleton King in a ruined stronghold"
     },
     "short": {
       "cs": "Kostlivá legie v prastaré zbroji pod velením svého krále.",
@@ -416,7 +368,7 @@ export function FantasyArmySelector({ locale }: { locale: Locale }) {
             >
               <img
                 src={assetPath("/images/fantasy-armies/" + army.thumbnail)}
-                alt={army.id === "zvirata" ? army.patron[locale] : army.imageAlt[locale]}
+                alt={army.imageAlt[locale]}
                 width={320}
                 height={400}
                 loading="lazy"
@@ -452,11 +404,11 @@ export function FantasyArmiesPage({ locale }: { locale: Locale }) {
             {isCs ? "Zpět na výběr armád" : "Back to army selection"}
           </Link>
           <p className="eyebrow eyebrow--color">VM Fantasy Battle</p>
-          <h1>{isCs ? "Poznej všech deset armád" : "Meet all ten armies"}</h1>
+          <h1>{isCs ? "Poznej všech devět armád" : "Meet all nine armies"}</h1>
           <p>
             {isCs
-              ? "Deset armád, pět balíků karet a dva způsoby hraní. Bitva je pro 2–4 hráče, přebíjená pro 2–10. Zvířata nahradila vlky a kostlivci sdílejí balík s trpaslíky."
-              : "Ten armies, five card packs and two ways to play. Battle is for 2–4 players and High Card Battle for 2–10. Animals replace Wolves, and Skeletons share a pack with Dwarves."}
+              ? "Devět armád, pět balíků karet a dva způsoby hraní. Každá armáda má vlastního patrona. Víly se stahují samostatně; trpaslíci sdílejí balík s kostlivci."
+              : "Nine armies, five card packs and two ways to play. Each army has its own patron. Fairies have a standalone pack; Dwarves share a pack with Skeletons."}
           </p>
         </header>
 
@@ -471,11 +423,8 @@ export function FantasyArmiesPage({ locale }: { locale: Locale }) {
                   (index % 2 === 1 ? " army-detail-card--reverse" : "")
                 }
               >
-                <div className={"army-detail-image" + (army.patronImage ? " army-detail-image--pair" : "")}>
-                  {army.patronImage ? <>
-                    <figure><img src={assetPath("/images/fantasy-armies/" + army.image)} alt={army.imageAlt[locale]} width={744} height={1008} loading="lazy" /><figcaption>{isCs ? "Karta 10" : "Card 10"}</figcaption></figure>
-                    <figure><img src={assetPath("/images/fantasy-armies/" + army.patronImage)} alt={army.patron[locale]} width={744} height={1008} loading="lazy" /><figcaption>{army.patron[locale]} · +5</figcaption></figure>
-                  </> : <img src={assetPath("/images/fantasy-armies/" + army.image)} alt={army.imageAlt[locale]} width={800} height={1000} loading={index === 0 ? "eager" : "lazy"} />}
+                <div className="army-detail-image">
+                  <img src={assetPath("/images/fantasy-armies/" + army.image)} alt={army.imageAlt[locale]} width={800} height={1000} loading={index === 0 ? "eager" : "lazy"} />
                 </div>
                 <div className="army-detail-copy">
                   <span className="army-detail-number">
@@ -492,9 +441,9 @@ export function FantasyArmiesPage({ locale }: { locale: Locale }) {
                     <p key={paragraph}>{paragraph}</p>
                   ))}
                   <p className="army-pack-note">
-                    {isCs
-                      ? "PDF balík obsahuje karty " + army.pack.cs + " včetně patronů. Akční karty a pravidla se stahují zvlášť."
-                      : "The PDF pack contains the " + army.pack.en + " cards, including their patrons. Download action cards and rules separately."}
+                    {army.id === "vily"
+                      ? (isCs ? "Samostatné PDF obsahuje 18 karet víl a jejich patronku. Akční karty a návod se stahují zvlášť." : "The standalone PDF contains 18 Fairies cards and their patron. Download action cards and rules separately.")
+                      : (isCs ? "PDF balík obsahuje karty " + army.pack.cs + " včetně patronů. Akční karty a pravidla se stahují zvlášť." : "The PDF pack contains the " + army.pack.en + " cards, including their patrons. Download action cards and rules separately.")}
                   </p>
                   <a
                     className={buttonVariants({

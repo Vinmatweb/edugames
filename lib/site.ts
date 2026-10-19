@@ -216,7 +216,7 @@ export const games: Record<GameKey, Game> = {
       category: "Card game · arithmetic",
       summary:
         "Build an army from number cards, launch attacks and call for support. Every move turns into a calculation the whole table can see.",
-      status: "10 armies · 2 games · ready to print",
+      status: "9 armies · 2 games · ready to print",
       coverAlt:
         "A knight, zombie, orc and goblin facing each other in a sunset arena",
       skills: [
@@ -228,7 +228,7 @@ export const games: Record<GameKey, Game> = {
       overview: [
         "Each unit card has a value. The cards in front of a player show the current size of that army. An ATTACK subtracts units, SUPPORT adds units and a patron can grant one carefully timed +5 boost.",
         "After every change, the player rebuilds the army with a new combination of cards. A total of 7 might be 5 + 2, 4 + 3 or a single 7. The arithmetic is visible, movable and easy for another player to check.",
-        "Choose from ten armies: Knights, Zombies, Orcs, Goblins, Fairies, Animals, Dwarves, Skeletons, Elves and Dragons. Battle is for 2–4 players; High Card Battle supports 2–10. With two or three players, everyone plays for themselves; four-player Battle uses two teams.",
+        "Choose from nine armies: Knights, Zombies, Orcs, Goblins, Fairies, Dwarves, Skeletons, Elves and Dragons. Battle is for 2–4 players; High Card Battle supports 2–10. With two or three players, everyone plays for themselves; four-player Battle uses two teams.",
       ],
       learnTitle: "What children practise",
       learnIntro:
@@ -289,7 +289,7 @@ export const games: Record<GameKey, Game> = {
       ],
       contentsTitle: "Current free set",
       contents: [
-        "10 armies with +5 patron cards",
+        "9 armies with +5 patron cards",
         "2 action card sets: ATTACK and SUPPORT",
         "Battle for 2–4; High Card Battle for 2–10",
         "Rules in English and Czech",
@@ -297,7 +297,7 @@ export const games: Record<GameKey, Game> = {
       ],
       downloadTitle: "Download the free game",
       downloadText:
-        "Download the rules, five army packs, action cards and optional Battle Logs separately. For two-player Battle, choose an army pack and one action set (I or II). For three or four players, each chooses a different army; use both action sets. High Card Battle needs army cards and patrons, without action cards. Card labels and logs are in English; the Czech and English rule booklets are available separately.",
+        "Download the rules, four paired army packs, the standalone Fairies pack, action cards and optional Battle Logs separately. For two-player Battle, choose an army pack and one action set (I or II). For three or four players, each chooses a different army; use both action sets. High Card Battle needs army cards and patrons, without action cards. Card labels and logs are in English; the Czech and English rule booklets are available separately.",
       primaryDownload: "Knights & Zombies · PDF",
       secondaryDownload: "Download universal rules · Czech PDF",
       primaryFile: "/downloads/vm-fantasy-battle-armies-knights-zombies.pdf",
@@ -305,6 +305,7 @@ export const games: Record<GameKey, Game> = {
       pdfNote: "A4 · 100% scale · duplex: flip on the long edge",
       faqTitle: "Common questions",
       faqs: [
+        { q: "Can ten people play with nine armies?", a: "Yes, in High Card Battle. Print one army twice and give each player their own complete deck of 18 cards plus its patron. Count all cards won at the end, regardless of their army. For Battle, choose different armies for the 2–4 players." },
         {
           q: "Does a child need to calculate alone?",
           a: "No. Let the child point to cards or count along the number range. Another player can help, then ask the child to say the complete calculation aloud.",
@@ -332,7 +333,7 @@ export const games: Record<GameKey, Game> = {
       category: "Karetní hra · počítání",
       summary:
         "Sestavte armádu z číselných karet, útočte a povolávejte posily. Každý tah se promění ve výpočet, který vidí celý stůl.",
-      status: "10 armád · 2 hry · připraveno k tisku",
+      status: "9 armád · 2 hry · připraveno k tisku",
       coverAlt:
         "Rytíř, nemrtvý, ork a skřet proti sobě v aréně při západu slunce",
       skills: [
@@ -344,7 +345,7 @@ export const games: Record<GameKey, Game> = {
       overview: [
         "Každá karta jednotek má hodnotu. Součet karet před hráčem udává velikost jeho armády. ATTACK jednotky ubírá, SUPPORT je přidává a patron může jednou za hru přinést dobře načasovaných +5.",
         "Po každé změně hráč sestaví armádu znovu v jiné kombinaci. Sedm může být 5 + 2, 4 + 3 nebo jedna karta 7. Výpočet je vidět, lze s ním pohybovat a ostatní ho snadno zkontrolují.",
-        "Na výběr je deset armád: rytíři, zombíci, orkové, skřeti, víly, zvířata, trpaslíci, kostlivci, elfové a draci. Bitva je pro 2–4 hráče, přebíjená pro 2–10. Ve dvou a třech se hraje každý za sebe, ve čtyřech Bitva ve dvou týmech.",
+        "Na výběr je devět armád: rytíři, zombíci, orkové, skřeti, víly, trpaslíci, kostlivci, elfové a draci. Bitva je pro 2–4 hráče, přebíjená pro 2–10. Ve dvou a třech se hraje každý za sebe, ve čtyřech Bitva ve dvou týmech.",
       ],
       learnTitle: "Co si děti procvičí",
       learnIntro:
@@ -405,7 +406,7 @@ export const games: Record<GameKey, Game> = {
       ],
       contentsTitle: "Aktuální sada zdarma",
       contents: [
-        "10 armád a jejich patroni +5",
+        "9 armád a jejich patroni +5",
         "2 série akčních karet ATTACK a SUPPORT",
         "Bitva pro 2–4; přebíjená pro 2–10 hráčů",
         "Návody v češtině a angličtině",
@@ -413,7 +414,7 @@ export const games: Record<GameKey, Game> = {
       ],
       downloadTitle: "Stáhněte si hru zdarma",
       downloadText:
-        "Návod, pět balíků armád, akční karty a volitelné Battle Logy si stáhněte samostatně. Pro Bitvu ve dvou vyberte armádu a jednu akční sérii (I nebo II). Pro tři až čtyři hráče vyberte každému jinou armádu a použijte obě akční série. Na přebíjenou použijte karty armády i patrona, bez akčních karet. Popisky karet a logů jsou anglicky; záhlaví tiskových archů a návod jsou česky.",
+        "Návod, čtyři dvojice armád, samostatné víly, akční karty a volitelné Battle Logy si stáhněte zvlášť. Pro Bitvu ve dvou vyberte armádu a jednu akční sérii (I nebo II). Pro tři až čtyři hráče vyberte každému jinou armádu a použijte obě akční série. Na přebíjenou použijte karty armády i patrona, bez akčních karet. Popisky karet a logů jsou anglicky; záhlaví tiskových archů a návod jsou česky.",
       primaryDownload: "Rytíři a zombíci · PDF",
       secondaryDownload: "Stáhnout univerzální pravidla · PDF",
       primaryFile: "/downloads/vm-fantasy-battle-armies-knights-zombies.pdf",
@@ -421,6 +422,7 @@ export const games: Record<GameKey, Game> = {
       pdfNote: "A4 · tisk 100 % · oboustranně přes dlouhou hranu",
       faqTitle: "Časté otázky",
       faqs: [
+        { q: "Může hrát deset lidí, když je armád devět?", a: "Ano, v přebíjené. Jednu armádu vytiskněte dvakrát a každému dejte vlastní úplný balíček 18 karet a patrona. Na konci se počítají všechny získané karty bez ohledu na jejich armádu. Pro Bitvu vyberte 2–4 různé armády." },
         {
           q: "Musí dítě počítat úplně samo?",
           a: "Nemusí. Nechte ho ukazovat na karty nebo počítat po číselné řadě. Jiný hráč může pomoci, ale dítě pak řekne celý příklad nahlas.",
