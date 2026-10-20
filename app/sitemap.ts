@@ -10,13 +10,14 @@ function url(path: string) {
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const now = new Date("2026-09-25T00:00:00Z");
+  const wordRaceDate = new Date("2026-10-21T00:00:00+02:00");
   const routePairs = Object.values(paths);
 
   return [
     ...routePairs.flatMap((pair) => [
     {
       url: url(pair.en),
-      lastModified: pair === paths.privacy || pair === paths.terms || pair === paths.about || pair === paths.home ? new Date("2026-09-30T00:00:00+02:00") : now,
+      lastModified: pair === paths.privacy || pair === paths.terms || pair === paths.about || pair === paths.home ? new Date("2026-09-30T00:00:00+02:00") : pair === paths.wordRace ? wordRaceDate : now,
       changeFrequency: pair === paths.home ? ("weekly" as const) : ("monthly" as const),
       priority: pair === paths.home ? 1 : 0.8,
       alternates: {

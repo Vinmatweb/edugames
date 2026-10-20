@@ -17,6 +17,7 @@ export const paths = {
     en: "/games/racing-math",
     cs: "/cs/hry/zavodni-matematika",
   },
+  wordRace: { en: "/games/word-race", cs: "/cs/hry/word-race" },
 } as const;
 
 export function localPath(key: keyof typeof paths, locale: Locale) {

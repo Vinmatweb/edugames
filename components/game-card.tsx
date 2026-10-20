@@ -10,22 +10,30 @@ import {
   type GameKey,
   type Locale,
 } from "@/lib/site";
+import { wordRaceCopy } from "@/lib/word-race";
 
-export function GameCard({ gameKey, locale }: { gameKey: GameKey; locale: Locale }) {
-  const game = games[gameKey];
-  const copy = game[locale];
+export function GameCard({ gameKey, locale }: { gameKey: GameKey | "wordRace"; locale: Locale }) {
+  const isWordRace = gameKey === "wordRace";
+  const baseGame = isWordRace ? null : games[gameKey];
+  const copy = isWordRace ? wordRaceCopy[locale] : baseGame![locale];
   const shared = sharedCopy[locale];
+  const route = isWordRace ? "wordRace" : baseGame!.routeKey;
+  const accent = isWordRace ? "word-race" : baseGame!.accent;
+  const image = isWordRace ? "/images/word-race-solar-system.webp" : baseGame!.image;
+  const players = isWordRace ? (locale === "cs" ? "1–4 hráči" : "1–4 players") : `${baseGame!.players} ${shared.players}`;
+  const age = isWordRace ? "6–8" : baseGame!.age;
+  const time = isWordRace ? "5–15" : baseGame!.time;
 
   return (
-    <article className={`game-card game-card--${game.accent}`}>
+    <article className={`game-card game-card--${accent}`}>
       <Link
         className="game-card-image-link"
-        href={localPath(game.routeKey, locale)}
+        href={localPath(route, locale)}
         aria-label={`${shared.viewGame}: ${copy.title}`}
       >
         <img
           className="game-card-image"
-          src={assetPath(game.image)}
+          src={assetPath(image)}
           alt={copy.coverAlt}
           loading="lazy"
         />
@@ -37,7 +45,7 @@ export function GameCard({ gameKey, locale }: { gameKey: GameKey; locale: Locale
       <div className="game-card-body">
         <p className="eyebrow">{copy.category}</p>
         <h3>
-          <Link href={localPath(game.routeKey, locale)}>{copy.title}</Link>
+          <Link href={localPath(route, locale)}>{copy.title}</Link>
         </h3>
         {copy.tagline && <p className="game-tagline">{copy.tagline}</p>}
         <p className="game-card-summary">{copy.summary}</p>
@@ -45,21 +53,21 @@ export function GameCard({ gameKey, locale }: { gameKey: GameKey; locale: Locale
         <ul className="game-meta" aria-label={locale === "cs" ? "Údaje o hře" : "Game facts"}>
           <li>
             <UsersRound aria-hidden="true" />
-            {gameKey === "fantasy" ? (locale === "cs" ? "Bitva 2–4 · Přebíjená 2–9" : "Battle 2–4 · High Card 2–9") : `${game.players} ${shared.players}`}
+            {gameKey === "fantasy" ? (locale === "cs" ? "Bitva 2–4 · Přebíjená 2–9" : "Battle 2–4 · High Card 2–9") : players}
           </li>
           <li>
             <span className="meta-age" aria-hidden="true">
-              {game.age}
+              {age}
             </span>
-            {game.age} {shared.years}
+            {age} {shared.years}
           </li>
           <li>
             <Clock3 aria-hidden="true" />
-            {game.time} {shared.minutes}
+            {time} {shared.minutes}
           </li>
         </ul>
 
-        <Link className="text-link" href={localPath(game.routeKey, locale)}>
+        <Link className="text-link" href={localPath(route, locale)}>
           {shared.viewGame}
           <ArrowRight aria-hidden="true" />
         </Link>

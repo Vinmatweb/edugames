@@ -3,9 +3,10 @@ import path from 'node:path';
 import crypto from 'node:crypto';
 
 const root = path.resolve(import.meta.dirname, '..');
-const manifest = JSON.parse(fs.readFileSync(path.join(root, 'print-assets/fantasy-battle.json'), 'utf8'));
+const manifests = ['fantasy-battle.json', 'word-race.json'].map(name => JSON.parse(fs.readFileSync(path.join(root, `print-assets/${name}`), 'utf8')));
+const files = manifests.flatMap(manifest => manifest.files);
 const hash = data => crypto.createHash('sha256').update(data).digest('hex');
-for (const file of manifest.files) {
+for (const file of files) {
   const output = path.join(root, file.output);
   if (fs.existsSync(output) && hash(fs.readFileSync(output)) === file.sha256) continue;
   fs.mkdirSync(path.dirname(output), {recursive: true});

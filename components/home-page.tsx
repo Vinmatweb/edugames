@@ -64,7 +64,7 @@ export function HomePage({ locale }: { locale: Locale }) {
 
           <dl className="hero-stats" aria-label={locale === "cs" ? "Přehled her" : "Library at a glance"}>
             <div>
-              <dt>2</dt>
+              <dt>3</dt>
               <dd>{copy.statGames}</dd>
             </div>
             <div>
@@ -86,9 +86,10 @@ export function HomePage({ locale }: { locale: Locale }) {
             </div>
             <p>{copy.gamesIntro}</p>
           </div>
-          <div className="game-grid">
+          <div className="game-grid game-grid--three">
             <GameCard gameKey="fantasy" locale={locale} />
             <GameCard gameKey="racing" locale={locale} />
+            <GameCard gameKey="wordRace" locale={locale} />
           </div>
         </section>
 
