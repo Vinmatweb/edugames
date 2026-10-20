@@ -9,7 +9,7 @@ const content = {
     back: "All games", title: "VM Word Race", sub: "Read • Race • Win", label: "Printable reading game",
     lead: "A calm, encouraging reading race for 1–4 children, played with a reader who can help sound out words. One player still needs a reading supervisor; this is not a self-guided game.",
     facts: [["Players","1–4"],["Age","about 6–8"],["Play time","about 5–15 min"],["Language","Czech"],["Format","Print and play"]],
-    learnTitle:"What children practise", learn:"Recognising letters, saying their sounds, blending sounds into words, and noticing short and long vowels. Reading speed gives no advantage.",
+    learnTitle:"What children practise", learn:"Recognising letters, saying their sounds, blending sounds into words, and noticing short and long vowels as part of reading, with no separate bonus. Reading speed gives no advantage.",
     howTitle:"How to play", steps:[
       "Prepare the chosen board, shuffle the word cards, and sort them into three piles by the printed move value: +1, +2 and +3. Each player chooses a car, ship or rocket to match the map.",
       "The youngest player starts. Then turns continue from youngest to oldest. The child chooses a pile that feels right, turns over its top card, says the word one letter sound at a time, then says the whole word.",
@@ -33,7 +33,7 @@ const content = {
     back:"Všechny hry", title:"VM Word Race", sub:"Čti • Závoď • Vyhraj", label:"Tisknutelná čtecí hra",
     lead:"Klidná a povzbuzující čtecí závodní hra pro 1–4 děti, které hrají s někým, kdo umí číst a pomůže s hláskováním. I při hře jednoho dítěte je čtenářský dohled nutný.",
     facts:[["Hráči","1–4"],["Věk","přibližně 6–8 let"],["Délka","přibližně 5–15 min"],["Jazyk","čeština"],["Formát","k vytištění"]],
-    learnTitle:"Co si děti procvičí", learn:"Poznávání písmen, čtení hlásek, spojování hlásek do slov a rozlišování krátkých a dlouhých samohlásek. Rychlost čtení nepřináší výhodu.",
+    learnTitle:"Co si děti procvičí", learn:"Poznávání písmen, čtení hlásek, spojování hlásek do slov a rozlišování krátkých a dlouhých samohlásek jako součást čtení bez zvláštního bonusu. Rychlost čtení nepřináší výhodu.",
     howTitle:"Jak se hraje", steps:[
       "Připravte vybranou mapu, zamíchejte slovní karty a rozdělte je do tří hromádek podle vytištěné hodnoty pohybu: +1, +2 a +3. Každý si podle mapy vybere auto, loď nebo raketu.",
       "Začíná nejmladší hráč. Potom hrají ostatní od nejmladšího po nejstaršího. Dítě si vybere hromádku podle toho, na jakou obtížnost se cítí, otočí horní kartu, přečte slovo po jednotlivých hláskách a potom ho vysloví celé.",
