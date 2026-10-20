@@ -27,6 +27,13 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" suppressHydrationWarning>
+      <head>
+        <script
+          data-goatcounter="https://vinmat.goatcounter.com/count"
+          async
+          src="https://gc.zgo.at/count.js"
+        />
+      </head>
       <body className="antialiased">{children}</body>
     </html>
   );
