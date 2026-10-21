@@ -24,8 +24,8 @@ const content = {
     ],
     variantsTitle:"Variants", variants:"The child normally chooses a card pile. As a variant, the reader or another player may choose the pile instead.",
     downloadsTitle:"Available print files", downloadIntro:"These Czech files are ready to print. Each download is checked and links to an existing PDF.",
-    downloads:[["Word cards (A4, double-sided)","/downloads/vm-word-race-cards-cs.pdf"],["Race track board (A3, 32 spaces)","/downloads/vm-word-race-track-a3-cs.pdf"],["Four folding cars (A4)","/downloads/vm-word-race-cars-a4-cs.pdf"],["Pirate route board (A3)","/downloads/vm-word-race-pirate-map-a3-cs.pdf"],["Pirate ships (A4)","/downloads/vm-word-race-pirate-ships-a4-cs.pdf"]],
-    unavailable:"English word cards are not available yet; the included word cards are in Czech.",
+    downloads:[["Word cards (A4, double-sided)","/downloads/vm-word-race-cards-cs.pdf"],["Race track board (A3, 32 spaces)","/downloads/vm-word-race-track-a3-cs.pdf"],["Four folding cars (A4)","/downloads/vm-word-race-cars-a4-cs.pdf"],["Pirate ships (A4)","/downloads/vm-word-race-pirate-ships-a4-cs.pdf"]],
+    unavailable:"English word cards and a printable pirate board are not available yet; included word cards are in Czech.",
     supervision:"Adult or older-child reading supervision is required for every game, including solo play.",
   },
   cs: {
@@ -47,8 +47,8 @@ const content = {
     ],
     variantsTitle:"Varianty", variants:"Základní pravidlo je, že si hromádku vybírá dítě. Ve variantě může hromádku určit čtenář nebo další hráč.",
     downloadsTitle:"Dostupné soubory k tisku", downloadIntro:"Tyto české soubory jsou připravené k tisku. Každý odkaz vede na existující PDF.",
-    downloads:[["Slovní karty (A4, oboustranně)","/downloads/vm-word-race-cards-cs.pdf"],["Závodní okruh (A3, 32 políček)","/downloads/vm-word-race-track-a3-cs.pdf"],["Čtyři skládací autíčka (A4)","/downloads/vm-word-race-cars-a4-cs.pdf"],["Pirátská mapa (A3)","/downloads/vm-word-race-pirate-map-a3-cs.pdf"],["Pirátské lodě (A4)","/downloads/vm-word-race-pirate-ships-a4-cs.pdf"]],
-    unavailable:"Anglické slovní karty zatím nejsou k dispozici; přiložené karty se slovy jsou v češtině.",
+    downloads:[["Slovní karty (A4, oboustranně)","/downloads/vm-word-race-cards-cs.pdf"],["Závodní okruh (A3, 32 políček)","/downloads/vm-word-race-track-a3-cs.pdf"],["Čtyři skládací autíčka (A4)","/downloads/vm-word-race-cars-a4-cs.pdf"],["Pirátské lodě (A4)","/downloads/vm-word-race-pirate-ships-a4-cs.pdf"]],
+    unavailable:"Anglické slovní karty a tisková pirátská mapa zatím nejsou k dispozici; přiložené karty se slovy jsou v češtině.",
     supervision:"Dohled dospělého nebo staršího dítěte, které umí číst, je nutný při každé hře včetně hry jednoho dítěte.",
   }
 } as const;
