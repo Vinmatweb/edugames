@@ -1931,7 +1931,7 @@ a {
 .wr-steps li>span { display:grid; place-items:center; width:36px; height:36px; border-radius:50%; background:#172049; color:white; font-weight:800; }
 .wr-note { margin-top:16px; padding:22px 24px; border-left:4px solid var(--blue); border-radius:8px 16px 16px 8px; background:#fff; }
 .wr-note h3 { margin-bottom:8px; }
-.wr-maps { display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:18px; }
+.wr-maps { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:18px; }
 .wr-map { overflow:hidden; background:white; border:1px solid var(--line); border-radius:18px; }
 .wr-map img { width:100%; height:230px; object-fit:contain; background:#f7f8fc; padding:10px; }
 .wr-map div { padding:20px; }
