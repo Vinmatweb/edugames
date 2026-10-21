@@ -19,7 +19,7 @@ export function GameCard({ gameKey, locale }: { gameKey: GameKey | "wordRace"; l
   const shared = sharedCopy[locale];
   const route = isWordRace ? "wordRace" : baseGame!.routeKey;
   const accent = isWordRace ? "word-race" : baseGame!.accent;
-  const image = isWordRace ? "/images/word-race-solar-system.webp" : baseGame!.image;
+  const image = isWordRace ? "/images/word-race-track.webp" : baseGame!.image;
   const players = isWordRace ? (locale === "cs" ? "1–4 hráči" : "1–4 players") : `${baseGame!.players} ${shared.players}`;
   const age = isWordRace ? "6–8" : baseGame!.age;
   const time = isWordRace ? "5–15" : baseGame!.time;

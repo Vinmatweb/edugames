@@ -11,7 +11,7 @@ const content = {
     facts: [["Players","1–4"],["Age","about 6–8"],["Play time","about 5–15 min"],["Language","Czech"],["Format","Print and play"]],
     learnTitle:"What children practise", learn:"Recognising letters, saying their sounds, blending sounds into words, and noticing short and long vowels as part of reading, with no separate bonus. Reading speed gives no advantage.",
     howTitle:"How to play", steps:[
-      "Prepare the chosen board, shuffle the word cards, and sort them into three piles by the printed move value: +1, +2 and +3. Each player chooses a car, ship or rocket to match the map.",
+      "Prepare the chosen board, shuffle the word cards, and sort them into three piles by the printed move value: +1, +2 and +3. Players choose a car for the race track or a ship for the pirate route.",
       "The youngest player starts. Then turns continue from youngest to oldest. The child chooses a pile that feels right, turns over its top card, says the word one letter sound at a time, then says the whole word.",
       "If the word is read correctly, move the playing piece by the value printed on the card. Usually three-letter words are +1, four-letter words +2 and five-letter words +3. A harder word may be worth more; the printed value always decides.",
       "Special spaces activate only when a player ends their move there, unless the board marks or the agreed rules say otherwise."
@@ -21,12 +21,11 @@ const content = {
     mapsTitle:"Choose a map", maps:[
       ["Race track","Drive cars around the course, following the numbered spaces.","/images/word-race-track.webp","Race track board"],
       ["Pirate route","Sail ships. If a turn ends on a marked entry space, follow its shortcut or return route as shown.","/images/word-race-pirates.webp","Pirate board with route markings"],
-      ["Solar system","Fly rockets from Pluto toward Earth. The planets follow their correct order; the route loops around Venus and Mercury and stays clear of the Sun.","/images/word-race-solar-system.webp","Solar system route map"]
     ],
     variantsTitle:"Variants", variants:"The child normally chooses a card pile. As a variant, the reader or another player may choose the pile instead.",
     downloadsTitle:"Available print files", downloadIntro:"These Czech files are ready to print. Each download is checked and links to an existing PDF.",
     downloads:[["Word cards (A4, double-sided)","/downloads/vm-word-race-cards-cs.pdf"],["Race track board (A3, 32 spaces)","/downloads/vm-word-race-track-a3-cs.pdf"],["Four folding cars (A4)","/downloads/vm-word-race-cars-a4-cs.pdf"],["Pirate route board (A3)","/downloads/vm-word-race-pirate-map-a3-cs.pdf"],["Pirate ships (A4)","/downloads/vm-word-race-pirate-ships-a4-cs.pdf"]],
-    unavailable:"The solar-system board and rocket tokens are not yet available as finished print PDFs.",
+    unavailable:"English word cards are not available yet; the included word cards are in Czech.",
     supervision:"Adult or older-child reading supervision is required for every game, including solo play.",
   },
   cs: {
@@ -35,7 +34,7 @@ const content = {
     facts:[["Hráči","1–4"],["Věk","přibližně 6–8 let"],["Délka","přibližně 5–15 min"],["Jazyk","čeština"],["Formát","k vytištění"]],
     learnTitle:"Co si děti procvičí", learn:"Poznávání písmen, čtení hlásek, spojování hlásek do slov a rozlišování krátkých a dlouhých samohlásek jako součást čtení bez zvláštního bonusu. Rychlost čtení nepřináší výhodu.",
     howTitle:"Jak se hraje", steps:[
-      "Připravte vybranou mapu, zamíchejte slovní karty a rozdělte je do tří hromádek podle vytištěné hodnoty pohybu: +1, +2 a +3. Každý si podle mapy vybere auto, loď nebo raketu.",
+      "Připravte vybranou mapu, zamíchejte slovní karty a rozdělte je do tří hromádek podle vytištěné hodnoty pohybu: +1, +2 a +3. Hráči si podle mapy vyberou auto pro závodní okruh nebo loď pro pirátskou trasu.",
       "Začíná nejmladší hráč. Potom hrají ostatní od nejmladšího po nejstaršího. Dítě si vybere hromádku podle toho, na jakou obtížnost se cítí, otočí horní kartu, přečte slovo po jednotlivých hláskách a potom ho vysloví celé.",
       "Při správném přečtení posune figurku o hodnotu vytištěnou na kartě. Obvykle mají třípísmenná slova hodnotu +1, čtyřpísmenná +2 a pětipísmenná +3. Náročnější slovo může mít vyšší hodnotu; vždy rozhoduje číslo na kartě.",
       "Speciální políčko se aktivuje jen tehdy, když na něm hráč skončí svůj pohyb, pokud značení mapy nebo domluvená pravidla neurčují jinak."
@@ -45,12 +44,11 @@ const content = {
     mapsTitle:"Vyberte mapu", maps:[
       ["Závodní okruh","Hráči jedou auty po závodní trati a postupují po vyznačených políčkách.","/images/word-race-track.webp","Herní plán závodního okruhu"],
       ["Pirátská mapa","Hráči plují loděmi. Pokud tah skončí na označeném vstupním políčku, použijí zkratku nebo vracečku podle značení.","/images/word-race-pirates.webp","Pirátská mapa se značenou trasou"],
-      ["Sluneční soustava","Hráči letí raketami od Pluta k Zemi. Planety jsou ve správném pořadí; trasa obkrouží Venuši a Merkur a vede mimo Slunce.","/images/word-race-solar-system.webp","Trasa Sluneční soustavou"]
     ],
     variantsTitle:"Varianty", variants:"Základní pravidlo je, že si hromádku vybírá dítě. Ve variantě může hromádku určit čtenář nebo další hráč.",
     downloadsTitle:"Dostupné soubory k tisku", downloadIntro:"Tyto české soubory jsou připravené k tisku. Každý odkaz vede na existující PDF.",
     downloads:[["Slovní karty (A4, oboustranně)","/downloads/vm-word-race-cards-cs.pdf"],["Závodní okruh (A3, 32 políček)","/downloads/vm-word-race-track-a3-cs.pdf"],["Čtyři skládací autíčka (A4)","/downloads/vm-word-race-cars-a4-cs.pdf"],["Pirátská mapa (A3)","/downloads/vm-word-race-pirate-map-a3-cs.pdf"],["Pirátské lodě (A4)","/downloads/vm-word-race-pirate-ships-a4-cs.pdf"]],
-    unavailable:"Mapa Sluneční soustavy a raketové figurky zatím nejsou k dispozici jako hotové tiskové PDF.",
+    unavailable:"Anglické slovní karty zatím nejsou k dispozici; přiložené karty se slovy jsou v češtině.",
     supervision:"Dohled dospělého nebo staršího dítěte, které umí číst, je nutný při každé hře včetně hry jednoho dítěte.",
   }
 } as const;
@@ -61,7 +59,7 @@ export function WordRacePage({ locale }: { locale: Locale }) {
     <main id="main-content" className="word-race-page">
       <div className="shell word-race-shell">
         <Link className="text-link wr-back" href={localPath("home",locale)}><ArrowLeft aria-hidden="true"/>{c.back}</Link>
-        <header className="wr-hero"><div><p className="eyebrow">{c.label}</p><h1>{c.title}</h1><p className="wr-subtitle">{c.sub}</p><p className="wr-lead">{c.lead}</p><ul className="wr-facts">{c.facts.map(([k,v])=><li key={k}><strong>{k}</strong><span>{v}</span></li>)}</ul></div><img src={assetPath("/images/word-race-solar-system.webp")} alt={locale==="cs"?"Náhled mapy Sluneční soustavy":"Solar system map preview"} /></header>
+        <header className="wr-hero"><div><p className="eyebrow">{c.label}</p><h1>{c.title}</h1><p className="wr-subtitle">{c.sub}</p><p className="wr-lead">{c.lead}</p><ul className="wr-facts">{c.facts.map(([k,v])=><li key={k}><strong>{k}</strong><span>{v}</span></li>)}</ul></div><img src={assetPath("/images/word-race-track.webp")} alt={locale==="cs"?"Náhled závodního okruhu":"Race track preview"} /></header>
         <section className="wr-learn"><BookOpenCheck aria-hidden="true"/><div><h2>{c.learnTitle}</h2><p>{c.learn}</p></div></section>
         <section className="wr-section"><h2>{c.howTitle}</h2><ol className="wr-steps">{c.steps.map((x,i)=><li key={x}><span>{i+1}</span><p>{x}</p></li>)}</ol><aside className="wr-note"><h3>{c.correctionTitle}</h3><p>{c.correction}</p></aside><aside className="wr-note"><h3>{c.finishTitle}</h3><p>{c.finish}</p></aside></section>
         <section className="wr-section"><h2>{c.mapsTitle}</h2><div className="wr-maps">{c.maps.map(([title,desc,img,alt])=><article className="wr-map" key={title}><img src={assetPath(img)} alt={alt}/><div><h3>{title}</h3><p>{desc}</p></div></article>)}</div></section>
