@@ -92,6 +92,15 @@ export function GamePage({ gameKey, locale }: { gameKey: GameKey; locale: Locale
             {gameKey === "fantasy" && <p className="mode-player-note">{locale === "cs" ? "Bitva: 2–4 hráči · Přebíjená: 2–9 hráčů" : "Battle: 2–4 players · High Card Battle: 2–9 players"}</p>}
 
             <div className="hero-actions">
+              {gameKey === "fantasy" && (
+                <a
+                  className={buttonVariants({ size: "lg", className: "button-primary" })}
+                  href={assetPath("/fantasy-battle/")}
+                >
+                  <ArrowRight aria-hidden="true" />
+                  {locale === "cs" ? "Hrát přebíjenou online" : "Play online · Czech"}
+                </a>
+              )}
               <a
                 className={buttonVariants({
                   size: "lg",

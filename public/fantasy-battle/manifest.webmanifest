@@ -1,0 +1,17 @@
+{
+  "name": "VM Fantasy Battle – Přebíjená",
+  "short_name": "Fantasy Battle",
+  "lang": "cs",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#10141c",
+  "theme_color": "#10141c",
+  "icons": [
+    {
+      "src": "/edugames/favicon.png",
+      "sizes": "any",
+      "type": "image/png"
+    }
+  ]
+}
