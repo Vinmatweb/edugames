@@ -8,6 +8,7 @@ address `https://vinmat.eu/edugames/`.
 - English home page and full Czech version under `/cs/`
 - VM Fantasy Battle game page, rules and Czech printable downloads
 - Racing Math game page, rules and Czech playtest download
+- Ollie’s Classroom hub at `/ollie/` (English, maths, reading and printable cards)
 - print-and-play guide
 - project, privacy and terms pages
 - responsive layout, keyboard focus states, sitemap and robots metadata

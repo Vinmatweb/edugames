@@ -48,6 +48,7 @@ export function SiteHeader({ locale, languageHref }: SiteHeaderProps) {
             </Link>
             <Link href={localPath("guide", locale)}>{copy.navGuide}</Link>
             <Link href={localPath("about", locale)}>{copy.navAbout}</Link>
+            <Link href="/ollie/">{locale === "cs" ? "Ollie" : "Ollie"}</Link>
           </nav>
 
           <Button
