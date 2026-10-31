@@ -95,10 +95,10 @@ export function GamePage({ gameKey, locale }: { gameKey: GameKey; locale: Locale
               {gameKey === "fantasy" && (
                 <a
                   className={buttonVariants({ size: "lg", className: "button-primary" })}
-                  href={assetPath("/fantasy-battle/")}
+                  href={assetPath(locale === "cs" ? "/fantasy-battle/cs/" : "/fantasy-battle/")}
                 >
                   <ArrowRight aria-hidden="true" />
-                  {locale === "cs" ? "Hrát přebíjenou online" : "Play online · Czech"}
+                  {locale === "cs" ? "Hrát přebíjenou online" : "Play High Card Battle"}
                 </a>
               )}
               <a

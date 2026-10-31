@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="120" height="330" viewBox="0 0 120 330" fill="none">
+ <defs>
+  <linearGradient id="steel" x1="45" y1="70" x2="77" y2="80" gradientUnits="userSpaceOnUse"><stop stop-color="#7894ad"/><stop offset=".45" stop-color="#f5fcff"/><stop offset=".51" stop-color="#a9c6d5"/><stop offset="1" stop-color="#4a6c86"/></linearGradient>
+  <linearGradient id="gold" x1="13" y1="237" x2="105" y2="261" gradientUnits="userSpaceOnUse"><stop stop-color="#80501f"/><stop offset=".3" stop-color="#ffdfa0"/><stop offset=".55" stop-color="#c99c4b"/><stop offset=".8" stop-color="#ffdd8e"/><stop offset="1" stop-color="#8d5a20"/></linearGradient>
+  <linearGradient id="grip" x1="48" y1="260" x2="70" y2="290" gradientUnits="userSpaceOnUse"><stop stop-color="#103855"/><stop offset=".5" stop-color="#286e97"/><stop offset="1" stop-color="#0e2944"/></linearGradient>
+ </defs>
+ <path d="M60 6 77 47 72 224 65 240H55L48 224 43 47Z" fill="url(#steel)" stroke="#c2e0e9" stroke-width="2"/>
+ <path d="M60 19V226" stroke="#f4fdff" stroke-width="2" opacity=".8"/>
+ <path d="m51 68 9-13 9 13M52 94l8-11 8 11M53 120l7-10 7 10" stroke="#5a85a4" stroke-width="1.4" opacity=".7"/>
+ <path d="m12 228 22 7 26 5 26-5 22-7-7 18-16 8-25-5-25 5-16-8Z" fill="url(#gold)" stroke="#69431d" stroke-width="2"/>
+ <path d="m21 234 18 8 21 3 21-3 18-8" stroke="#ffedb8" stroke-width="2" opacity=".8"/>
+ <path d="M49 252h22l-3 47H52Z" fill="url(#grip)" stroke="#cba054" stroke-width="2"/>
+ <path d="m50 258 19 7m-18 4 18 7m-18 3 17 7m-16 4 16 6" stroke="#bb9453" stroke-width="2.5"/>
+ <path d="m60 233 11 12-11 11-11-11Z" fill="#44bded" stroke="#ffe1a1" stroke-width="3"/>
+ <path d="m60 235-2 10 11-1-9 9Z" fill="#14739e"/><path d="m54 243 6-6 4 5-9 3Z" fill="#c5f4ff"/>
+ <path d="m52 299-8 12 16 13 16-13-8-12Z" fill="url(#gold)" stroke="#70451e" stroke-width="2"/>
+ <path d="m60 304 7 7-7 7-7-7Z" fill="#247ca2" stroke="#ffe2a0"/>
+</svg>

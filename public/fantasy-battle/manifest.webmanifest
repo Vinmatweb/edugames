@@ -1,7 +1,7 @@
 {
-  "name": "VM Fantasy Battle – Přebíjená",
+  "name": "VM Fantasy Battle · High Card Battle",
   "short_name": "Fantasy Battle",
-  "lang": "cs",
+  "lang": "en",
   "start_url": "./",
   "scope": "./",
   "display": "standalone",

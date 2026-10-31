@@ -21,3 +21,11 @@ Players reveal only by clicking their own deck. Solo always draws the human firs
 ## GitHub Pages and iPad
 
 The deployable game is `public/fantasy-battle/`; Next static export copies it to `/edugames/fantasy-battle/`. Test the engine with `node tests/fantasy-battle.test.mjs`. CSS includes iPad landscape compaction, minimum 44px touch controls, safe-area padding and 16px touch input fonts. The Web App Manifest and Apple metadata support adding the game to the Home Screen. No service worker is installed; offline play is not promised.
+
+## Bilingual edition and interaction update (2026-10-31)
+
+English is the default at `/edugames/fantasy-battle/`; Czech lives at `/edugames/fantasy-battle/cs/`. Both entrypoints share game code, audio and card art. Per-language canonical/hreflang metadata, manifests and parent-page links keep addresses consistent. Saves and sound preference are shared on the same origin; names remain user data when changing language.
+
+The game view now keeps each face-up card DOM node in its own persistent slot. Opponent reveals, errors and scoring do not replace that node or restart its reveal animation. Wrong comparisons show a blue-and-gold sword swoosh with localized feedback; points stay unchanged. Correct comparisons queue the next round after 950 ms (1,100 ms for a tiebreak), without a Next button. Every new card still requires its player's deck click; Gamemaster follows automatically. Saved resolved rounds schedule their own continuation on resume.
+
+`audio.mjs` provides quiet procedural card rustle and nine army voices (metal, wood, bone, harp, bells, drums and airy low textures); no external audio service is used. Sound is opt-in and persisted. All iPad layout/touch rules remain in place.

@@ -14,6 +14,16 @@ export default function sitemap(): MetadataRoute.Sitemap {
   const routePairs = Object.values(paths);
 
   return [
+    ...[
+      { path: "/fantasy-battle", language: "en" },
+      { path: "/fantasy-battle/cs", language: "cs" },
+    ].map(({ path }) => ({
+      url: url(path),
+      lastModified: new Date("2026-10-31T00:00:00+01:00"),
+      changeFrequency: "monthly" as const,
+      priority: 0.8,
+      alternates: { languages: { en: url("/fantasy-battle"), cs: url("/fantasy-battle/cs") } },
+    })),
     ...routePairs.flatMap((pair) => [
     {
       url: url(pair.en),
