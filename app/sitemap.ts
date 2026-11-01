@@ -14,6 +14,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
   const routePairs = Object.values(paths);
 
   return [
+    {
+      url: url("/ollie/pismenkove-patrani"),
+      lastModified: new Date("2026-11-01T00:00:00+01:00"),
+      changeFrequency: "monthly",
+      priority: 0.8,
+    },
     ...[
       { path: "/fantasy-battle", language: "en" },
       { path: "/fantasy-battle/cs", language: "cs" },
@@ -76,3 +82,4 @@ export default function sitemap(): MetadataRoute.Sitemap {
     },
   ];
 }
+
