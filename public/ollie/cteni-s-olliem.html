@@ -17,22 +17,29 @@ const BRAND = {
   greeting: 'Ahoj! Já jsem sova Ollie.',
   appTitle: 'Čtení s Olliem',
   fonts: {
-    css: 'https://fonts.googleapis.com/css2?family=Andika:wght@400;700&family=Nunito:wght@600;700;800;900&display=swap',
-    ui: '"Nunito","Trebuchet MS",system-ui,sans-serif',          // nadpisy a ovládání (musí umět Č, Ř, Ě…)
+    css: 'https://fonts.googleapis.com/css2?family=Andika:wght@400;700&family=Baloo+2:wght@500;600;700;800&display=swap',
+    ui: '"Baloo 2","Nunito","Trebuchet MS",system-ui,sans-serif',  // nadpisy a ovládání (Baloo 2 umí Č, Ř, Ě…)
     read: '"Andika","Andika New Basic","Trebuchet MS",system-ui,sans-serif' // písmo pro čtená slova
   },
   colors: {
-    page: '#F3E4C4',       // pozadí stránky (světlé dřevo)
-    board: '#24493B',      // tabule
-    wood: '#8B5A2B',       // rám tabule
-    chalk: '#F4F1E6',      // text na tabuli
+    page: '#E5CA92',       // pozadí stránky (dřevo)
+    grain: 'rgba(134,91,48,.07)', // jemná léta dřeva
+    board: '#29483C',      // tabule
+    wood: '#865B30',       // rám tabule
+    chalk: '#FFFFFF',      // text na tabuli
     chalkGood: '#A9EBB9',  // pochvala na tabuli
     chalkFix: '#FFD0A6',   // oprava na tabuli
-    ink: '#24493B',        // hlavní text
-    inkSoft: '#5E6F63',    // vedlejší text
-    accent: '#E8892B',     // hlavní tlačítka
-    accentDark: '#B9661A', // stín tlačítek
-    border: '#E2CFA6'      // okraje karet
+    ink: '#29483C',        // hlavní text
+    inkSoft: '#6A675C',    // vedlejší text
+    accent: '#29483C',     // hlavní tlačítka (tmavě zelená)
+    accentDark: '#1B3229', // stín tlačítek
+    panel: '#FFFBF3',      // krémové panely
+    soft: '#F3EDE1',       // neaktivní tlačítka, prázdná políčka
+    shadow: '#C49B5A',     // stín karet
+    border: '#E6D7B8',     // okraje
+    stripe1: '#E78D47', tag1: '#8F582B',   // úroveň / lekce 1 (oranžová)
+    stripe2: '#4C9D5C', tag2: '#2F6B3C',   // lekce 2 (zelená)
+    stripe3: '#437EBF', tag3: '#294E76'    // lekce 3 (modrá)
   },
   mascot: `
  <path d="M30 34 L26 18 L42 28 Z" fill="#8A5A2B"/><path d="M90 34 L94 18 L78 28 Z" fill="#8A5A2B"/>
@@ -286,6 +293,64 @@ input[type=range]{width:100%;accent-color:var(--sky)}
   .tiles{gap:8px}.tile-stat{padding:10px 12px}.tile-stat b{font-size:24px}.tile-stat span{font-size:13px}
 }
 @media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}}
+
+/* ================= Ollie Classroom – společný vzhled ================= */
+body{background-color:var(--b-page);
+  background-image:repeating-linear-gradient(90deg,var(--b-grain) 0 2px,transparent 2px 11px,var(--b-grain) 11px 12px,transparent 12px 29px,var(--b-grain) 29px 31px,transparent 31px 47px);}
+h1,h2,h3,.lbl,.lesson h2,.primary,.chip-btn,.pill-btn,.seg button{font-family:var(--f-ui)}
+.apphead{display:flex;align-items:center;gap:12px;margin-bottom:14px}
+.apptitle{flex:1;margin:0;font-size:24px;font-weight:800;color:var(--b-ink);line-height:1.1}
+.pill-btn{display:inline-flex;align-items:center;gap:8px;border:2px solid var(--b-ink);background:transparent;color:var(--b-ink);border-radius:999px;padding:6px 16px;font-weight:700;font-size:16px}
+.pill-btn svg{width:18px;height:18px}
+.pill-btn.off{opacity:.6}
+.coach{border:10px solid var(--b-wood);border-radius:22px;background:var(--b-board);box-shadow:0 5px 0 rgba(0,0,0,.18);padding:14px 20px;gap:18px;max-width:none}
+.coach .bubble{color:var(--b-chalk);font-weight:800;font-size:clamp(20px,3.2vw,30px);line-height:1.2;font-family:var(--f-ui)}
+.home-coach{margin-bottom:18px}
+.home-coach .mascot{width:84px}
+.again{flex:none;display:inline-flex;align-items:center;gap:6px;border:2px solid rgba(255,255,255,.45);background:rgba(255,255,255,.06);color:#fff;border-radius:999px;padding:8px 16px;font-weight:700;font-size:16px;font-family:var(--f-ui)}
+.again svg{width:18px;height:18px}
+.again:hover{background:rgba(255,255,255,.14)}
+/* karty lekcí s barevným proužkem */
+.lesson{border:none;border-radius:18px;background:#fff;box-shadow:0 5px 0 var(--b-shadow);padding:18px 20px 18px 34px;position:relative;overflow:hidden;--stripe:var(--b-stripe1);--tagc:var(--b-tag1)}
+.lesson::before{content:"";position:absolute;left:0;top:0;bottom:0;width:12px;background:var(--stripe)}
+.lessons .lesson:nth-child(3n+2){--stripe:var(--b-stripe2);--tagc:var(--b-tag2)}
+.lessons .lesson:nth-child(3n){--stripe:var(--b-stripe3);--tagc:var(--b-tag3)}
+.lesson .tag{color:var(--tagc);font-weight:800}
+.lesson h2{font-size:24px;font-weight:800;line-height:1.15}
+.lesson .sample{font-family:var(--f-ui);font-weight:600}
+.lesson:hover{transform:translateY(-2px);box-shadow:0 7px 0 var(--b-shadow)}
+.lesson.komplet{background:var(--b-panel);outline:3px solid var(--stripe);outline-offset:-3px}
+/* panely */
+.count-pick,.panel,.tile-stat,dialog{background:var(--b-panel);border:none;border-radius:18px;box-shadow:0 5px 0 var(--b-shadow)}
+dialog{box-shadow:0 8px 0 var(--b-shadow)}
+.lesson-head{color:var(--b-ink);font-weight:800;font-size:22px}
+/* přepínače jako pilulky */
+.seg{background:var(--b-soft);border-radius:999px;padding:4px;display:inline-flex;flex-wrap:wrap;gap:2px}
+.seg button{border:none;background:transparent;border-radius:999px;padding:7px 16px;font-weight:700;color:var(--b-ink)}
+.seg button[aria-pressed="true"]{background:var(--b-ink);color:#fff;font-weight:800}
+.count-pick .seg button{min-width:52px}
+/* tlačítka */
+.primary{background:var(--b-ink);color:#fff;border-radius:999px;box-shadow:0 4px 0 var(--b-accent-dark);font-weight:800}
+.chip-btn{border:2px solid var(--b-ink);background:transparent;color:var(--b-ink);font-weight:700}
+.chip-btn:hover{background:rgba(41,72,60,.06);border-color:var(--b-ink)}
+.icon-btn{border:2px solid var(--b-ink);background:transparent;border-radius:999px;color:var(--b-ink)}
+.danger{background:transparent}
+.adult button{border:2px solid var(--b-ink);background:var(--b-panel);border-radius:999px;color:var(--b-ink)}
+.adult button.ok{border-color:var(--leaf);color:var(--leaf)} .adult button.bad{border-color:var(--clay);color:var(--clay)}
+/* plocha se slovem */
+.sheet{border:none;border-radius:22px;background:#fff;box-shadow:0 6px 0 var(--b-shadow)}
+.mic{background:var(--b-ink);box-shadow:0 8px 0 var(--b-accent-dark)}
+.mic:active{box-shadow:0 4px 0 var(--b-accent-dark)}
+.mic.busy{background:#B9A57C;box-shadow:0 8px 0 #977F55}
+/* políčka hlásek a slova v souhrnech */
+.vkey{border:2px solid transparent;background:var(--b-soft);box-shadow:none}
+.vkey.good{background:#E1F3E6;border-color:#BBE0C7} .vkey.weak{background:#F8E1DD;border-color:#EDB9AF} .vkey.rec{border-color:var(--b-ink)}
+.wordlist span{background:#FFF1C9} .wordlist span.help{background:#E1F3E6} .wordlist span.skip{background:var(--b-soft)}
+.chips span{background:#F8E1DD}
+.bar{background:var(--b-soft)} .bar i{background:var(--b-stripe1)}
+.note{color:var(--b-ink-soft)}
+.topbar .lesson-name{font-weight:800;font-size:18px}
+@media (max-width:520px){ .coach{border-width:7px;padding:10px 12px} .apptitle{font-size:20px} .again{padding:6px 10px;font-size:14px} .lesson{padding-left:28px} }
 </style>
 </head>
 <body>
@@ -293,12 +358,14 @@ input[type=range]{width:100%;accent-color:var(--sky)}
 
   <!-- HOME -->
   <section class="home" id="home">
-    <div class="brand">
-      <svg viewBox="0 0 120 100" aria-hidden="true" class="mascot-svg"></svg>
-      <div>
-        <h1 id="brandTitle"></h1>
-        <p id="brandGreeting"></p>
-      </div>
+    <div class="apphead">
+      <h1 class="apptitle" id="brandTitle"></h1>
+      <button class="pill-btn" id="btnSound"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M4 9h4l5-4v14l-5-4H4z"/><path d="M16 8.5a4.5 4.5 0 0 1 0 7M18.5 6a8 8 0 0 1 0 12" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg><span id="soundLbl">Zvuk</span></button>
+    </div>
+    <div class="coach home-coach">
+      <svg viewBox="0 0 120 100" aria-hidden="true" class="mascot mascot-svg"></svg>
+      <div class="bubble" id="brandGreeting"></div>
+      <button class="again" id="homeAgain"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M4 9h4l5-4v14l-5-4H4z"/><path d="M16 8.5a4.5 4.5 0 0 1 0 7" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>Znovu</button>
     </div>
     <div class="count-pick">
       <span class="lbl">Kolik slov dnes přečteme?</span>
@@ -346,6 +413,7 @@ input[type=range]{width:100%;accent-color:var(--sky)}
     <div class="coach">
       <svg viewBox="0 0 120 100" class="mascot" id="mascot" aria-hidden="true"></svg>
       <div class="bubble" id="bubble" aria-live="polite"></div>
+      <button class="again" id="readAgain" aria-label="Zopakovat"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M4 9h4l5-4v14l-5-4H4z"/><path d="M16 8.5a4.5 4.5 0 0 1 0 7" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>Znovu</button>
     </div>
 
     <div class="sheet">
@@ -613,7 +681,9 @@ const $=id=>document.getElementById(id);
 const bubble=$('bubble'), mascot=$('mascot');
 
 // spoken: text, nebo pole částí – řetězce čte hlas, {g:'N'} přehraje hlásku
+let lastSay=null;
 async function say(text, spoken, mood){
+  lastSay={text,spoken,mood};
   bubble.textContent=text; bubble.className='bubble'+(mood?' '+mood:'');
   spoken = spoken ?? text;
   const parts = Array.isArray(spoken) ? spoken : [spoken];
@@ -1045,6 +1115,7 @@ function analyzeWhole(alts, lenient){
   return {kind:lenOnly?'len':'bad', wrong:best.wrong, lenIdx:best.lenIdx};
 }
 async function modelItem(onlyWrong){
+  lastSay=null;
   // Ollie přečte (chybná) slova po hláskách a celá, nakonec celé slovo / větu
   const ws = W.sentence && onlyWrong && wrongSet.size ? W.words.filter(g=>g.some(i=>wrongSet.has(i))) : W.words;
   bubble.textContent='Poslouchej: '+ws.map(g=>g.map(i=>W.G[i]).join(' – ')+' … '+g.map(i=>W.G[i]).join('')).join(', ')+(W.sentence?' … '+W.text+W.punct:'')+' Teď ty.';
@@ -1606,7 +1677,14 @@ $('startCustom').onclick=()=>{
 };
 
 $('brandTitle').textContent=BRAND.appTitle;
-$('brandGreeting').textContent=BRAND.greeting+' Čteme po písmenkách, po slabikách a pak celé slovo.';
+$('brandGreeting').textContent='Vyber si lekci!';
+const GREET=()=>`${BRAND.greeting} Vyber si lekci!`;
+$('homeAgain').onclick=()=>{ audioCtx(); speakTTS(GREET().toLowerCase()); };
+const soundUI=()=>{ $('soundLbl').textContent = settings.voice==='on'?'Zvuk':'Bez zvuku'; $('btnSound').classList.toggle('off', settings.voice!=='on'); };
+$('btnSound').onclick=()=>{ settings.voice = settings.voice==='on'?'off':'on'; saveSettings(); applySettingsUI(); soundUI(); };
+soundUI();
+// Znovu: zopakuje poslední větu Ollieho a pak pokračuje stejným krokem
+$('readAgain').onclick=async()=>{ if(!lastSay || !W) return; const q=queue[0]; stopAll(); await say(lastSay.text,lastSay.spoken,lastSay.mood); if(q && queue[0]===q) runQueue(); };
 document.querySelectorAll('.bname').forEach(e=>e.textContent=BRAND.name);
 applySettingsUI(); renderHome();
 </script>
